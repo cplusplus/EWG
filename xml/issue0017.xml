@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="17" status="New">
+<title>
+N3419 Vector loops and Parallel Loops
+</title>
+<section><sref ref="[intro.multithread]"/></section>
+<submitter>Robert Geva</submitter>
+<date>21 Sep 2012</date>
+
+<discussion>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3419.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3419.pdf</a>
+<p>
+Handled by the Concurrency Study Group (SG1).
+</p>
+</discussion>
+
+</issue>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="33" status="New">
+<title>
+[tiny] contextual bool conversion from scoped enum
+</title>
+<section><sref ref="[dcl.enum]"/></section>
+<submitter>Jeffrey Yasskin</submitter>
+<date>20 Oct 2012</date>
+
+<discussion>
+<p>
+In Beman's filesystem code, I found the following problem, which he
+didn't see because he's been building with MSVC 10:
+
+A scoped enum defined at
+<p>
+<a href="https://github.com/Beman/filesystem-proposal/blob/master/include/boost/filesystem/operations.hpp#L230">https://github.com/Beman/filesystem-proposal/blob/master/include/boost/filesystem/operations.hpp#L230</a>
+</p>
+is used like
+
+<p>
+if (opts & copy_options::skip_existing) ++ct;
+</p>
+
+at 
+<p>
+<a href="https://github.com/Beman/filesystem-proposal/blob/master/src/operations.cpp#L773">https://github.com/Beman/filesystem-proposal/blob/master/src/operations.cpp#L773</a>.
+</p>
+
+This causes an error like:
+
+<p>../../../libs/filesystem/src/operations.cpp:773:9: error: value of
+type 'boost::filesystem::copy_options' is not contextually convertible
+to 'bool'
+</p>
+
+I believe it makes sense to define a contextual conversion to bool for
+certain scoped enumerations, but I don't see a way to do it. I do see
+a way to overload & to return bool, but that seems to prevent using &
+to remove bits from a value, which shouldn't always be prevented.
+</p>
+</discussion>
+
+</issue>

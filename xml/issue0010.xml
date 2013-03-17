@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="10" status="New">
+<title>
+N3407 Proposal to Add Decimal Floating Point Support to C++
+</title>
+<section><sref ref="[library]"/></section>
+<submitter>Dietmar Kühl</submitter>
+<date>14 Sep 2012</date>
+
+<discussion>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3407.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3407.html</a>
+<p>Handled by the Numerics Study Group (SG5).</p>
+</discussion>
+
+</issue>

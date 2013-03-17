@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="42" status="New">
+<title>
+[tiny] basic_string(const charT*, size_type, const Allocator&) requires clause too restrictive
+</title>
+<section><sref ref="[string.cons]"/></section>
+<submitter>Nevin Liber</submitter>
+<date>19 Dec 2012</date>
+
+<discussion>
+<p>
+In n3485 21.4.2p6 (basic_string constructors and assignment operators), we have:
+
+<pre>
+  basic_string(const charT* s, size_type n,
+  const Allocator& a = Allocator());
+  Requires: s shall not be a null pointer and n &lt; npos.
+</pre>
+
+
+That requires clause is too restrictive; s can be a null pointer when n==0.
+
+A (simplified) use case I have seen:
+
+<pre>
+  std::string StringFromVector(std::vector&lt;char&gt; const& vc)
+  { return std::string(vc.data(), vc.size()); }
+</pre>
+
+Since a conforming implementation can return a null pointer for vc.data() when vc.size() == 0.  I don't see any reason to disallow this construct, especially since it takes a Standards expert to see that this is possibly illegal, but not std::string(vc.data(), vc.data() + vc.size()).
+</p>
+
+This is likely to go onto the LEWG's plate.
+</discussion>
+
+<resolution>
+<pre>
+  Requires: n &lt; npos and either s shall not be a null pointer or n == 0.
+</pre>
+</resolution>
+</issue>

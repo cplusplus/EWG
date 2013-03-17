@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="32" status="New">
+<title>
+[tiny] Templated constructor accidentally preferred over copy constructor
+</title>
+<section><sref ref="[over]"/></section>
+<submitter>Nevin Liber</submitter>
+<date>19 Oct 2012</date>
+
+<discussion>
+<p>
+<pre>
+
+struct Silly
+{
+    template&lt;class... Ts&gt;
+    Silly(Ts&&...)
+    {}
+};
+
+int main()
+{
+    Silly s;
+    Silly t(s);	// Silly::Silly(Ts &&...) [Ts = &lt;Silly &&gt;]
+    const Silly u;
+    Silly v(u); // calls Silly::Silly(Silly const&)
+}
+</pre>
+
+The problem is that users expect the copy constructor to be called in both situations.
+
+Note:  you do not need variadics for this; it made the example smaller.  Also, this issue existed in C++03, but rarely happened in practice because templated parameters were usually declared const T&.
+</p>
+</discussion>
+
+</issue>

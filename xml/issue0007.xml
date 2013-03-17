@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="7" status="Ready">
+<title>
+N3402 User-defined Literals for Standard Library Types
+</title>
+<section><sref ref="[utilities.general]"/></section>
+<submitter>Peter Sommerlad</submitter>
+<date>08 Sep 2012</date>
+
+<discussion>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3402.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3402.pdf</a>
+<p>Reviewed by EWG in Portland 2012, binary literals to be added into the core language, the rest of the paper is on LWG's plate. The binary literals are proceeding to CWG.</p>
+</discussion>
+
+<resolution>
+<p>The paper contains the Library wording, Dennett has written the Core
+wording for binary literals.</p>
+</resolution>
+</issue>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="11" status="New">
+<title>
+N3409 Strict Fork-Join Parallelism
+</title>
+<section><sref ref="[intro.multithread]"/></section>
+<submitter>Pablo Halpern</submitter>
+<date>24 Sep 2012</date>
+
+<discussion>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3409.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3409.pdf</a>
+<p>Handled by the Concurrency Study Group (SG1)</p>
+</discussion>
+
+</issue>

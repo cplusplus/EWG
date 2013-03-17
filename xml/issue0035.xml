@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="35" status="New">
+<title>
+[tiny] Some concise way to generate a unique, unused variable name
+</title>
+<section><sref ref="[basic.lookup]"/></section>
+<submitter>Jeffrey Yasskin</submitter>
+<date>24 Oct 2012</date>
+
+<discussion>
+<p>
+Sometimes we want to define a variable that's unused except for its
+constructor and destructor. lock_guard&lt;mutex&gt; and ScopeGuard are
+decent examples of this. In C++11, we have to manually name the
+variable something unique. Sometimes we use _some_name_##__LINE__
+(suitably wrapped so the concatenation happens after expanding
+__LINE__) to try to generate unique names automatically, and gcc/clang
+have an extension _some_name_##__COUNTER__
+<p>
+<a href="http://gcc.gnu.org/onlinedocs/gcc-4.7.2/cpp/Common-Predefined-Macros.html">http://gcc.gnu.org/onlinedocs/gcc-4.7.2/cpp/Common-Predefined-Macros.html</a>
+</p>
+to allow multiple such variables on the same line. These are pretty
+verbose and not convenient for casual use.
+
+Haskell allows _ (underscore) to stand in for a variable that's not
+going to be used. Googlemock defines testing::_ to mean "don't care"
+as an argument, which is similar but not identical.
+</p>
+</discussion>
+
+</issue>

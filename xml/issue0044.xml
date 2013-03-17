@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="44" status="New">
+<title>
+[tiny] variadic bind
+</title>
+<section><sref ref="[bind]"/></section>
+<submitter>Chris Jefferson</submitter>
+<date>25 Jan 2013</date>
+
+<discussion>
+<p>
+As more variadic functions work their way into my C++ code, I'm getting increasingly annoyed that there isn't a variadic bind.
+
+There is a tiny bit of annoyance on exactly what to use. There seems to me to be 2 sensible choices (other people may have others)
+
+<pre>
+  1) _args : Use all otherwise unnamed arguments.
+  2) _3onwards : All arguments from the 3rd onwards.
+</pre>
+
+I haven't personally found a need for multiple ranges of variadic arguments, or more complicated chopping (such as getting the last few arguments), and I'd want to hopefully keep this simple if possible!
+</p>
+</discussion>
+</issue>

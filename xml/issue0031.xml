@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="31" status="New">
+<title>
+[tiny] constexpr functions must work at runtime
+</title>
+<section><sref ref="[expr.const]"/></section>
+<submitter>Dave Abrahams</submitter>
+<date>16 Oct 2012</date>
+
+<discussion>
+<p>
+constexpr functions are crippled by the fact that they have to be valid
+at runtime.  Things that are tantalizingly close but you can't quite do
+include returning a type that depends on the /value/ of a function
+parameter:
+
+<pre>
+  constexpr auto ptr_array(int N) -> int(*)[N]
+  { ... }
+</pre>
+
+If we would allow for constexpr functions that can only be evaluated at
+compile time, we'd be able to do compile-time computation in a much less
+template-heavy way.
+</p>
+</discussion>
+
+</issue>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="26" status="New">
+<title>
+N3445 Pass by Const Reference or Value
+</title>
+<section><sref ref="[dcl.fct]"/></section>
+<submitter>Lawrence Crowl</submitter>
+<date>23 Sep 2012</date>
+
+<discussion>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3445.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3445.html</a>
+</discussion>
+
+</issue>

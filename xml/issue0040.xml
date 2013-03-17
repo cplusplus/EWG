@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="40" status="New">
+<title>
+[tiny] Relax the allocator requirements on vector so that the small object optimization is allowed
+</title>
+<section><sref ref="[vector]"/></section>
+<submitter>Nevin Liber</submitter>
+<date>27 Nov 2012</date>
+
+<discussion>
+<p>
+I'd like it to be possible to use the small object optimization (embedding up to a fixed number of objects inside the allocator itself) inside a vector.
+</p>
+</discussion>
+
+</issue>

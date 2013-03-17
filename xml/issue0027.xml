@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="27" status="Open">
+<title>
+N3448 Painless Digit Separation
+</title>
+<section><sref ref="[lex.ppnumber]"/></section>
+<submitter>Daveed Vandevoorde</submitter>
+<date>21 Sep 2012</date>
+
+<discussion>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3448.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3448.pdf</a>
+<p>
+Reviewed by EWG in Portland 2012, proceeding with a follow-up paper.
+</p>
+</discussion>
+
+<resolution>
+<p>The paper contains the proposed wording.</p>
+</resolution>
+</issue>

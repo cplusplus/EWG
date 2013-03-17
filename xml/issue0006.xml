@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="6" status="Ready">
+<title>
+N3401 Generating move operations (elaborating on Core 1402)
+</title>
+<section><sref ref="[class.copy]"/></section>
+<submitter>Ville Voutilainen</submitter>
+<date>21 Sep 2012</date>
+
+<discussion>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3401.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3401.html</a>
+<p>Reviewed by EWG in Portland 2012, proceeding to CWG.</p>
+</discussion>
+
+<resolution>
+<p>The related Core issue contains the proposed wording.</p>
+</resolution>
+</issue>

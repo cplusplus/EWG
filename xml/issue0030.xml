@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="30" status="New">
+<title>
+[tiny] Efficient/Flexible Access to Argument Packs
+</title>
+<section><sref ref="[temp.variadic]"/></section>
+<submitter>Dave Abrahams</submitter>
+<date>16 Oct 2012</date>
+
+<discussion>
+<p>
+There are lots of very basic manipulations that are either really hard
+or impossible to do with argument packs unless you use something that
+causes a big recursive template instantiation, which is expensive at
+compile-time and can cause bad error messages.  I want to be able to
+index argument packs with integral constant expressions, "take" or
+"drop" the first N elements of the pack, etc.
+</p>
+</discussion>
+
+</issue>

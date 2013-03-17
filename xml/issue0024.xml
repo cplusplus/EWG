@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="24" status="New">
+<title>
+N3441 Call Stack Utilities and std::exception Extension Proposal
+</title>
+<section><sref ref="[support.exception]"/></section>
+<submitter>Aurelian Melinte</submitter>
+<date>20 Sep 2012</date>
+
+<discussion>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3441.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3441.html</a>
+</discussion>
+
+</issue>

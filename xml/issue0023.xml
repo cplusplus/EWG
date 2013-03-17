@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="23" status="New">
+<title>
+N3437 Type Name Strings For C++
+</title>
+<section><sref ref="[meta]"/></section>
+<submitter>Axel Naumann</submitter>
+<date>24 Sep 2012</date>
+
+<discussion>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3437.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3437.pdf</a>
+<p>
+Not reviewed by EWG yet, to be handled by the Reflection Study Group (SG7).
+</p>
+</discussion>
+
+</issue>

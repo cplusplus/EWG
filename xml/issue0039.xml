@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="39" status="NAD">
+<title>
+[tiny] local class and friendship
+</title>
+<section><sref ref="[class.friend]"/></section>
+<submitter>Gabriel Dos Reis</submitter>
+<date>10 Nov 2012</date>
+
+<discussion>
+<p>
+When we went from C++98 to C++03 we made nested classes implicitly
+friend of their enclosing classes.  We seem to have missed doing the same
+for local classes defined at member functions scopes.
+</p>
+
+Mike Miller explained:
+<p>
+Hmm.  I think that's already covered by 11p2:
+<pre>
+    A member of a class can also access all the names to which the class
+    has access.  A local class of a member function may access the same
+    names that the member function itself may access.
+</pre>
+By the definition of "private" in 11p1, a nested class has access to the
+private members of the containing class; a member function of the nested
+class therefore also has access to the private members of the containing
+class; a local class of such a member function has the same access as
+the member function; and a member function of the local class has the
+same access as the local class, the same access as the containing
+member function, and the same access as the nested class.
+</p>
+</discussion>
+
+</issue>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="43" status="New">
+<title>
+[tiny] simultaneous iteration with new-style for syntax
+</title>
+<section><sref ref="[stmt.ranged]"/></section>
+<submitter>Gabriel Dos Reis</submitter>
+<date>12 Jan 2013</date>
+
+<discussion>
+<p>
+The new-style 'for' syntax allows us to dispense with administrative
+iterator declarations when iterating over a single seuqence.
+
+The burden and noise remain, however, when iterating over two or more
+sequences simultaenously.  We should extend the syntax to allow that.
+E.g. one should be able to write:
+<pre>
+    for (auto& x : v; auto& y : w)
+       a = combine(v, w, a);
+</pre>
+
+instead of the noisier
+<pre>
+    auto p1 = v.begin();
+    auto q1 = v.end();
+    auto p2 = w.begin();
+    auto q2 = w.end();
+    while (p1 &lt; q1 and p2 &lt; q2) {
+       a = combine(*p1, *p2, a);
+       ++p1;
+       ++p2;
+    }
+</pre>
+</p>
+</discussion>
+</issue>

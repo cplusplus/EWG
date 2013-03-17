@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="36" status="New">
+<title>
+[tiny] no way to say "prefer this implicit conversion over that"
+</title>
+<section><sref ref="[class.conv]"/></section>
+<submitter>Jeffrey Yasskin</submitter>
+<date>24 Oct 2012</date>
+
+<discussion>
+<p>
+If a type has two implicit conversions, and I call a function with overloads for both target types, there's no way to disambiguate short of writing the conversion explicitly or adding another overload. It would be nice to be able to extend the partial order on conversions.
+</p>
+</discussion>
+
+</issue>

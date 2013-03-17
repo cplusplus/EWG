@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="41" status="New">
+<title>
+[tiny] In-class explicit specializations forbidden but not partial specializations
+</title>
+<section><sref ref="[temp.expl.spec]"/></section>
+<submitter>Faisal Vali</submitter>
+<date>27 Oct 2012</date>
+
+<discussion>
+<p>
+I had submitted a DR (727) about this in October 2008 - and it was
+classified as an extension - I wonder if Spertus' DR (1077) that was
+also classified as an extension should be considered along with this
+one.
+
+
+14.7.3 [temp.expl.spec] paragraph 2 requires that explicit
+specializations of member templates be declared in namespace scope,
+not in the class definition. This restriction does not apply to
+partial specializations of member templates; that is,
+<pre>
+    struct A {
+      template&lt;class T&gt; struct B;
+      template &lt;class T&gt; struct B&lt;T*&gt; { }; // well-formed
+      template &lt;&gt; struct B&lt;int*&gt; { }; // ill-formed
+    };
+</pre>
+There does not seem to be a good reason for this inconsistency.
+</p>
+</discussion>
+
+</issue>

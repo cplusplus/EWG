@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="34" status="New">
+<title>
+[tiny] Defining hash functions for composite user-defined types is annoying
+</title>
+<section><sref ref="[hash.requirements]"/></section>
+<submitter>Matt Austern</submitter>
+<date>23 Oct 2012</date>
+
+<discussion>
+<p>
+We have a hash function for built-in types and for some standard library types, but we don't have automatically generated hash&lt;&gt; specializations for user-defined types like
+<pre>
+  struct my_type {
+    int x;
+    std::string y;
+    vector&lt;int&gt; z;
+  };
+</pre>
+Defining a good and efficient hash function for composite types takes a fair amount of work. One consequence is that there are a lot of user-defined types with bad hash functions floating around.
+
+One possibility is automatically generating hash&lt;&gt; specializations, but that's tricky. A simpler possibility is providing tools that make it easier for users to do the right thing.
+</p>
+</discussion>
+
+</issue>

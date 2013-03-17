@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="38" status="New">
+<title>
+[tiny] Core issue 1542
+</title>
+<section><sref ref="[expr.ass]"/></section>
+<submitter>Mike Miller</submitter>
+<date>02 Nov 2012</date>
+
+<discussion>
+<p>
+In Portland, CWG categorized a number of issues as "extension," which
+I presume you
+will automatically look at for potential EWG involvement once the new
+revision of the
+issues list is out.  I did want to mention one issue for which we will
+be resolving part
+and referring the other part to EWG: issue 1542 raises the question of
+whether the
+narrowing rules make sense for a compound assignment, e.g.,
+<pre>
+    char c;
+    c += {1};
+</pre>
+CWG addressed a similar issue (1078) for an ordinary assignment and
+decided that,
+although the narrowing error was annoying in that case, it wasn't
+worth the effort to
+change the language because the workaround was simply to add a cast.  In this
+case, however, there's no way to avoid the error (no place to put the
+cast).  I think we'd
+be happy with a revision of the narrowing rules that addressed both
+this case and the
+one in 1078; maybe the answer is just "why would you use the { } form
+in a case like
+this anyway?"
+</p>
+
+The Core issue link <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_active.html#1542">here</a>.
+
+</discussion>
+
+</issue>

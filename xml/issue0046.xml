@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="46" status="New">
+<title>
+[tiny] Type Trait is_final<T>
+</title>
+<section><sref ref="[meta.unary.prop]"/></section>
+<submitter>Nevin Liber</submitter>
+<date>05 Feb 2013</date>
+
+<discussion>
+<p>
+I'd like to have an is_final&lt;T&gt; type trait, which is true if and only if T is a final type.
+</p>
+</discussion>
+</issue>

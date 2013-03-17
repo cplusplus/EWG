@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="12" status="New">
+<title>
+N3410 Rich Pointers with Dynamic and Static Introspection
+</title>
+<section><sref ref="[meta]"/></section>
+<submitter>Dean Michael Berris</submitter>
+<date>18 Sep 2012</date>
+
+<discussion>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3410.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3410.pdf</a>
+<p>To be handled by the Reflection Study Group (SG7).</p>
+</discussion>
+
+</issue>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="45" status="New">
+<title>
+[tiny] Type Trait is_range<T>
+</title>
+<section><sref ref="[meta.unary.prop]"/></section>
+<submitter>Nevin Liber</submitter>
+<date>05 Feb 2013</date>
+
+<discussion>
+<p>
+I'd like to have an is_range&lt;T, R = void&gt; type trait, which derives from true_type if and only if T can be used in range-based for, and *__begin is convertible to R (where R == void means don't bother checking this condition).
+</p>
+</discussion>
+</issue>

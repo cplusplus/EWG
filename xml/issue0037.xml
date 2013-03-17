@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="37" status="New">
+<title>
+[tiny] Logical xor operator
+</title>
+<section><sref ref="[expr]"/></section>
+<submitter>Alisdair Meredith</submitter>
+<date>28 Oct 2012</date>
+
+<discussion>
+<p>
+I have a low-priority issue for adding the (neglected) logical-xor operator, ^^.
+This has traditionally been dismissed as un-necessary, as it is equivalent to boolean operator!=, and there is no short-circuiting benefit to justify adding it.
+
+However, contextual conversions to 'bool' are handled specially for logical operators, and in that context it would be completing a hole in the language.
+
+I wish I had a better example, but pulling from the standard library:
+<pre>
+   function&lt;void()&gt; a;
+   function&lt;void()&gt; b;
+   assert(a != b);  // does not compile
+   assert(a ^^ b);  // would compile, and assert!
+</pre>
+</p>
+</discussion>
+
+</issue>
