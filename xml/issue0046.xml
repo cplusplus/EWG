@@ -5,7 +5,7 @@
 
 <issue num="46" status="New">
 <title>
-[tiny] Type Trait is_final<T>
+[tiny] Type Trait is_final&lt;T&gt;
 </title>
 <section><sref ref="[meta.unary.prop]"/></section>
 <submitter>Nevin Liber</submitter>

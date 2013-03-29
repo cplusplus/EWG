@@ -18,22 +18,22 @@
 struct Silly
 {
     template&lt;class... Ts&gt;
-    Silly(Ts&&...)
+    Silly(Ts&amp;&amp;...)
     {}
 };
 
 int main()
 {
     Silly s;
-    Silly t(s);	// Silly::Silly(Ts &&...) [Ts = &lt;Silly &&gt;]
+    Silly t(s);	// Silly::Silly(Ts &amp;&amp;...) [Ts = &lt;Silly &amp;&gt;]
     const Silly u;
-    Silly v(u); // calls Silly::Silly(Silly const&)
+    Silly v(u); // calls Silly::Silly(Silly const&amp;)
 }
 </pre>
 
 The problem is that users expect the copy constructor to be called in both situations.
 
-Note:  you do not need variadics for this; it made the example smaller.  Also, this issue existed in C++03, but rarely happened in practice because templated parameters were usually declared const T&.
+Note:  you do not need variadics for this; it made the example smaller.  Also, this issue existed in C++03, but rarely happened in practice because templated parameters were usually declared const T&amp;.
 </p>
 </discussion>
 

@@ -5,7 +5,7 @@
 
 <issue num="45" status="New">
 <title>
-[tiny] Type Trait is_range<T>
+[tiny] Type Trait is_range&lt;T&gt;
 </title>
 <section><sref ref="[meta.unary.prop]"/></section>
 <submitter>Nevin Liber</submitter>

@@ -23,7 +23,7 @@ A scoped enum defined at
 is used like
 
 <p>
-if (opts & copy_options::skip_existing) ++ct;
+if (opts &amp; copy_options::skip_existing) ++ct;
 </p>
 
 at 
@@ -40,7 +40,7 @@ to 'bool'
 
 I believe it makes sense to define a contextual conversion to bool for
 certain scoped enumerations, but I don't see a way to do it. I do see
-a way to overload & to return bool, but that seems to prevent using &
+a way to overload &amp; to return bool, but that seems to prevent using &amp;
 to remove bits from a value, which shouldn't always be prevented.
 </p>
 </discussion>

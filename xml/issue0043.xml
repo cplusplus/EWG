@@ -20,7 +20,7 @@ The burden and noise remain, however, when iterating over two or more
 sequences simultaenously.  We should extend the syntax to allow that.
 E.g. one should be able to write:
 <pre>
-    for (auto& x : v; auto& y : w)
+    for (auto&amp; x : v; auto&amp; y : w)
        a = combine(v, w, a);
 </pre>
 

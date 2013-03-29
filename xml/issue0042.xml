@@ -5,7 +5,7 @@
 
 <issue num="42" status="New">
 <title>
-[tiny] basic_string(const charT*, size_type, const Allocator&) requires clause too restrictive
+[tiny] basic_string(const charT*, size_type, const Allocator&amp;) requires clause too restrictive
 </title>
 <section><sref ref="[string.cons]"/></section>
 <submitter>Nevin Liber</submitter>
@@ -17,7 +17,7 @@ In n3485 21.4.2p6 (basic_string constructors and assignment operators), we have:
 
 <pre>
   basic_string(const charT* s, size_type n,
-  const Allocator& a = Allocator());
+  const Allocator&amp; a = Allocator());
   Requires: s shall not be a null pointer and n &lt; npos.
 </pre>
 
@@ -27,7 +27,7 @@ That requires clause is too restrictive; s can be a null pointer when n==0.
 A (simplified) use case I have seen:
 
 <pre>
-  std::string StringFromVector(std::vector&lt;char&gt; const& vc)
+  std::string StringFromVector(std::vector&lt;char&gt; const&amp; vc)
   { return std::string(vc.data(), vc.size()); }
 </pre>
 
