@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="51" status="New">
+<title>
+N3490 ADL Control for C++
+</title>
+<section><sref ref="[basic.lookup.argdep]"/></section>
+<submitter>Dave Abrahams</submitter>
+<date>31 Oct 2012</date>
+
+<discussion>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3490.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3490.html</a>
+</discussion>
+</issue>
