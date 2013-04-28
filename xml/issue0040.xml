@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="40" status="New">
+<issue num="40" status="Ready">
 <title>
 [tiny] Relax the allocator requirements on vector so that the small object optimization is allowed
 </title>
@@ -14,6 +14,9 @@
 <discussion>
 <p>
 I'd like it to be possible to use the small object optimization (embedding up to a fixed number of objects inside the allocator itself) inside a vector.
+</p>
+<p>
+Bristol 2013: Designated for LEWG.
 </p>
 </discussion>
 

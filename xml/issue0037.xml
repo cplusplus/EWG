@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="37" status="New">
+<issue num="37" status="NAD">
 <title>
 [tiny] Logical xor operator
 </title>
@@ -25,6 +25,9 @@ I wish I had a better example, but pulling from the standard library:
    assert(a != b);  // does not compile
    assert(a ^^ b);  // would compile, and assert!
 </pre>
+</p>
+<p>
+Bristol 2013: EWG doesn't believe reopening this discussion, it's been tried previously and it's unlikely that a new round would lead to anything. NAD. 
 </p>
 </discussion>
 

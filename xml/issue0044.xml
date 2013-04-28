@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="44" status="New">
+<issue num="44" status="Ready">
 <title>
 [tiny] variadic bind
 </title>
@@ -23,6 +23,9 @@ There is a tiny bit of annoyance on exactly what to use. There seems to me to be
 </pre>
 
 I haven't personally found a need for multiple ranges of variadic arguments, or more complicated chopping (such as getting the last few arguments), and I'd want to hopefully keep this simple if possible!
+</p>
+<p>
+Bristol 2013: Defer to LEWG. 
 </p>
 </discussion>
 </issue>

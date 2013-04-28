@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="31" status="New">
+<issue num="31" status="NAD">
 <title>
 [tiny] constexpr functions must work at runtime
 </title>
@@ -26,6 +26,9 @@ parameter:
 If we would allow for constexpr functions that can only be evaluated at
 compile time, we'd be able to do compile-time computation in a much less
 template-heavy way.
+</p>
+<p>
+Bristol 2013: Gregor thought that wrt general direction, constexpr is specifically not to have a constexpr-only model, and this issue would go into the opposite direction. NAD. 
 </p>
 </discussion>
 

@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="33" status="New">
+<issue num="33" status="Open">
 <title>
 [tiny] contextual bool conversion from scoped enum
 </title>
@@ -42,6 +42,9 @@ I believe it makes sense to define a contextual conversion to bool for
 certain scoped enumerations, but I don't see a way to do it. I do see
 a way to overload &amp; to return bool, but that seems to prevent using &amp;
 to remove bits from a value, which shouldn't always be prevented.
+</p>
+<p>
+Bristol 2013: Stroustrup pointed out that the existing behavior is deliberately trying to avoid supporting anything like this, in order to play safe. He further explained that allowing member functions for scoped enums has been attempted but the attempts failed. Gregor pointed out that not all scoped enums have a zero value, so doing it generally is hard. Stroustrup said he would want to have member functions for enums. Yasskin said he's not interested in writing a paper. Other people are invited to do so. 
 </p>
 </discussion>
 

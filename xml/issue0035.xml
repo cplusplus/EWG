@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="35" status="New">
+<issue num="35" status="Open">
 <title>
 [tiny] Some concise way to generate a unique, unused variable name
 </title>
@@ -29,6 +29,9 @@ verbose and not convenient for casual use.
 Haskell allows _ (underscore) to stand in for a variable that's not
 going to be used. Googlemock defines testing::_ to mean "don't care"
 as an argument, which is similar but not identical.
+</p>
+<p>
+Bristol 2013: Stroustrup wondered how unique the name needs to be, and wondered whether parallel builds would have problems ensuring the uniqueness. Naumann pointed out that having an unnamed variable is useful also for cases where you don't want the variable's address to be taken etc. Stroustrup and Van Winkel said this is not tiny, and a proper paper is necessary for this issue. 
 </p>
 </discussion>
 

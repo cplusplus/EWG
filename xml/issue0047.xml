@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="47" status="New">
+<issue num="47" status="NAD">
 <title>
 [tiny] Fix the relation operators on standard templated types
 </title>
@@ -17,6 +17,9 @@ In C++11, all the containers, pair, tuple, etc. always have the relation operato
 <p>
 A use case I've have for this is when holding stateless objects that don't normally have the relation operators defined for them.
 </p>
+</p>
+<p>
+Bristol 2013: NAD. The operators have no opportunity for substitution failure.
 </p>
 </discussion>
 </issue>

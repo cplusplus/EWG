@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="45" status="New">
+<issue num="45" status="Ready">
 <title>
 [tiny] Type Trait is_range&lt;T&gt;
 </title>
@@ -14,6 +14,9 @@
 <discussion>
 <p>
 I'd like to have an is_range&lt;T, R = void&gt; type trait, which derives from true_type if and only if T can be used in range-based for, and *__begin is convertible to R (where R == void means don't bother checking this condition).
+</p>
+<p>
+Bristol 2013: Submitter is encouraged to proceed and present to LWG. Apparently LEWG doesn't handle these. 
 </p>
 </discussion>
 </issue>

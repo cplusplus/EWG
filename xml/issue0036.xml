@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="36" status="New">
+<issue num="36" status="NAD">
 <title>
 [tiny] no way to say "prefer this implicit conversion over that"
 </title>
@@ -15,6 +15,10 @@
 <p>
 If a type has two implicit conversions, and I call a function with overloads for both target types, there's no way to disambiguate short of writing the conversion explicitly or adding another overload. It would be nice to be able to extend the partial order on conversions.
 </p>
+<p>
+Bristol 2013: The group doesn't see this as something that we should pursue, and thinks it's a design error and users are advised just not to do this. NAD. 
+</p>
+
 </discussion>
 
 </issue>

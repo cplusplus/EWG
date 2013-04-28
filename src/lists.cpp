@@ -979,7 +979,8 @@ auto EwgIssuesXml::get_revisions(std::vector<issue> const & issues, std::string 
 
    r += "<li>";
 //   r += "R74: 2011-02-28 pre-Madrid mailing";   // This is the form we are copying
-   r += "R01: 2013-03-18 pre-Bristol mailing";   // We should date and *timestamp* this reference, as we expect to generate several documents per day
+//   r += "R01: 2013-03-18 pre-Bristol mailing";   // We should date and *timestamp* this reference, as we expect to generate several documents per day
+   r += "D02: 2013-04-28 updated tiny issue statuses";   // We should date and *timestamp* this reference, as we expect to generate several documents per day
 //   r += "Madrid meeting resolutions";   // We should date and *timestamp* this reference, as we expect to generate several documents per day
    r += diff_report;
    r += "</li>\n";

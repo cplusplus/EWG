@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="48" status="New">
+<issue num="48" status="Open">
 <title>
 [tiny] Specializing templates in different namespaces
 </title>
@@ -51,6 +51,11 @@ Instead, I should be able to specialize std::less without having to break out of
     }
   }
 </pre>
+</p>
+<p>
+Bristol 2013:  Stroustrup expressed concern about unqualified name lookup in the specializations, and Voutilainen thought that that just might be the reason why the current rules don't allow it. Gottschling voiced concern about the implementation impact, and Voutilainen suggested asking for a quick review of the overall idea from Spicer. Austern thought that this could be palatable if it's expressed as a set of rewrite rules. Spertus asked about an alternative which is to be able to open another namespace without having to exit the current namespace. This alternative didn't gain success.
+
+Spertus to write a paper. 
 </p>
 </discussion>
 </issue>

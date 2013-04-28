@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="43" status="New">
+<issue num="43" status="Open">
 <title>
 [tiny] simultaneous iteration with new-style for syntax
 </title>
@@ -36,6 +36,9 @@ instead of the noisier
        ++p2;
     }
 </pre>
+</p>
+<p>
+Bristol 2013: Submitter is encouraged to write a paper. 
 </p>
 </discussion>
 </issue>

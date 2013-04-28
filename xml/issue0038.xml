@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="38" status="New">
+<issue num="38" status="NAD">
 <title>
 [tiny] Core issue 1542
 </title>
@@ -42,6 +42,9 @@ this anyway?"
 
 The Core issue link <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_active.html#1542">here</a>.
 
+<p>
+In Bristol 2013: EWG thinks the answer _is_ just "why would you use the { } form in a case like this anyway?". NAD. 
+</p>
 </discussion>
 
 </issue>
