@@ -38,7 +38,7 @@
 </tr>
 </table>
 <h1>C++ Standard Evolution Defect Report List (Revision D02)</h1>
-<p>Revised 2013-04-28 at 20:04:53 UTC</p>
+<p>Revised 2013-04-28 at 23:04:27 UTC</p>
 
   <p>Reference ISO/IEC IS 14882:2003(E)</p>
   <p>Also see:</p>
@@ -63,14 +63,16 @@
 <ul>
 <li>D02: 2013-04-28 updated tiny issue statuses<ul>
 <li><b>Summary:</b><ul>
-<li>42 open issues, down by 5.</li>
-<li>6 closed issues, up by 5.</li>
-<li>48 issues total, up by 0.</li>
+<li>43 open issues, down by 4.</li>
+<li>9 closed issues, up by 8.</li>
+<li>52 issues total, up by 4.</li>
 </ul></li>
 <li><b>Details:</b><ul>
+<li>Added the following 4 New issues: <a href="ewg-active.html#49">49</a>, <a href="ewg-active.html#50">50</a>, <a href="ewg-active.html#51">51</a>, <a href="ewg-active.html#52">52</a>.</li>
 <li>Changed the following 5 issues from New to NAD: <a href="ewg-closed.html#31">31</a>, <a href="ewg-closed.html#36">36</a>, <a href="ewg-closed.html#37">37</a>, <a href="ewg-closed.html#38">38</a>, <a href="ewg-closed.html#47">47</a>.</li>
 <li>Changed the following 7 issues from New to Open: <a href="ewg-active.html#30">30</a>, <a href="ewg-active.html#32">32</a>, <a href="ewg-active.html#33">33</a>, <a href="ewg-active.html#34">34</a>, <a href="ewg-active.html#35">35</a>, <a href="ewg-active.html#43">43</a>, <a href="ewg-active.html#48">48</a>.</li>
 <li>Changed the following 6 issues from New to Ready: <a href="ewg-active.html#40">40</a>, <a href="ewg-active.html#41">41</a>, <a href="ewg-active.html#42">42</a>, <a href="ewg-active.html#44">44</a>, <a href="ewg-active.html#45">45</a>, <a href="ewg-active.html#46">46</a>.</li>
+<li>Changed the following 3 issues from Ready to WP: <a href="ewg-defects.html#1">1</a>, <a href="ewg-defects.html#7">7</a>, <a href="ewg-defects.html#13">13</a>.</li>
 </ul></li>
 </ul>
 </li>
@@ -96,5 +98,87 @@
 </ul>
 
 <h2>Defect Reports</h2>
+<hr>
+<h3><a name="1"></a>1. N3638, N3582, N3386 Return type deduction for normal functions</h3>
+<p><b>Section:</b> 7.1.6.4 [dcl.spec.auto] <b>Status:</b> <a href="ewg-active.html#WP">WP</a>
+ <b>Submitter:</b> Jason Merrill <b>Opened:</b> 2012-03-27 <b>Last modified:</b> 2013-04-29</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#WP">WP</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3386.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3386.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3582.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3582.html</a>
+</p>
+<p>Reviewed by EWG in Portland 2012, proceeding to CWG.</p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3638.</p>
+
+
+<p><b>Wording available:</b></p>
+<p>The paper contains the proposed wording.</p>
+
+
+
+
+<hr>
+<h3><a name="7"></a>7. 
+N3642, N3468, N3402 User-defined Literals for Standard Library Types, N3472 Binary Literals in the C++ Core Language
+</h3>
+<p><b>Section:</b> 2.14.2 [lex.icon] <b>Status:</b> <a href="ewg-active.html#WP">WP</a>
+ <b>Submitter:</b> Peter Sommerlad <b>Opened:</b> 2012-09-08 <b>Last modified:</b> 2013-04-29</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#WP">WP</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3402.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3402.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3468.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3468.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3472.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3472.pdf</a>
+</p>
+<p>Reviewed by EWG in Portland 2012, binary literals to be added into the core language, the rest of the paper is on LWG's plate. The binary literals are proceeding to CWG.</p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3642.</p>
+<p>N3472 also accepted into the Working Draft in Bristol 2013.</p>
+
+
+<p><b>Wording available:</b></p>
+<p>The paper contains the Library wording, Dennett has written the Core
+wording (N3472) for binary literals.</p>
+
+
+
+
+<hr>
+<h3><a name="13"></a>13. 
+N3639, N3497, N3467, N3412 Runtime-sized arrays with automatic storage duration
+</h3>
+<p><b>Section:</b> 3.9 [basic.types] <b>Status:</b> <a href="ewg-active.html#WP">WP</a>
+ <b>Submitter:</b> Jens Maurer <b>Opened:</b> 2012-09-19 <b>Last modified:</b> 2013-04-29</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#WP">WP</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3412.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3412.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3467.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3467.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3497.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3497.html</a>
+</p>
+<p>
+Reviewed by EWG in Portland 2012, proceeding to CWG. The library part is <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2648.html">N2648 C++ Dynamic Arrays</a>, and that part is proceeding to LWG.
+</p>
+<p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3639.</p>
+</p>
+
+
+<p><b>Wording available:</b></p>
+The paper contains the proposed wording, as does the Library counterpart.
+
+
+
+
 </body>
 </html>
