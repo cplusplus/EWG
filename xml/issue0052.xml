@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="52" status="New">
+<title>
+N3515 Toward Opaque Typedefs for C++1Y
+</title>
+<section><sref ref="[dcl.typedef]"/></section>
+<submitter>Walter Brown</submitter>
+<date>11 Jan 2013</date>
+
+<discussion>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3515.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3515.pdf</a>
+</discussion>
+</issue>

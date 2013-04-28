@@ -3,21 +3,31 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="7" status="Ready">
+<issue num="7" status="WP">
 <title>
-N3402 User-defined Literals for Standard Library Types
+N3642, N3468, N3402 User-defined Literals for Standard Library Types, N3472 Binary Literals in the C++ Core Language
 </title>
-<section><sref ref="[utilities.general]"/></section>
+<section><sref ref="[lex.icon]"/></section>
 <submitter>Peter Sommerlad</submitter>
 <date>08 Sep 2012</date>
 
 <discussion>
+<p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3402.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3402.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3468.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3468.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3472.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3472.pdf</a>
+</p>
 <p>Reviewed by EWG in Portland 2012, binary literals to be added into the core language, the rest of the paper is on LWG's plate. The binary literals are proceeding to CWG.</p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3642.</p>
+<p>N3472 also accepted into the Working Draft in Bristol 2013.</p>
 </discussion>
 
 <resolution>
 <p>The paper contains the Library wording, Dennett has written the Core
-wording for binary literals.</p>
+wording (N3472) for binary literals.</p>
 </resolution>
 </issue>

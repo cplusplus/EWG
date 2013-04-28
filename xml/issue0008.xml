@@ -5,14 +5,19 @@
 
 <issue num="8" status="New">
 <title>
-N3403 Use Cases for Compile-Time Reflection
+N3492, N3403 Use Cases for Compile-Time Reflection
 </title>
 <section><sref ref="[language.support]"/></section>
 <submitter>Mike Spertus</submitter>
 <date>22 Sep 2012</date>
 
 <discussion>
+<p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3403.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3403.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3492.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3492.pdf</a>
+</p>
 <p>Not reviewed by EWG yet, to be handled by the Reflection Study Group (SG7).</p>
 </discussion>
 

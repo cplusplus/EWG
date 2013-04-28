@@ -3,18 +3,29 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="13" status="Ready">
+<issue num="13" status="WP">
 <title>
-N3412 Runtime-sized arrays with automatic storage duration (revision 2)
+N3639, N3497, N3467, N3412 Runtime-sized arrays with automatic storage duration
 </title>
 <section><sref ref="[basic.types]"/></section>
 <submitter>Jens Maurer</submitter>
 <date>19 Sep 2012</date>
 
 <discussion>
+<p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3412.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3412.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3467.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3467.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3497.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3497.html</a>
+</p>
 <p>
 Reviewed by EWG in Portland 2012, proceeding to CWG. The library part is <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2648.html">N2648 C++ Dynamic Arrays</a>, and that part is proceeding to LWG.
+</p>
+<p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3639.</p>
 </p>
 </discussion>
 

@@ -3,15 +3,21 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="1" status="Ready">
-<title>N3386 Return type deduction for normal functions</title>
+<issue num="1" status="WP">
+<title>N3638, N3582, N3386 Return type deduction for normal functions</title>
 <section><sref ref="[dcl.spec.auto]"/></section>
 <submitter>Jason Merrill</submitter>
 <date>27 Mar 2012</date>
 
 <discussion>
+<p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3386.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3386.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3582.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3582.html</a>
+</p>
 <p>Reviewed by EWG in Portland 2012, proceeding to CWG.</p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3638.</p>
 </discussion>
 
 <resolution>
