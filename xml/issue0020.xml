@@ -5,14 +5,19 @@
 
 <issue num="20" status="Ready">
 <title>
-N3432 C++ Sized Deallocation
+N3536, N3432 C++ Sized Deallocation
 </title>
 <section><sref ref="[basic.stc.dynamic]"/></section>
 <submitter>Lawrence Crowl</submitter>
 <date>23 Sep 2012</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3536.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3536.html</a>
+</p>
+<p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3432.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3432.html</a>
+</p>
 <p>
 Reviewed by EWG in Portland 2012, proceeding to CWG.
 </p>

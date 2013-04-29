@@ -5,16 +5,42 @@
 
 <issue num="27" status="Open">
 <title>
-N3448 Painless Digit Separation
+N3499 Digit Separators, N3448 Painless Digit Separation
 </title>
 <section><sref ref="[lex.ppnumber]"/></section>
 <submitter>Daveed Vandevoorde</submitter>
 <date>21 Sep 2012</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3499.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3499.html</a>
+</p>
+<p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3448.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3448.pdf</a>
+</p>
 <p>
 Reviewed by EWG in Portland 2012, proceeding with a follow-up paper.
+</p>
+<p>
+Bristol 2013:  
+</p>
+<p>
+Straw poll:
+</p>
+<p>
+Double radix point as the suffix disambiguator:
+</p>
+<p>
+SF: 8 F: 5 N: 0 A: 0 SA: 0
+</p>
+<p>
+Convey to Core, target C++14:
+</p>
+<p>
+SF: 10 F: 3 N: 0 A: 0 SA: 0 
+</p>
+<p>
+The paper was not adopted in Bristol, because its motion didn't pass.
 </p>
 </discussion>
 

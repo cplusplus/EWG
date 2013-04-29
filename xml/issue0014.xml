@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="14" status="New">
+<issue num="14" status="Open">
 <title>
 N3413 Allowing arbitrary literal types for non-type template parameters
 </title>
@@ -12,7 +12,37 @@ N3413 Allowing arbitrary literal types for non-type template parameters
 <date>19 Sep 2012</date>
 
 <discussion>
+<p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3413.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3413.html</a>
+</p>
+<p>
+Bristol 2013: Maurer expressed surprise at the paper being under discussion, and explained that he doesn't think it can be made to work under current linker environments, and further explained that user-defined equality operators cause confusion and surprises. Maurer said that he'd want Stroustrup to clarify which parts of the paper he would want.
+</p>
+
+<p>
+Two-way Straw polls:
+</p>
+<p>
+Rules for agument expressions:
+</p>
+<p>
+F: 5 A: 0
+</p>
+<p>
+Structs without operator==
+</p>
+<p>
+F: 0 A: 0
+</p>
+<p>
+Structs with operator==
+</p>
+<p>
+F: 1 A: 3
+</p>
+<p>
+The issue is not pushed at this time. 
+</p>
 </discussion>
 
 <resolution>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="66" status="Open">
+<title>
+N3599 Literal operator templates for strings
+</title>
+<section><sref ref="[lex.ext]"/></section>
+<submitter>Richard Smith</submitter>
+<date>13 Mar 2013</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3599.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3599.html</a>
+</p>
+<p>
+Bristol 2013: 
+<p>
+Straw Poll: Adopt N3599, send to core: SF:2 WF:1 N:6 WA:4 SA:1
+</p>
+<p>
+No consensus for moving forward as is.
+</p>
+<p>
+Straw Poll: Revise with additional machinery for compile time string processing
+</p>
+<p>
+SF: 10 WF: 2 N: 0 WA: 0 SA: 0
+</p>
+<p>
+Encouragement for Smith and Vandevoorde to revise. 
+</p>
+</p>
+</discussion>
+</issue>

@@ -20,15 +20,16 @@
   <p>The purpose of this document is to record the status of issues
   which have come before the Evolution Working Group (EWG) of the INCITS PL22.16
   and ISO WG21 C++ Standards Committee. Issues represent
-  potential defects in the ISO/IEC IS 14882:2003(E) document.  
+  potential defects in the ISO/IEC IS 14882:2003(E) document, 
+  and proposed extensions to it.
   </p>
 
   <p>This document contains only evolution issues which are actively being
   considered by the Evolution Working Group, i.e., issues which have a
   status of <a href="ewg-active.html#New">New</a>, <a href="ewg-active.html#Open">Open</a>, 
   <a href="ewg-active.html#Ready">Ready</a>, or <a href="ewg-active.html#Review">Review</a>. See
-  <a href="ewg-complete.html">Evolution Completed Issues List</a> for issues considered defects and 
-  <a href="ewg-closed.html">Evolution Closed Issues List</a> for issues considered closed.</p>
+  <a href="ewg-complete.html">Evolution Completed Issues List</a> for issues considered completed (adopted) and 
+  <a href="ewg-closed.html">Evolution Closed Issues List</a> for issues considered closed (rejected).</p>
 
   <p>The issues in these lists are not necessarily formal ISO Defect
   Reports (DR's). While some issues will eventually be elevated to
@@ -127,9 +128,9 @@ ownership of it.
       <li><a href="ewg-closed.html">Evolution Closed Issues List</a></li>
     </ul>
   <p>This document contains only evolution issues which have been closed
-  by the Evolution Working Group (EWG) after being found to be defects
-  in the standard.  That is, issues which have a status of <a href="ewg-active.html#DR">DR</a>,
-  <a href="ewg-active.html#TC1">TC1</a>, <a href="ewg-active.html#C++11">C++11</a>, 
+  by the Evolution Working Group (EWG) after being found to be acceptable
+  extensions to the standard.  That is, issues which have a status of <a href="ewg-active.html#DR">DR</a>,
+  <a href="ewg-active.html#TC1">TC1</a>, <a href="ewg-active.html#WP">WP</a>, <a href="ewg-active.html#C++11">C++11</a>, 
   or <a href="ewg-active.html#Resolved">Resolved</a>. See the
   <a href="ewg-closed.html">Evolution Closed Issues List</a> for issues closed as non-defects.  See the
   <a href="ewg-active.html">Evolution Active Issues List</a> for active issues and more information.  The
@@ -153,7 +154,7 @@ ownership of it.
   issues which have a status of <a href="ewg-active.html#Dup">Dup</a> or
   <a href="ewg-active.html#NAD">NAD</a>. See the <a href="ewg-active.html">Evolution Active Issues List</a> active issues and more
   information. See the <a href="ewg-complete.html">Evolution Complete Issues List</a> for issues considered
-  defects.  The introductory material in that document also applies to
+  accepted extensions.  The introductory material in that document also applies to
   this document.</p>
 </intro>
 
@@ -287,8 +288,8 @@ ownership of it.
 
   <p><b><a name="WP">WP</a></b> - (Working Paper) - The proposed
   resolution has not been accepted as a Technical Corrigendum, but
-  the full WG21/PL22.16 committee has voted to apply the Defect Report's Proposed
-  Resolution to the working paper.</p>
+  the full WG21/PL22.16 committee has voted to apply the issue's resolution
+  to the working paper.</p>
 
   <p><b>Tentatively</b> - This is a <i>status qualifier</i>.  The issue has
   been reviewed online, or at an unofficial meeting, but not in an official meeting, and some support has been formed
@@ -315,7 +316,7 @@ ownership of it.
   become the basis for Technical Corrigenda (<a href="ewg-active.html#TC1">TC1</a>),
   or are closed without action other than a Record of Response
   (<a href="ewg-active.html#Resolved">Resolved</a> ). The intent of this EWG process is that
-  only issues which are truly defects in the Standard move to the
+  issues which are defects in or accepted extensions to the Standard move to the
   formal ISO DR status.
   </p>
 
