@@ -197,7 +197,7 @@ auto remove_qualifier(std::string const & stat) -> std::string {
 
 static constexpr char const * EWG_ACTIVE {"ewg-active.html" };
 static constexpr char const * EWG_CLOSED {"ewg-closed.html" };
-static constexpr char const * EWG_DEFECTS{"ewg-defects.html"};
+static constexpr char const * EWG_DEFECTS{"ewg-complete.html"};
 
 // functions to relate the status of an issue to its relevant published list document
 auto filename_for_status(std::string stat) -> std::string {
@@ -868,7 +868,7 @@ auto EwgIssuesXml::get_doc_number(std::string doc) const -> std::string {
     if (doc == "active") {
         doc = "active_docno=\"";
     }
-    else if (doc == "defect") {
+    else if (doc == "complete") {
         doc = "defect_docno=\"";
     }
     else if (doc == "closed") {
@@ -894,8 +894,8 @@ auto EwgIssuesXml::get_intro(std::string doc) const -> std::string {
     if (doc == "active") {
         doc = "<intro list=\"Active\">";
     }
-    else if (doc == "defect") {
-        doc = "<intro list=\"Defects\">";
+    else if (doc == "complete") {
+        doc = "<intro list=\"Complete\">";
     }
     else if (doc == "closed") {
         doc = "<intro list=\"Closed\">";
@@ -1135,7 +1135,7 @@ R"(<h1>C++ Standard Evolution Issues List (Revision )" << ewg_issues_xml.get_rev
 <h1>Table of Contents</h1>
 <p>Reference ISO/IEC IS 14882:2003(E)</p>
 <p>This document is the Table of Contents for the <a href="ewg-active.html">Evolution Active Issues List</a>,
-<a href="ewg-defects.html">Evolution Defect Reports List</a>, and <a href="ewg-closed.html">Evolution Closed Issues List</a>.</p>
+<a href="ewg-complete.html">Evolution Completed Issues List</a>, and <a href="ewg-closed.html">Evolution Closed Issues List</a>.</p>
 )";
    out << build_timestamp;
 
@@ -1159,7 +1159,7 @@ R"(<h1>C++ Standard Evolution Issues List (Revision )" << ewg_issues_xml.get_rev
 <p>Reference ISO/IEC IS 14882:2003(E)</p>
 <p>
 This document is the Index by Status and Section for the <a href="ewg-active.html">Evolution Active Issues List</a>,
-<a href="ewg-defects.html">Evolution Defect Reports List</a>, and <a href="ewg-closed.html">Evolution Closed Issues List</a>.
+<a href="ewg-complete.html">Evolution Completed Issues List</a>, and <a href="ewg-closed.html">Evolution Closed Issues List</a>.
 </p>
 
 )";
@@ -1192,7 +1192,7 @@ R"(<h1>C++ Standard Evolution Issues List (Revision )" << ewg_issues_xml.get_rev
 <p>Reference ISO/IEC IS 14882:2003(E)</p>
 <p>
 This document is the Index by Status and Date for the <a href="ewg-active.html">Evolution Active Issues List</a>,
-<a href="ewg-defects.html">Evolution Defect Reports List</a>, and <a href="ewg-closed.html">Evolution Closed Issues List</a>.
+<a href="ewg-complete.html">Evolution Completed Issues List</a>, and <a href="ewg-closed.html">Evolution Closed Issues List</a>.
 </p>
 )";
    out << build_timestamp;
@@ -1265,7 +1265,7 @@ void make_sort_by_section(std::vector<issue>& issues, std::string const & filena
    out << "<p>Reference ISO/IEC IS 14882:2003(E)</p>\n";
    out << "<p>This document is the Index by Section for the <a href=\"ewg-active.html\">Evolution Active Issues List</a>";
    if(!active_only) {
-      out << ", <a href=\"ewg-defects.html\">Evolution Defect Reports List</a>, and <a href=\"ewg-closed.html\">Evolution Closed Issues List</a>";
+      out << ", <a href=\"ewg-complete.html\">Evolution Completed Issues List</a>, and <a href=\"ewg-closed.html\">Evolution Closed Issues List</a>";
    }
    out << ".</p>\n";
    out << "<h2>Index by Section";
@@ -1395,8 +1395,8 @@ R"(<table>
    if (paper == "active") {
       out << "C++ Standard Evolution Active Issues List (Revision ";
    }
-   else if (paper == "defect") {
-      out << "C++ Standard Evolution Defect Report List (Revision ";
+   else if (paper == "complete") {
+      out << "C++ Standard Evolution Completed Issues List (Revision ";
    }
    else if (paper == "closed") {
       out << "C++ Standard Evolution Closed Issues List (Revision ";
@@ -1428,12 +1428,12 @@ void make_active(std::vector<issue> const & issues, std::string const & path, Ew
 void make_defect(std::vector<issue> const & issues, std::string const & path, EwgIssuesXml const & ewg_issues_xml, std::string const & diff_report) {
    assert(is_sorted(issues.begin(), issues.end(), sort_by_num{}));
 
-   std::ofstream out((path + "ewg-defects.html").c_str());
-   print_file_header(out, "C++ Standard Evolution Defect Report List");
-   print_paper_heading(out, "defect", ewg_issues_xml);
-   out << ewg_issues_xml.get_intro("defect") << '\n';
+   std::ofstream out((path + "ewg-complete.html").c_str());
+   print_file_header(out, "C++ Standard Evolution Completed Issues List");
+   print_paper_heading(out, "complete", ewg_issues_xml);
+   out << ewg_issues_xml.get_intro("complete") << '\n';
    out << "<h2>Revision History</h2>\n" << ewg_issues_xml.get_revisions(issues, diff_report) << '\n';
-   out << "<h2>Defect Reports</h2>\n";
+   out << "<h2>Completed Issues</h2>\n";
    print_issues(out, issues, [](issue const & i) {return is_defect(i.stat);} );
    print_file_trailer(out);
 }

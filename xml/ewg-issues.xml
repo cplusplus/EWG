@@ -14,7 +14,7 @@
       <li><a href="ewg-toc.html">Table of Contents</a> for all evolution issues.</li>
       <li><a href="ewg-index.html">Index by Section</a> for all evolution issues.</li>
       <li><a href="ewg-status.html">Index by Status</a> for all evolution issues.</li>
-      <li><a href="ewg-defects.html">Evolution Defect Reports List</a></li>
+      <li><a href="ewg-complete.html">Evolution Completed Issues List</a></li>
       <li><a href="ewg-closed.html">Evolution Closed Issues List</a></li>
   </ul>
   <p>The purpose of this document is to record the status of issues
@@ -27,7 +27,7 @@
   considered by the Evolution Working Group, i.e., issues which have a
   status of <a href="ewg-active.html#New">New</a>, <a href="ewg-active.html#Open">Open</a>, 
   <a href="ewg-active.html#Ready">Ready</a>, or <a href="ewg-active.html#Review">Review</a>. See
-  <a href="ewg-defects.html">Evolution Defect Reports List</a> for issues considered defects and 
+  <a href="ewg-complete.html">Evolution Completed Issues List</a> for issues considered defects and 
   <a href="ewg-closed.html">Evolution Closed Issues List</a> for issues considered closed.</p>
 
   <p>The issues in these lists are not necessarily formal ISO Defect
@@ -116,7 +116,7 @@ ownership of it.
 
 </intro>
 
-<intro list="Defects">
+<intro list="Complete">
   <p>Reference ISO/IEC IS 14882:2003(E)</p>
   <p>Also see:</p>
     <ul>
@@ -145,14 +145,14 @@ ownership of it.
       <li><a href="ewg-index.html">Index by Section</a> for all evolution issues.</li>
       <li><a href="ewg-status.html">Index by Status</a> for all evolution issues.</li>
       <li><a href="ewg-active.html">Evolution Active Issues List</a></li>
-      <li><a href="ewg-defects.html">Evolution Defect Reports List</a></li>
+      <li><a href="ewg-complete.html">Evolution Complete Issues List</a></li>
     </ul>
 
   <p>This document contains only evolution issues which have been closed
   by the Evolution Working Group as duplicates or not defects. That is,
   issues which have a status of <a href="ewg-active.html#Dup">Dup</a> or
   <a href="ewg-active.html#NAD">NAD</a>. See the <a href="ewg-active.html">Evolution Active Issues List</a> active issues and more
-  information. See the <a href="ewg-defects.html">Evolution Defect Reports List</a> for issues considered
+  information. See the <a href="ewg-complete.html">Evolution Complete Issues List</a> for issues considered
   defects.  The introductory material in that document also applies to
   this document.</p>
 </intro>
@@ -161,7 +161,7 @@ ownership of it.
   <p>Reference ISO/IEC IS 14882:2003(E)</p>
 
   <p>This document is the Table of Contents for the <a href="ewg-active.html">Evolution Active Issues List</a>,
-  <a href="ewg-defects.html">Evolution Defect Reports List</a>, and <a href="ewg-closed.html">Evolution Closed Issues List</a>.</p>
+  <a href="ewg-complete.html">Evolution Complete Issues List</a>, and <a href="ewg-closed.html">Evolution Closed Issues List</a>.</p>
 
   <p>Also see:</p>
     <ul>
@@ -174,7 +174,7 @@ ownership of it.
   <p>Reference ISO/IEC IS 14882:2003(E)</p>
 
   <p>This document is the Index by Section for the <a href="ewg-active.html">Evolution Active Issues List</a>,
-  <a href="ewg-defects.html">Evolution Defect Reports List</a>, and <a href="ewg-closed.html">Evolution Closed Issues List</a>.</p>
+  <a href="ewg-complete.html">Evolution Complete Issues List</a>, and <a href="ewg-closed.html">Evolution Closed Issues List</a>.</p>
 
   <p>Also see:</p>
     <ul>
@@ -187,7 +187,7 @@ ownership of it.
   <p>Reference ISO/IEC IS 14882:2003(E)</p>
 
   <p>This document is the Index by Status for the <a href="ewg-active.html">Evolution Active Issues List</a>,
-  <a href="ewg-defects.html">Evolution Defect Reports List</a>, and <a href="ewg-closed.html">Evolution Closed Issues List</a>.</p>
+  <a href="ewg-complete.html">Evolution Complete Issues List</a>, and <a href="ewg-closed.html">Evolution Closed Issues List</a>.</p>
 
   <p>Also see:</p>
     <ul>
