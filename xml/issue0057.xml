@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="57" status="Open">
+<title>
+N3587 For Loop Exit Strategies
+</title>
+<section><sref ref="[stmt.iter]"/></section>
+<submitter>Alan Talbot</submitter>
+<date>17 Mar 2013</date>
+
+<discussion>
+<p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3587.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3587.pdf</a>
+</p>
+<p>
+Bristol 2013: Van Winkel pointed out that this allows jumping out of nested 
+loops. Naumann expressed doubt over whether the problem is so big that we 
+need such a big extension to solve it. Van Winkel and Spertus thought that 
+this would likely be a popular feature. Voutilainen thought that it would be 
+beneficial to revisit a lambda solution. Talbot expressed doubt whether that's 
+a suitable solution, syntax-wise and performance-wise. Austern thought that 
+this seems to be in flux, and thought we aren't necessarily ready to choose 
+between the various options. Gottschling thought Vandevoorde's option is 
+nice, since it's still structured. Spertus said he likes the idea of having 
+a control structure be an expression. Austern recommended looking closely 
+at Clause 5 in the follow-up paper. 
+</p>
+<p>
+The author is encouraged to write a follow-up paper.
+</p>
+</p>
+</discussion>
+</issue>

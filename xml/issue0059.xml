@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="59" status="New">
+<title>
+N3596 Code Reuse in Class Template Specialization 	
+</title>
+<section><sref ref="[basic.lookup.argdep]"/></section>
+<submitter>Peter Gottschling</submitter>
+<date>15 Mar 2013</date>
+
+<discussion>
+<p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3596.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3596.pdf</a>
+</p>
+</p>
+</discussion>
+</issue>

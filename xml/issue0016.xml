@@ -3,18 +3,31 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="16" status="Open">
+<issue num="16" status="WP">
 <title>
-N3418 Proposal for Generic (Polymorphic) Lambda Expressions  
+N3649, N3560, N3559, N3418 Proposal for Generic (Polymorphic) Lambda Expressions  
 </title>
 <section><sref ref="[expr.prim.lambda]"/></section>
 <submitter>Faisal Vali</submitter>
 <date>21 Sep 2012</date>
 
 <discussion>
+<p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3418.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3418.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3559.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3559.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3560.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3560.pdf</a>
+</p>
 <p>
 Reviewed by EWG in Portland 2012, proceeding with a follow-up paper.
+</p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3649.</p>
+<p>Bristol 2013: Do not re-open proposals 2.1 and 2.2 in N3560,
+they are considered NAD. The proposals 2.3 and 2.4 are covered by
+N3649.
 </p>
 </discussion>
 

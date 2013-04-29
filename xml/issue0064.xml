@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="64" status="WP">
+<title>
+N3651, N3615 Constexpr Variable Templates, N3552 Introducing Object Aliases
+</title>
+<section><sref ref="[temp.param]"/></section>
+<submitter>Gabriel Dos Reis</submitter>
+<date>18 Mar 2013</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3615.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3615.pdf</a>
+</p>
+<p>
+N3615 supersedes N3552. 
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3552.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3552.pdf</a>
+</p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3651.</p>
+</discussion>
+</issue>

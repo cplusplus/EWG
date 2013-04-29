@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="65" status="New">
+<title>
+N3617 Lifting overload sets into function objects
+</title>
+<section><sref ref="[func.require]"/></section>
+<submitter>Philipp Juschka</submitter>
+<date>14 Mar 2013</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3617.htm">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3617.htm</a>
+</p>
+</discussion>
+</issue>

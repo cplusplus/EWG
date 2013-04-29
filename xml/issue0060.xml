@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="60" status="Open">
+<title>
+N3602 Template parameter deduction for constructors
+</title>
+<section><sref ref="[temp.deduct]"/></section>
+<submitter>Mike Spertus</submitter>
+<date>14 Mar 2013</date>
+
+<discussion>
+<p>
+This issue is split from EWG Issue <iref ref="9"/>.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3602.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3602.html</a>
+</p>
+<p>
+Bristol 2013: Reviewed and accepted by EWG, needs redrafting before
+ready for core.
+</p>
+</discussion>
+</issue>

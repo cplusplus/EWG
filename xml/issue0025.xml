@@ -3,19 +3,28 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="25" status="Open">
+<issue num="25" status="WP">
 <title>
-N3444 Relaxing syntactic constraints on constexpr function definitions
+N3652, N3597, N3598, N3444 Relaxing syntactic constraints on constexpr function definitions
 </title>
 <section><sref ref="[expr.const]"/></section>
 <submitter>Richard Smith</submitter>
 <date>21 Sep 2012</date>
 
 <discussion>
+<p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3444.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3444.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3597.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3597.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3598.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3598.html</a>
+</p>
 <p>
 Reviewed by EWG in Portland 2012, proceeding with a follow-up paper.
 </p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3652.</p>
 </discussion>
 
 </issue>

@@ -3,9 +3,9 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="6" status="Ready">
+<issue num="6" status="WP">
 <title>
-N3401 Generating move operations (elaborating on Core 1402)
+N3667, N3401 Generating move operations (elaborating on Core 1402)
 </title>
 <section><sref ref="[class.copy]"/></section>
 <submitter>Ville Voutilainen</submitter>
@@ -14,6 +14,7 @@ N3401 Generating move operations (elaborating on Core 1402)
 <discussion>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3401.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3401.html</a>
 <p>Reviewed by EWG in Portland 2012, proceeding to CWG.</p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3667.</p>
 </discussion>
 
 <resolution>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="56" status="Open">
+<title>
+N3583 	Exploring constexpr at Runtime
+</title>
+<section><sref ref="[expr.const]"/></section>
+<submitter>Scott Schurr</submitter>
+<date>13 Mar 2013</date>
+
+<discussion>
+<p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3583.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3583.pdf</a>
+</p>
+<p>
+Bristol 2013: We won't move forward with this at this time, but we might want to see a followup paper focusing on the trait. 
+</p>
+</p>
+</discussion>
+</issue>

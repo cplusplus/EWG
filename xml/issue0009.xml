@@ -5,15 +5,24 @@
 
 <issue num="9" status="Open">
 <title>
-N3405 Template Tidbits
+N3601 Implicit template parameters, N3405 Template Tidbits
 </title>
 <section><sref ref="[temp]"/></section>
 <submitter>Mike Spertus</submitter>
 <date>22 Sep 2012</date>
 
 <discussion>
+<p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3405.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3405.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3601.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3601.html</a>
+</p>
 <p>EWG review started, not completed yet. Likely needs a follow-up paper.</p>
+<p>
+Bristol 2013: Encouraged to pursue further. Template parameter deduction
+for constructors has been split into EWG Issue <iref ref="60"/>.
+</p>
 </discussion>
 
 </issue>

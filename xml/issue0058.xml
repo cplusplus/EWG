@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="58" status="Open">
+<title>
+N3595 Simplifying Argument-Dependent Lookup Rules
+</title>
+<section><sref ref="[basic.lookup.argdep]"/></section>
+<submitter>Peter Gottschling</submitter>
+<date>15 Mar 2013</date>
+
+<discussion>
+<p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3595.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3595.pdf</a>
+</p>
+<p>
+Bristol 2013: Looked at briefly, the EWG thinks this should be considered
+alongside other ADL proposals.
+</p>
+</p>
+</discussion>
+</issue>

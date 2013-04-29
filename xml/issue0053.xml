@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="53" status="NAD">
+<title>
+N3526 	Uniform initialization for arrays and class aggregate types
+</title>
+<section><sref ref="[dcl.init.aggr]"/></section>
+<submitter>Michael Price</submitter>
+<date>21 Jan 2013</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3526.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3526.html</a>
+</p>
+<p>
+Bristol 2013:  Stroustrup thought that the proposal is too aggressive and removes structure, and thought that the existing limitations are deliberate. Stroustrup and Sutton also pointed out that there are existing matrix types that deduce the shape of the matrix from the initializers, and this change would break such existing code.
+
+No recommendation to move forward, considered NAD. 
+</p>
+</discussion>
+</issue>

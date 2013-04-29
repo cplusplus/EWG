@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="54" status="NAD">
+<title>
+N3553 Proposing a C++1Y Swap Operator
+</title>
+<section><sref ref="[over.oper]"/></section>
+<submitter>Walter Brown</submitter>
+<date>13 Mar 2013</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3553.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3553.pdf</a>
+</p>
+<p>
+Bristol 2013: 
+<p>
+ Point d in "the basics": left operand is a modifiable lvalue expression and the right operand a modifiable glvalue. Why the asymmetry? JC: it's because the operator returns the lhs.
+</p>
+<p>
+Bjarne: do we really need a new operator?
+</p>
+<p>
+Matt: Maybe. swap() has annoying ADL problems.
+</p>
+<p>
+Daveed: does it really solve them? The operator will still be found by ADL. Matt: maybe, since this would use an intrinsic in place of the general std::swap template.
+</p>
+<p>
+Bjarne: But swap() isn't going away because of backward compatibility, so now we'll have swap() and operator:=:. "Probably a good idea if we had a time machine". Introducing a new operator, it has to be really central and helpful. If it got us out of our swap problem it might be good enough, but it isn't. Libraries aren't going to stop calling swap and if they did then all the specialized swap functions people have written wouldn't get invoked. Problems are real, but the benefits it would have (i.e. what problem it would actually solve) aren't sufficiently explained. Too likely that swap and :=: would coexist indefinitely and that all the problems of swap would persist.
+</p>
+<p>
+General agreement that this is a real problem but that it's not clear why this would solve them. We will not proceed with this. 
+</p>
+<p>
+No recommendation to move forward, considered NAD. 
+</p>
+</p>
+</discussion>
+</issue>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="55" status="NAD">
+<title>
+N3578 Proposing the Rule of Five
+</title>
+<section><sref ref="[class.copy]"/></section>
+<submitter>Walter Brown</submitter>
+<date>12 Mar 2013</date>
+
+<discussion>
+<p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3578.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3578.pdf</a>
+</p>
+<p>
+Bristol 2013: Considered NAD, too early for such a breaking change after
+C++11, breaks valid programs that use C++11 semantics (defaulted destructor
+outside class definition, otherwise generated members, used with various
+smart pointer members).
+</p>
+</p>
+</discussion>
+</issue>

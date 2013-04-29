@@ -5,14 +5,20 @@
 
 <issue num="26" status="New">
 <title>
-N3445 Pass by Const Reference or Value
+N3538, N3445 Pass by Const Reference or Value
 </title>
 <section><sref ref="[dcl.fct]"/></section>
 <submitter>Lawrence Crowl</submitter>
 <date>23 Sep 2012</date>
 
 <discussion>
+<p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3445.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3445.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3538.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3538.html</a>
+</p>
+
 </discussion>
 
 </issue>

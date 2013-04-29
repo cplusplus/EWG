@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="62" status="WP">
+<title>
+N3648, N3610 Generic lambda-capture initializers, supporting capture-by-move
+</title>
+<section><sref ref="[expr.prim.lambda]"/></section>
+<submitter>Ville Voutilainen</submitter>
+<date>15 Mar 2013</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3610.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3610.html</a>
+</p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3648.</p>
+</discussion>
+</issue>
