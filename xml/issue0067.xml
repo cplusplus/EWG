@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="67" status="New">
+<title>
+[tiny] Unspecialized std::tuple_size should be defined
+</title>
+<section><sref ref="[tuple.general]"/></section>
+<submitter>Nevin Liber</submitter>
+<date>19 Mar 2013</date>
+
+<discussion>
+<p>
+In 20.4.1p2, the unspecialized std::tuple_size is undefined.  It would be a lot more useful if it were defined as an empty struct; that way, it can be used with enable_if for determining whether or not it is valid to use tuple_size, tuple_element and get on the corresponding data structure.
+</p>
+</discussion>
+</issue>

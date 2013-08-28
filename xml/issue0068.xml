@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="68" status="New">
+<title>
+[tiny] C++ DR about global placement array new
+</title>
+<section><sref ref="[expr.new]"/></section>
+<submitter>Thomas Koeppke</submitter>
+<date>22 Apr 2013</date>
+
+<discussion>
+<p>
+Basically, I would like to file a Defect Report: The global array placement new, as described in C++11, 5.3.4/10-12, is unusable. The reason for this is that the standard allows the operator to consume an arbitrary amount of memory, which is impossible for the user to learn, and thus impossible to provide. The fix is to remove the ability for placement-new to require more size than required for the array itself to the allocation function.
+</p>
+<p>
+Current wording, in 5.3.4/12 says:
+<pre>
+    new(2,f) T[5] results in a call of operator new[](sizeof(T)*5+y,2,f)
+</pre>
+    Here, x and y are non-negative unspecified values representing array allocation overhead; the result of the new-expression will be offset by this amount from the value returned by operator new[].
+</p>
+<p>
+Unfortunately, the presence of "y" means that it is impossible to pass a usable address to placement-array-new:
+<pre>
+    void * addr = std::malloc(?);
+    new (addr) T[10];
+</pre>
+</p>
+<p>
+In the above, it is impossible to know the required argument for malloc, since the placement-new can ask for sizeof(T) * 10 + y bytes for any y.
+</p>
+<p>
+The fix would be to remove the possiblity of placement-new requiring more memory for arrays, i.e. insert into 5.3.4/10 something like:
+<pre>
+    A new-expression passes the amount of space requested to the allocation 
+    function as the first argument of type std::size_t. That argument shall 
+    be no less than the size of the object being created; it may be greater 
+    than the size of the object being created only if the object is an array 
+    and the new-expression is a default new-expression.
+</pre>
+</p>
+<p>
+What do you think? I don't think the change could break anything, since nothing could be using placement-array-new at the moment, and it makes sense that a placement version doesn't require extra space, since the caller already knows the array size and has to perform destruction manually anyway.
+</p>
+<p> Mike Miller points out the following:
+</p>
+<p>
+You're not the first one to notice a problem with this; see
+</p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_closed.html#476">http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_closed.html#476</a>
+</p>
+<p>
+To summarize, CWG agreed that that's a problem but felt that the
+resolution was more appropriately handled in EWG, since it requires
+evaluations of the tradeoffs of various possible options to address it.
+Your approach, for example, focuses on the placement operator new
+provided by the library, which simply runs the constructor(s) on a
+previously-allocated buffer.  However, that's not the only use of the
+placement new syntax, which can pass arbitrary arguments to
+allocation functions that actually do allocate memory, and it's not
+clear that none of those will need to add padding similar to the way
+the standard allocation function does.
+</p>
+</discussion>
+</issue>

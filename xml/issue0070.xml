@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="70" status="New">
+<title>
+[tiny] Const in expressions
+</title>
+<section><sref ref="[expr.post]"/></section>
+<submitter>Herb Sutter</submitter>
+<date>06 Jun 2013</date>
+
+<discussion>
+<p>
+Example:
+<pre>
+#include &lt;string>
+using namespace std;
+int main() {
+ const string{ "Hello" };                   // 1: error
+ "xyzzy" + const string{"Hello"};           // 2: error
+ typedef const string const_string;
+ const_string{"Hello"};                     // 3: ok
+ "xyzzy" + const_string{"Hello"};           // 4: ok
+ unsigned long{0};                          // 5: error
+ 42ul + unsigned long{0};                   // 6: error
+
+ typedef unsigned long unsigned_long;
+ unsigned_long{0};                          // 7: ok
+ 42ul + unsigned_long{0};                   // 8: ok
+
+}
+</pre>
+Sutter says:
+<p>
+The issue is "lines 1 to 8 below should all work." That they don't is just because of the reason Nikolay pointed out using line 1 below as an example:
+<p>
+> The error is purely syntactic: 'const string' is not a simple-type-specifier
+</p>
+</p>
+</p>
+<p>
+Richard Smith points out the following:
+<p>
+I can't comment on what was noticed in the abstract, but I was certainly aware of all the above cases. And the rules make sense to me: function-style casts are supposed to be function-style, and the above error cases doesn't look like a function call (and not just because you've put the paren next to the type in the function-call-like cases, and added an extra space in the other cases!).
+<p>
+I'm not sure exactly what rules you're proposing, but I hope we don't make this valid:
+</p>
+<pre>
+  struct A { int n; }; // ok, struct definition
+  struct A { 0 }; // might now be an expression?
+</pre>
+</p>
+</p>
+<p>
+Regarding using a parenthesized type as a work-around, Sutter explained:
+<p>
+I think it needs to be an open EWG issue after all, because as Johannes pointed out the workaround doesn't work because it can't call multi-argument constructors, such as that
+<pre>
+    (const vector&lt;int>)( 1, 2  )
+</pre>
+drops the 1 on the floor and creates a vector containing two zeroes.
+And that it doesn't work for list initializations, such as that
+<pre>
+    (unsigned int){ 1, 2, 3, 4 }   // C compound literal(?!)
+</pre>
+doesn't work.
+</p>
+</p>
+</discussion>
+</issue>

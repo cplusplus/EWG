@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="73" status="New">
+<title>
+N3681 Auto and braced-init lists
+</title>
+<section><sref ref="[dcl.spec.auto]"/></section>
+<submitter>Ville Voutilainen</submitter>
+<date>02 May 2013</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3681.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3681.html</a>
+</p>
+</discussion>
+</issue>
