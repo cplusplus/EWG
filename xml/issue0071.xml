@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="71" status="New">
+<title>
+N3626 Relaxed switch statement
+</title>
+<section><sref ref="[stmt.switch]"/></section>
+<submitter>Zhihao Yuan</submitter>
+<date>02 Feb 2013</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3626.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3626.pdf</a>
+</p>
+</discussion>
+</issue>

@@ -1,0 +1,1699 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>C++ Standard Evolution Active Issues List</title>
+<style type="text/css">
+  p {text-align:justify}
+  li {text-align:justify}
+  blockquote.note
+  {
+    background-color:#E0E0E0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+  ins {background-color:#A0FFA0}
+  del {background-color:#FFA0A0}
+</style>
+</head>
+<body>
+<table>
+<tr>
+  <td align="left">Doc. no.</td>
+  <td align="left">N3736</td>
+</tr>
+<tr>
+  <td align="left">Date:</td>
+  <td align="left">2013-08-27</td>
+</tr>
+<tr>
+  <td align="left">Project:</td>
+  <td align="left">Programming Language C++</td>
+</tr>
+<tr>
+  <td align="left">Reply to:</td>
+  <td align="left">Ville Voutilainen &lt;<a href="mailto:ville.voutilainen@gmail.com">ville.voutilainen@gmail.com</a>&gt;</td>
+</tr>
+</table>
+<h1>C++ Standard Evolution Active Issues List (Revision R03)</h1>
+<p>Revised 2013-08-27 at 16:08:33 UTC</p>
+
+  <p>Reference ISO/IEC IS 14882:2003(E)</p>
+  <p>Also see:</p>
+  <ul>
+      <li><a href="ewg-toc.html">Table of Contents</a> for all evolution issues.</li>
+      <li><a href="ewg-index.html">Index by Section</a> for all evolution issues.</li>
+      <li><a href="ewg-status.html">Index by Status</a> for all evolution issues.</li>
+      <li><a href="ewg-complete.html">Evolution Completed Issues List</a></li>
+      <li><a href="ewg-closed.html">Evolution Closed Issues List</a></li>
+  </ul>
+  <p>The purpose of this document is to record the status of issues
+  which have come before the Evolution Working Group (EWG) of the INCITS PL22.16
+  and ISO WG21 C++ Standards Committee. Issues represent
+  potential defects in the ISO/IEC IS 14882:2003(E) document, 
+  and proposed extensions to it.
+  </p>
+
+  <p>This document contains only evolution issues which are actively being
+  considered by the Evolution Working Group, i.e., issues which have a
+  status of <a href="ewg-active.html#New">New</a>, <a href="ewg-active.html#Open">Open</a>, 
+  <a href="ewg-active.html#Ready">Ready</a>, or <a href="ewg-active.html#Review">Review</a>. See
+  <a href="ewg-complete.html">Evolution Completed Issues List</a> for issues considered completed (adopted) and 
+  <a href="ewg-closed.html">Evolution Closed Issues List</a> for issues considered closed (rejected).</p>
+
+  <p>The issues in these lists are not necessarily formal ISO Defect
+  Reports (DR's). While some issues will eventually be elevated to
+  official Defect Report status, other issues will be disposed of in
+  other ways. See <a href="#Status">Issue Status</a>.</p>
+
+  <p>This document includes <i>[bracketed italicized notes]</i> as a
+  reminder to the EWG of current progress on issues. Such notes are
+  strictly unofficial and should be read with caution as they may be
+  incomplete or incorrect. Be aware that EWG support for a particular
+  resolution can quickly change if new viewpoints or killer examples are
+  presented in subsequent discussions.</p>
+
+  <p>For the most current official version of this document see 
+  <a href="http://www.open-std.org/jtc1/sc22/wg21/">http://www.open-std.org/jtc1/sc22/wg21/</a>.
+  Requests for further information about this document should include
+  the document number above, reference ISO/IEC 14882:2003(E), and be
+  submitted to Information Technology Industry Council (ITI), 1250 Eye
+  Street NW, Washington, DC 20005.</p>
+
+  <p>Public information as to how to obtain a copy of the C++ Standard,
+  join the standards committee, submit an issue, or comment on an issue
+  can be found in the comp.std.c++ FAQ.
+  </p>
+
+<p><a name="submit_issue"></a><b>How to submit an issue</b></p>
+
+<ol style="list-style-type:upper-alpha">
+<li><a name="submit_issue_A"></a>
+Mail your issue to the author of this list.
+</li>
+<li><a name="submit_issue_B"></a>
+Specify a short descriptive title.  If you fail to do so, the subject line of your
+mail will be used as the issue title.
+</li>
+<li><a name="submit_issue_C"></a>
+If the "From" on your email is not the name you wish to appear as issue submitter,
+then specify issue submitter.
+</li>
+<li><a name="submit_issue_D"></a>
+Provide a brief discussion of the problem you wish to correct.  Refer to the latest
+working draft or standard using [section.tag] and paragraph numbers where appropriate.
+</li>
+<li><a name="submit_issue_E"></a>
+Provide proposed wording.  This should indicate exactly how you want the standard
+to be changed.  General solution statements belong in the discussion area.  This
+area contains very clear and specific directions on how to modify the current
+draft.  If you are not sure how to word a solution, you may omit this part.
+But your chances of a successful issue greatly increase if you attempt wording.
+</li>
+<li><a name="submit_issue_F"></a>
+It is not necessary for you to use html markup.  However, if you want to, you can
+&lt;ins&gt;<ins>insert text like this</ins>&lt;/ins&gt; and &lt;del&gt;<del>delete text like
+this</del>&lt;/del&gt;.  The only strict requirement is to communicate clearly to
+the list maintainer exactly how you want your issue to look.
+</li>
+<li><a name="submit_issue_G"></a>
+It is not necessary for you to specify other html font/formatting
+mark-up, but if you do the list maintainer will attempt to respect your
+formatting wishes (as described by html markup, or other common idioms).
+</li>
+<li><a name="submit_issue_H"></a>
+It is not necessary for you to specify open date or last modified date (the date
+of your mail will be used).
+</li>
+<li><a name="submit_issue_I"></a>
+It is not necessary for you to cross reference other issues, but you can if you
+like.  You do not need to form the hyperlinks when you do, the list maintainer will
+take care of that.
+</li>
+<li><a name="submit_issue_J"></a>
+One issue per email is best.
+</li>
+<li><a name="submit_issue_K"></a>
+Between the time you submit the issue, and the next mailing deadline
+(date at the top of the Revision History), you <em>own</em> this issue. 
+You control the content, the stuff that is right, the stuff that is
+wrong, the format, the misspellings, etc.  You can even make the issue
+disappear if you want.  Just let the list maintainer know how you want
+it to look, and he will try his best to accommodate you.  After the
+issue appears in an official mailing, you no longer enjoy exclusive
+ownership of it.
+</li>
+</ol>
+
+
+<h2>Revision History</h2>
+<ul>
+<li>R03: 2013-08-27 pre-Chicago mailing<ul>
+<li><b>Summary:</b><ul>
+<li>55 open issues, up by 7.</li>
+<li>18 closed issues, up by 0.</li>
+<li>73 issues total, up by 7.</li>
+</ul></li>
+<li><b>Details:</b><ul>
+<li>Added the following 7 New issues: <a href="ewg-active.html#67">67</a>, <a href="ewg-active.html#68">68</a>, <a href="ewg-active.html#69">69</a>, <a href="ewg-active.html#70">70</a>, <a href="ewg-active.html#71">71</a>, <a href="ewg-active.html#72">72</a>, <a href="ewg-active.html#73">73</a>.</li>
+</ul></li>
+</ul>
+</li>
+<li>R02: 
+2013-05-06 post-Bristol mailing
+<ul>
+<li><b>Summary:</b><ul>
+<li>49 open issues, up by 2.</li>
+<li>18 closed issues, up by 17.</li>
+<li>67 issues total, up by 19.</li>
+</ul></li>
+<li><b>Details:</b><ul>
+<li>Added the following 3 NAD issues: <a href="ewg-closed.html#53">53</a>, <a href="ewg-closed.html#54">54</a>, <a href="ewg-closed.html#55">55</a>.</li>
+<li>Added the following 6 New issues: <a href="ewg-active.html#49">49</a>, <a href="ewg-active.html#50">50</a>, <a href="ewg-active.html#51">51</a>, <a href="ewg-active.html#52">52</a>, <a href="ewg-active.html#59">59</a>, <a href="ewg-active.html#65">65</a>.</li>
+<li>Added the following 7 Open issues: <a href="ewg-active.html#56">56</a>, <a href="ewg-active.html#57">57</a>, <a href="ewg-active.html#58">58</a>, <a href="ewg-active.html#60">60</a>, <a href="ewg-active.html#63">63</a>, <a href="ewg-active.html#66">66</a>, <a href="ewg-active.html#66">66</a>.</li>
+<li>Added the following 3 WP issues: <a href="ewg-complete.html#61">61</a>, <a href="ewg-complete.html#62">62</a>, <a href="ewg-complete.html#64">64</a>.</li>
+<li>Changed the following 5 issues from New to NAD: <a href="ewg-closed.html#31">31</a>, <a href="ewg-closed.html#36">36</a>, <a href="ewg-closed.html#37">37</a>, <a href="ewg-closed.html#38">38</a>, <a href="ewg-closed.html#47">47</a>.</li>
+<li>Changed the following 8 issues from New to Open: <a href="ewg-active.html#14">14</a>, <a href="ewg-active.html#30">30</a>, <a href="ewg-active.html#32">32</a>, <a href="ewg-active.html#33">33</a>, <a href="ewg-active.html#34">34</a>, <a href="ewg-active.html#35">35</a>, <a href="ewg-active.html#43">43</a>, <a href="ewg-active.html#48">48</a>.</li>
+<li>Changed the following 6 issues from New to Ready: <a href="ewg-active.html#40">40</a>, <a href="ewg-active.html#41">41</a>, <a href="ewg-active.html#42">42</a>, <a href="ewg-active.html#44">44</a>, <a href="ewg-active.html#45">45</a>, <a href="ewg-active.html#46">46</a>.</li>
+<li>Changed the following 2 issues from Open to WP: <a href="ewg-complete.html#16">16</a>, <a href="ewg-complete.html#25">25</a>.</li>
+<li>Changed the following 4 issues from Ready to WP: <a href="ewg-complete.html#1">1</a>, <a href="ewg-complete.html#6">6</a>, <a href="ewg-complete.html#7">7</a>, <a href="ewg-complete.html#13">13</a>.</li>
+</ul></li>
+</ul>
+</li>
+<li>R01: 
+2013-03-18 Pre-Bristol mailing
+<ul>
+<li><b>Summary:</b><ul>
+<li>47 open issues, up by 47.</li>
+<li>1 closed issues, up by 1.</li>
+<li>48 issues total, up by 48.</li>
+</ul></li>
+<li><b>Details:</b><ul>
+<li>Added the following NAD issue: <a href="ewg-closed.html#39">39</a>.</li>
+<li>Added the following 32 New issues: <a href="ewg-active.html#2">2</a>, <a href="ewg-active.html#5">5</a>, <a href="ewg-active.html#8">8</a>, <a href="ewg-active.html#10">10</a>, <a href="ewg-active.html#11">11</a>, <a href="ewg-active.html#12">12</a>, <a href="ewg-active.html#14">14</a>, <a href="ewg-active.html#15">15</a>, <a href="ewg-active.html#17">17</a>, <a href="ewg-active.html#19">19</a>, <a href="ewg-active.html#23">23</a>, <a href="ewg-active.html#24">24</a>, <a href="ewg-active.html#26">26</a>, <a href="ewg-active.html#28">28</a>, <a href="ewg-active.html#30">30</a>, <a href="ewg-active.html#31">31</a>, <a href="ewg-active.html#32">32</a>, <a href="ewg-active.html#33">33</a>, <a href="ewg-active.html#34">34</a>, <a href="ewg-active.html#35">35</a>, <a href="ewg-active.html#36">36</a>, <a href="ewg-active.html#37">37</a>, <a href="ewg-active.html#38">38</a>, <a href="ewg-active.html#40">40</a>, <a href="ewg-active.html#41">41</a>, <a href="ewg-active.html#42">42</a>, <a href="ewg-active.html#43">43</a>, <a href="ewg-active.html#44">44</a>, <a href="ewg-active.html#45">45</a>, <a href="ewg-active.html#46">46</a>, <a href="ewg-active.html#47">47</a>, <a href="ewg-active.html#48">48</a>.</li>
+<li>Added the following 9 Open issues: <a href="ewg-active.html#4">4</a>, <a href="ewg-active.html#9">9</a>, <a href="ewg-active.html#16">16</a>, <a href="ewg-active.html#18">18</a>, <a href="ewg-active.html#21">21</a>, <a href="ewg-active.html#22">22</a>, <a href="ewg-active.html#25">25</a>, <a href="ewg-active.html#27">27</a>, <a href="ewg-active.html#29">29</a>.</li>
+<li>Added the following 6 Ready issues: <a href="ewg-active.html#1">1</a>, <a href="ewg-active.html#3">3</a>, <a href="ewg-active.html#6">6</a>, <a href="ewg-active.html#7">7</a>, <a href="ewg-active.html#13">13</a>, <a href="ewg-active.html#20">20</a>.</li>
+</ul></li>
+</ul>
+</li>
+</ul>
+
+</li>
+</ul>
+
+<h2><a name="Status"></a>Issue Status</h2>
+
+  <p><b><a name="New">New</a></b> - The issue has not yet been
+  reviewed by the EWG. Any <b>Wording available</b> is purely a
+  suggestion from the issue submitter, and should not be construed as
+  the view of EWG.</p>
+
+  <p><b><a name="Open">Open</a></b> - The EWG has discussed the issue
+  but is not yet ready to move the issue forward. There are several
+  possible reasons for open status:</p>
+     <ul>
+        <li>Consensus may have not yet have been reached as to how to deal
+            with the issue.</li>
+        <li>Informal consensus may have been reached, but the EWG awaits
+            exact resolution for review.</li>
+        <li>The EWG wishes to consult additional technical experts before
+            proceeding.</li>
+        <li>The issue may require further study.</li>
+     </ul>
+
+  <p>A <b>Wording available</b> for an open issue is still not be
+  construed as the view of EWG. Comments on the current state of
+  discussions are often given at the end of open issues in an italic
+  font. Such comments are for information only and should not be given
+  undue importance.</p>
+
+  <p><b><a name="Deferred">Deferred</a></b> - The EWG has discussed the issue,
+  is not yet ready to move the issue forward, but neither does it deem the
+  issue significant enough to delay publishing a standard or Technical Report.
+  A typical deferred issue would be seeking to clarify wording that might be
+  technically correct, but easily mis-read.</p>
+
+  <p>A <b>Wording available</b> for a deferred issue is still not be
+  construed as the view of EWG. Comments on the current state of
+  discussions are often given at the end of open issues in an italic
+  font. Such comments are for information only and should not be given
+  undue importance.</p>
+
+  <p><b><a name="Dup">Dup</a></b> - The EWG has reached consensus that
+  the issue is a duplicate of another issue, and will not be further
+  dealt with. A <b>Rationale</b> identifies the duplicated issue's
+  issue number.  </p>
+
+  <p><b><a name="NAD">NAD</a></b> - The EWG has reached consensus that
+  the issue is not a defect in the Standard nor is it an extension
+  the EWG deems acceptable.</p>
+
+  <p><b><a name="Review">Review</a></b> - Exact resolution is now 
+  available for review on an issue for which the EWG previously reached 
+  informal consensus.</p>
+
+  <p><b><a name="Ready">Ready</a></b> - The EWG has reached consensus
+  that the issue is an extension that can go forward to Core, Library,
+  or a Study Group for further processing.</p>
+
+  <p><b><a name="Resolved">Resolved</a></b> - The EWG has reached consensus
+  that the issue is a defect in or an acceptable extension to the Standard, 
+  but the resolution adopted to
+  resolve the issue came via some other mechanism than this issue in the
+  list - typically by applying a formal paper, occasionally as a side effect
+  of consolidating several interacting issue resolutions into a single issue.</p>
+
+  <p><b><a name="DR">DR</a></b> - (Defect Report) - It's not expected
+  that the EWG would handle Defect Reports.</p>
+
+  <p><b><a name="WP">WP</a></b> - (Working Paper) - The proposed
+  resolution has not been accepted as a Technical Corrigendum, but
+  the full WG21/PL22.16 committee has voted to apply the issue's resolution
+  to the working paper.</p>
+
+  <p><b>Tentatively</b> - This is a <i>status qualifier</i>.  The issue has
+  been reviewed online, or at an unofficial meeting, but not in an official meeting, and some support has been formed
+  for the qualified status.  Tentatively qualified issues may be moved to the unqualified status
+  and forwarded to full committee (if Ready) within the same meeting.  Unlike Ready issues, Tentatively Ready issues
+  will be reviewed in subcommittee prior to forwarding to full committee.  When a status is
+  qualified with Tentatively, the issue is still considered active.</p>
+
+  <p><b>Pending</b> - This is a <i>status qualifier</i>.  When prepended to
+  a status this indicates the issue has been
+  processed by the committee, and a decision has been made to move the issue to
+  the associated unqualified status.  However for logistical reasons the indicated
+  outcome of the issue has not yet appeared in the latest working paper.
+
+  <p>Issues are always given the status of <a href="ewg-active.html#New">New</a> when
+  they first appear on the issues list. They may progress to
+  <a href="ewg-active.html#Open">Open</a> or <a href="ewg-active.html#Review">Review</a> while the EWG
+  is actively working on them. When the EWG has reached consensus on
+  the disposition of an issue, the status will then change to
+  <a href="ewg-active.html#Dup">Dup</a>, <a href="ewg-active.html#NAD">NAD</a>, or
+  <a href="ewg-active.html#Ready">Ready</a> as appropriate.  Once the full J16 committee votes to
+  forward Ready issues to the Project Editor, they are given the
+  status of Defect Report ( <a href="ewg-active.html#DR">DR</a>). These in turn may
+  become the basis for Technical Corrigenda (<a href="ewg-active.html#TC1">TC1</a>),
+  or are closed without action other than a Record of Response
+  (<a href="ewg-active.html#Resolved">Resolved</a> ). The intent of this EWG process is that
+  issues which are defects in or accepted extensions to the Standard move to the
+  formal ISO DR status.
+  </p>
+
+
+<h2>Active Issues</h2>
+<hr>
+<h3><a name="2"></a>2. N3387 Overload resolution tiebreakers for integer types</h3>
+<p><b>Section:</b> 4.13 [conv.rank] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Jens Maurer <b>Opened:</b> 2012-09-12 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3387.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3387.html</a>
+
+
+<p><b>Wording available:</b></p>
+<p>The paper contains the proposed wording.</p>
+
+
+
+
+<hr>
+<h3><a name="3"></a>3. N3394 [[deprecated]] attribute</h3>
+<p><b>Section:</b> 7.6 [dcl.attr] <b>Status:</b> <a href="ewg-active.html#Ready">Ready</a>
+ <b>Submitter:</b> Alberto Ganesh Barbati <b>Opened:</b> 2012-06-12 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Ready">Ready</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3394.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3394.html</a>
+
+<p>Reviewed by EWG in Portland 2012, proceeding to CWG.</p>
+
+
+<p><b>Wording available:</b></p>
+<p>The paper contains the proposed wording.</p>
+
+
+
+
+<hr>
+<h3><a name="4"></a>4. N3396 Dynamic memory allocation for over-aligned data</h3>
+<p><b>Section:</b> 18.6 [support.dynamic] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Clark Nelson <b>Opened:</b> 2012-08-30 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3396.htm">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3396.htm</a>
+<p>Reviewed by EWG in Portland, author encouraged to revise.</p>
+
+
+<p><b>Wording available:</b></p>
+<p>The paper contains the proposed wording that is to be revised.</p>
+
+
+
+
+<hr>
+<h3><a name="5"></a>5. 
+N3400 A proposal for eliminating the underscore madness that library writers have to suffer</h3>
+<p><b>Section:</b> 16.3 [cpp.replace] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Jonathan de Boyne Pollard <b>Opened:</b> 2012-09-21 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3400.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3400.html</a>
+
+
+<p><b>Wording available:</b></p>
+<p>The paper contains the proposed wording.</p>
+
+
+
+
+<hr>
+<h3><a name="8"></a>8. 
+N3492, N3403 Use Cases for Compile-Time Reflection
+</h3>
+<p><b>Section:</b> 18 [language.support] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Mike Spertus <b>Opened:</b> 2012-09-22 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3403.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3403.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3492.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3492.pdf</a>
+</p>
+<p>Not reviewed by EWG yet, to be handled by the Reflection Study Group (SG7).</p>
+
+
+
+
+
+<hr>
+<h3><a name="9"></a>9. 
+N3601 Implicit template parameters, N3405 Template Tidbits
+</h3>
+<p><b>Section:</b> 14 [temp] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Mike Spertus <b>Opened:</b> 2012-09-22 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3405.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3405.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3601.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3601.html</a>
+</p>
+<p>EWG review started, not completed yet. Likely needs a follow-up paper.</p>
+<p>
+Bristol 2013: Encouraged to pursue further. Template parameter deduction
+for constructors has been split into EWG Issue <a href="ewg-active.html#60">60</a>.
+</p>
+
+
+
+
+
+<hr>
+<h3><a name="10"></a>10. 
+N3407 Proposal to Add Decimal Floating Point Support to C++
+</h3>
+<p><b>Section:</b> 17 [library] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Dietmar Kühl <b>Opened:</b> 2012-09-14 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all other</b> <a href="ewg-index.html#library">issues</a> in [library].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3407.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3407.html</a>
+<p>Handled by the Numerics Study Group (SG5).</p>
+
+
+
+
+
+<hr>
+<h3><a name="11"></a>11. 
+N3409 Strict Fork-Join Parallelism
+</h3>
+<p><b>Section:</b> 1.10 [intro.multithread] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Pablo Halpern <b>Opened:</b> 2012-09-24 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View other</b> <a href="ewg-index-open.html#intro.multithread">active issues</a> in [intro.multithread].</p>
+<p><b>View all other</b> <a href="ewg-index.html#intro.multithread">issues</a> in [intro.multithread].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3409.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3409.pdf</a>
+<p>Handled by the Concurrency Study Group (SG1)</p>
+
+
+
+
+
+<hr>
+<h3><a name="12"></a>12. 
+N3410 Rich Pointers with Dynamic and Static Introspection
+</h3>
+<p><b>Section:</b> 20.9 [meta] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Dean Michael Berris <b>Opened:</b> 2012-09-18 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View other</b> <a href="ewg-index-open.html#meta">active issues</a> in [meta].</p>
+<p><b>View all other</b> <a href="ewg-index.html#meta">issues</a> in [meta].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3410.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3410.pdf</a>
+<p>To be handled by the Reflection Study Group (SG7).</p>
+
+
+
+
+
+<hr>
+<h3><a name="14"></a>14. 
+N3413 Allowing arbitrary literal types for non-type template parameters
+</h3>
+<p><b>Section:</b> 14.1 [temp.param] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Jens Maurer <b>Opened:</b> 2012-09-19 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View other</b> <a href="ewg-index-open.html#temp.param">active issues</a> in [temp.param].</p>
+<p><b>View all other</b> <a href="ewg-index.html#temp.param">issues</a> in [temp.param].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3413.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3413.html</a>
+</p>
+<p>
+Bristol 2013: Maurer expressed surprise at the paper being under discussion, and explained that he doesn't think it can be made to work under current linker environments, and further explained that user-defined equality operators cause confusion and surprises. Maurer said that he'd want Stroustrup to clarify which parts of the paper he would want.
+</p>
+
+<p>
+Two-way Straw polls:
+</p>
+<p>
+Rules for agument expressions:
+</p>
+<p>
+F: 5 A: 0
+</p>
+<p>
+Structs without operator==
+</p>
+<p>
+F: 0 A: 0
+</p>
+<p>
+Structs with operator==
+</p>
+<p>
+F: 1 A: 3
+</p>
+<p>
+The issue is not pushed at this time. 
+</p>
+
+
+<p><b>Wording available:</b></p>
+The paper contains the proposed wording.
+
+
+
+
+<hr>
+<h3><a name="15"></a>15. 
+N3416 Packaging Parameter Packs
+</h3>
+<p><b>Section:</b> 14.1 [temp.param] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Mike Spertus <b>Opened:</b> 2012-09-21 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View other</b> <a href="ewg-index-open.html#temp.param">active issues</a> in [temp.param].</p>
+<p><b>View all other</b> <a href="ewg-index.html#temp.param">issues</a> in [temp.param].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3416.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3416.html</a>
+
+
+
+
+
+<hr>
+<h3><a name="17"></a>17. 
+N3419 Vector loops and Parallel Loops
+</h3>
+<p><b>Section:</b> 1.10 [intro.multithread] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Robert Geva <b>Opened:</b> 2012-09-21 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View other</b> <a href="ewg-index-open.html#intro.multithread">active issues</a> in [intro.multithread].</p>
+<p><b>View all other</b> <a href="ewg-index.html#intro.multithread">issues</a> in [intro.multithread].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3419.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3419.pdf</a>
+<p>
+Handled by the Concurrency Study Group (SG1).
+</p>
+
+
+
+
+
+<hr>
+<h3><a name="18"></a>18. 
+N3424 Lambda Correctness and Usability Issues
+</h3>
+<p><b>Section:</b> 5.1.2 [expr.prim.lambda] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Herb Sutter <b>Opened:</b> 2012-09-23 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all other</b> <a href="ewg-index.html#expr.prim.lambda">issues</a> in [expr.prim.lambda].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3424.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3424.pdf</a>
+<p>
+Reviewed by EWG in Portland 2012, proceeding with a follow-up paper. Changes to const captures rejected, capturing of 'this' and members encouraged to continue with a follow-up paper.
+</p>
+
+
+
+
+
+
+<hr>
+<h3><a name="19"></a>19. 
+N3429 A C++ Library Solution To Parallelism
+</h3>
+<p><b>Section:</b> 30 [thread] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Artur Laksberg <b>Opened:</b> 2012-09-21 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3429.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3429.pdf</a>
+<p>
+Handled by the Concurrency Study Group (SG1).
+</p>
+
+
+<p><b>Wording available:</b></p>
+<p>The paper contains the proposed wording.</p>
+
+
+
+
+<hr>
+<h3><a name="20"></a>20. 
+N3536, N3432 C++ Sized Deallocation
+</h3>
+<p><b>Section:</b> 3.7.4 [basic.stc.dynamic] <b>Status:</b> <a href="ewg-active.html#Ready">Ready</a>
+ <b>Submitter:</b> Lawrence Crowl <b>Opened:</b> 2012-09-23 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View other</b> <a href="ewg-index-open.html#basic.stc.dynamic">active issues</a> in [basic.stc.dynamic].</p>
+<p><b>View all other</b> <a href="ewg-index.html#basic.stc.dynamic">issues</a> in [basic.stc.dynamic].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Ready">Ready</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3536.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3536.html</a>
+</p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3432.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3432.html</a>
+</p>
+<p>
+Reviewed by EWG in Portland 2012, proceeding to CWG.
+</p>
+
+
+<p><b>Wording available:</b></p>
+<p>The paper contains the proposed wording.</p>
+
+
+
+
+<hr>
+<h3><a name="21"></a>21. 
+N3433 Clarifying Memory Allocation
+</h3>
+<p><b>Section:</b> 3.7.4 [basic.stc.dynamic] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Lawrence Crowl <b>Opened:</b> 2012-09-23 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View other</b> <a href="ewg-index-open.html#basic.stc.dynamic">active issues</a> in [basic.stc.dynamic].</p>
+<p><b>View all other</b> <a href="ewg-index.html#basic.stc.dynamic">issues</a> in [basic.stc.dynamic].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3433.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3433.html</a>
+<p>
+Reviewed by EWG in Portland 2012, proceeding with a follow-up paper.
+</p>
+
+
+<p><b>Wording available:</b></p>
+<p>The paper contains the proposed wording.</p>
+
+
+
+
+<hr>
+<h3><a name="22"></a>22. 
+N3435 Standardized feature-test macros
+</h3>
+<p><b>Section:</b> 18.1 [support.general] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Clark Nelson <b>Opened:</b> 2012-09-18 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View other</b> <a href="ewg-index-open.html#support.general">active issues</a> in [support.general].</p>
+<p><b>View all other</b> <a href="ewg-index.html#support.general">issues</a> in [support.general].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3435.htm">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3435.htm</a>
+<p>
+Reviewed by EWG in Portland 2012, proceeding in SG10, Feature Test.
+</p>
+
+
+
+
+
+<hr>
+<h3><a name="23"></a>23. 
+N3437 Type Name Strings For C++
+</h3>
+<p><b>Section:</b> 20.9 [meta] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Axel Naumann <b>Opened:</b> 2012-09-24 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View other</b> <a href="ewg-index-open.html#meta">active issues</a> in [meta].</p>
+<p><b>View all other</b> <a href="ewg-index.html#meta">issues</a> in [meta].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3437.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3437.pdf</a>
+<p>
+Not reviewed by EWG yet, to be handled by the Reflection Study Group (SG7).
+</p>
+
+
+
+
+
+<hr>
+<h3><a name="24"></a>24. 
+N3441 Call Stack Utilities and std::exception Extension Proposal
+</h3>
+<p><b>Section:</b> 18.8 [support.exception] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Aurelian Melinte <b>Opened:</b> 2012-09-20 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3441.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3441.html</a>
+
+
+
+
+
+<hr>
+<h3><a name="26"></a>26. 
+N3538, N3445 Pass by Const Reference or Value
+</h3>
+<p><b>Section:</b> 8.3.5 [dcl.fct] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Lawrence Crowl <b>Opened:</b> 2012-09-23 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3445.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3445.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3538.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3538.html</a>
+</p>
+
+
+
+
+
+
+<hr>
+<h3><a name="27"></a>27. 
+N3661, N3499 Digit Separators, N3448 Painless Digit Separation
+</h3>
+<p><b>Section:</b> 2.10 [lex.ppnumber] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Daveed Vandevoorde <b>Opened:</b> 2012-09-21 <b>Last modified:</b> 2013-08-27</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3499.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3499.html</a>
+</p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3448.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3448.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3661.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3661.html</a>
+</p>
+<p>
+Reviewed by EWG in Portland 2012, proceeding with a follow-up paper.
+</p>
+<p>
+Bristol 2013:  
+</p>
+<p>
+Straw poll:
+</p>
+<p>
+Double radix point as the suffix disambiguator:
+</p>
+<p>
+SF: 8 F: 5 N: 0 A: 0 SA: 0
+</p>
+<p>
+Convey to Core, target C++14:
+</p>
+<p>
+SF: 10 F: 3 N: 0 A: 0 SA: 0 
+</p>
+<p>
+The paper was not adopted in Bristol, because its motion didn't pass.
+</p>
+
+
+<p><b>Wording available:</b></p>
+<p>The paper contains the proposed wording.</p>
+
+
+
+
+<hr>
+<h3><a name="28"></a>28. 
+N3449 Open and Efficient Type Switch for C++
+</h3>
+<p><b>Section:</b> 5.2.7 [expr.dynamic.cast] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Bjarne Stroustrup <b>Opened:</b> 2012-09-23 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3449.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3449.pdf</a>
+
+
+
+
+
+<hr>
+<h3><a name="29"></a>29. 
+N3329 Proposal: static if declaration
+</h3>
+<p><b>Section:</b> 20.9 [meta] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Herb Sutter <b>Opened:</b> 2012-01-10 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View other</b> <a href="ewg-index-open.html#meta">active issues</a> in [meta].</p>
+<p><b>View all other</b> <a href="ewg-index.html#meta">issues</a> in [meta].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3329.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3329.pdf</a>
+<p>
+Reviewed by EWG in Portland 2012, to be handled by the Concepts Study Group (SG8).
+</p>
+
+
+
+
+
+<hr>
+<h3><a name="30"></a>30. 
+[tiny] Efficient/Flexible Access to Argument Packs
+</h3>
+<p><b>Section:</b> 14.5.3 [temp.variadic] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Dave Abrahams <b>Opened:</b> 2012-10-16 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+There are lots of very basic manipulations that are either really hard
+or impossible to do with argument packs unless you use something that
+causes a big recursive template instantiation, which is expensive at
+compile-time and can cause bad error messages.  I want to be able to
+index argument packs with integral constant expressions, "take" or
+"drop" the first N elements of the pack, etc.
+</p>
+<p>
+In Bristol 2013: N3493 may solve parts of the problem. The submitter is encouraged to write a paper, and practical examples are desirable. 
+</p>
+
+
+
+
+
+<hr>
+<h3><a name="32"></a>32. 
+[tiny] Templated constructor accidentally preferred over copy constructor
+</h3>
+<p><b>Section:</b> 13 [over] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Nevin Liber <b>Opened:</b> 2012-10-19 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<pre>
+
+struct Silly
+{
+    template&lt;class... Ts&gt;
+    Silly(Ts&amp;&amp;...)
+    {}
+};
+
+int main()
+{
+    Silly s;
+    Silly t(s);	// Silly::Silly(Ts &amp;&amp;...) [Ts = &lt;Silly &amp;&gt;]
+    const Silly u;
+    Silly v(u); // calls Silly::Silly(Silly const&amp;)
+}
+</pre>
+
+The problem is that users expect the copy constructor to be called in both situations.
+
+Note:  you do not need variadics for this; it made the example smaller.  Also, this issue existed in C++03, but rarely happened in practice because templated parameters were usually declared const T&amp;.
+</p>
+<p>
+Bristol 2013: Sutton and Gregor proposed various work-arounds, like additional overloads and constraints. Stroustrup asked whether having a copying template have different semantics from a copy constructor isn't an error, and Gregor explained that tuples run into that issue and they have different semantics for the template. The submitter is encouraged to write a paper, and practical examples are desirable. 
+</p>
+
+
+
+
+
+<hr>
+<h3><a name="33"></a>33. 
+[tiny] contextual bool conversion from scoped enum
+</h3>
+<p><b>Section:</b> 7.2 [dcl.enum] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Jeffrey Yasskin <b>Opened:</b> 2012-10-20 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+In Beman's filesystem code, I found the following problem, which he
+didn't see because he's been building with MSVC 10:
+
+A scoped enum defined at
+<p>
+<a href="https://github.com/Beman/filesystem-proposal/blob/master/include/boost/filesystem/operations.hpp#L230">https://github.com/Beman/filesystem-proposal/blob/master/include/boost/filesystem/operations.hpp#L230</a>
+</p>
+is used like
+
+<p>
+if (opts &amp; copy_options::skip_existing) ++ct;
+</p>
+
+at 
+<p>
+<a href="https://github.com/Beman/filesystem-proposal/blob/master/src/operations.cpp#L773">https://github.com/Beman/filesystem-proposal/blob/master/src/operations.cpp#L773</a>.
+</p>
+
+This causes an error like:
+
+<p>../../../libs/filesystem/src/operations.cpp:773:9: error: value of
+type 'boost::filesystem::copy_options' is not contextually convertible
+to 'bool'
+</p>
+
+I believe it makes sense to define a contextual conversion to bool for
+certain scoped enumerations, but I don't see a way to do it. I do see
+a way to overload &amp; to return bool, but that seems to prevent using &amp;
+to remove bits from a value, which shouldn't always be prevented.
+</p>
+<p>
+Bristol 2013: Stroustrup pointed out that the existing behavior is deliberately trying to avoid supporting anything like this, in order to play safe. He further explained that allowing member functions for scoped enums has been attempted but the attempts failed. Gregor pointed out that not all scoped enums have a zero value, so doing it generally is hard. Stroustrup said he would want to have member functions for enums. Yasskin said he's not interested in writing a paper. Other people are invited to do so. 
+</p>
+
+
+
+
+
+<hr>
+<h3><a name="34"></a>34. 
+[tiny] Defining hash functions for composite user-defined types is annoying
+</h3>
+<p><b>Section:</b> 17.6.3.4 [hash.requirements] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Matt Austern <b>Opened:</b> 2012-10-23 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+We have a hash function for built-in types and for some standard library types, but we don't have automatically generated hash&lt;&gt; specializations for user-defined types like
+<pre>
+  struct my_type {
+    int x;
+    std::string y;
+    vector&lt;int&gt; z;
+  };
+</pre>
+Defining a good and efficient hash function for composite types takes a fair amount of work. One consequence is that there are a lot of user-defined types with bad hash functions floating around.
+
+One possibility is automatically generating hash&lt;&gt; specializations, but that's tricky. A simpler possibility is providing tools that make it easier for users to do the right thing.
+</p>
+<p>
+Bristol 2013: Austern explained that he didn't envision syntax to automate the generation of hash operations but thought that this could potentially be solved by a library. Stroustrup and Austern thought that reflection would be another way to solve this. Van Winkel thought that for the generation of such things, it's perhaps desirable that they aren't generated by default but can be generated on demand when a user-defined type requests such generation. The guidance of the EWG is to propose a solution that handles equality operators and other such things in a more general manner. 
+</p>
+
+
+
+
+
+<hr>
+<h3><a name="35"></a>35. 
+[tiny] Some concise way to generate a unique, unused variable name
+</h3>
+<p><b>Section:</b> 3.4 [basic.lookup] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Jeffrey Yasskin <b>Opened:</b> 2012-10-24 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+Sometimes we want to define a variable that's unused except for its
+constructor and destructor. lock_guard&lt;mutex&gt; and ScopeGuard are
+decent examples of this. In C++11, we have to manually name the
+variable something unique. Sometimes we use _some_name_##__LINE__
+(suitably wrapped so the concatenation happens after expanding
+__LINE__) to try to generate unique names automatically, and gcc/clang
+have an extension _some_name_##__COUNTER__
+<p>
+<a href="http://gcc.gnu.org/onlinedocs/gcc-4.7.2/cpp/Common-Predefined-Macros.html">http://gcc.gnu.org/onlinedocs/gcc-4.7.2/cpp/Common-Predefined-Macros.html</a>
+</p>
+to allow multiple such variables on the same line. These are pretty
+verbose and not convenient for casual use.
+
+Haskell allows _ (underscore) to stand in for a variable that's not
+going to be used. Googlemock defines testing::_ to mean "don't care"
+as an argument, which is similar but not identical.
+</p>
+<p>
+Bristol 2013: Stroustrup wondered how unique the name needs to be, and wondered whether parallel builds would have problems ensuring the uniqueness. Naumann pointed out that having an unnamed variable is useful also for cases where you don't want the variable's address to be taken etc. Stroustrup and Van Winkel said this is not tiny, and a proper paper is necessary for this issue. 
+</p>
+
+
+
+
+
+<hr>
+<h3><a name="40"></a>40. 
+[tiny] Relax the allocator requirements on vector so that the small object optimization is allowed
+</h3>
+<p><b>Section:</b> 23.3.6 [vector] <b>Status:</b> <a href="ewg-active.html#Ready">Ready</a>
+ <b>Submitter:</b> Nevin Liber <b>Opened:</b> 2012-11-27 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Ready">Ready</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+I'd like it to be possible to use the small object optimization (embedding up to a fixed number of objects inside the allocator itself) inside a vector.
+</p>
+<p>
+Bristol 2013: Designated for LEWG.
+</p>
+
+
+
+
+
+<hr>
+<h3><a name="41"></a>41. 
+[tiny] In-class explicit specializations forbidden but not partial specializations
+</h3>
+<p><b>Section:</b> 14.7.3 [temp.expl.spec] <b>Status:</b> <a href="ewg-active.html#Ready">Ready</a>
+ <b>Submitter:</b> Faisal Vali <b>Opened:</b> 2012-10-27 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View other</b> <a href="ewg-index-open.html#temp.expl.spec">active issues</a> in [temp.expl.spec].</p>
+<p><b>View all other</b> <a href="ewg-index.html#temp.expl.spec">issues</a> in [temp.expl.spec].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Ready">Ready</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+I had submitted a DR (727) about this in October 2008 - and it was
+classified as an extension - I wonder if Spertus' DR (1077) that was
+also classified as an extension should be considered along with this
+one.
+
+
+14.7.3 [temp.expl.spec] paragraph 2 requires that explicit
+specializations of member templates be declared in namespace scope,
+not in the class definition. This restriction does not apply to
+partial specializations of member templates; that is,
+<pre>
+    struct A {
+      template&lt;class T&gt; struct B;
+      template &lt;class T&gt; struct B&lt;T*&gt; { }; // well-formed
+      template &lt;&gt; struct B&lt;int*&gt; { }; // ill-formed
+    };
+</pre>
+There does not seem to be a good reason for this inconsistency.
+</p>
+<p>
+Bristol 2013: Defer to Core, with the guidance to reopen the DR mentioned and remove the restriction. 
+</p>
+
+
+
+
+
+<hr>
+<h3><a name="42"></a>42. 
+[tiny] basic_string(const charT*, size_type, const Allocator&amp;) requires clause too restrictive
+</h3>
+<p><b>Section:</b> 21.4.2 [string.cons] <b>Status:</b> <a href="ewg-active.html#Ready">Ready</a>
+ <b>Submitter:</b> Nevin Liber <b>Opened:</b> 2012-12-19 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Ready">Ready</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+In n3485 21.4.2p6 (basic_string constructors and assignment operators), we have:
+
+<pre>
+  basic_string(const charT* s, size_type n,
+  const Allocator&amp; a = Allocator());
+  Requires: s shall not be a null pointer and n &lt; npos.
+</pre>
+
+
+That requires clause is too restrictive; s can be a null pointer when n==0.
+
+A (simplified) use case I have seen:
+
+<pre>
+  std::string StringFromVector(std::vector&lt;char&gt; const&amp; vc)
+  { return std::string(vc.data(), vc.size()); }
+</pre>
+
+Since a conforming implementation can return a null pointer for vc.data() when vc.size() == 0.  I don't see any reason to disallow this construct, especially since it takes a Standards expert to see that this is possibly illegal, but not std::string(vc.data(), vc.data() + vc.size()).
+</p>
+
+This is likely to go onto the LEWG's plate.
+<p>
+Bristol 2013: Defer to LEWG. 
+</p>
+
+
+<p><b>Wording available:</b></p>
+<pre>
+  Requires: n &lt; npos and either s shall not be a null pointer or n == 0.
+</pre>
+
+
+
+
+<hr>
+<h3><a name="43"></a>43. 
+[tiny] simultaneous iteration with new-style for syntax
+</h3>
+<p><b>Section:</b> 6.5.4 [stmt.ranged] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Gabriel Dos Reis <b>Opened:</b> 2013-01-12 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+The new-style 'for' syntax allows us to dispense with administrative
+iterator declarations when iterating over a single seuqence.
+
+The burden and noise remain, however, when iterating over two or more
+sequences simultaenously.  We should extend the syntax to allow that.
+E.g. one should be able to write:
+<pre>
+    for (auto&amp; x : v; auto&amp; y : w)
+       a = combine(v, w, a);
+</pre>
+
+instead of the noisier
+<pre>
+    auto p1 = v.begin();
+    auto q1 = v.end();
+    auto p2 = w.begin();
+    auto q2 = w.end();
+    while (p1 &lt; q1 and p2 &lt; q2) {
+       a = combine(*p1, *p2, a);
+       ++p1;
+       ++p2;
+    }
+</pre>
+</p>
+<p>
+Bristol 2013: Submitter is encouraged to write a paper. 
+</p>
+
+
+
+
+<hr>
+<h3><a name="44"></a>44. 
+[tiny] variadic bind
+</h3>
+<p><b>Section:</b> 20.8.9 [bind] <b>Status:</b> <a href="ewg-active.html#Ready">Ready</a>
+ <b>Submitter:</b> Chris Jefferson <b>Opened:</b> 2013-01-25 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Ready">Ready</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+As more variadic functions work their way into my C++ code, I'm getting increasingly annoyed that there isn't a variadic bind.
+
+There is a tiny bit of annoyance on exactly what to use. There seems to me to be 2 sensible choices (other people may have others)
+
+<pre>
+  1) _args : Use all otherwise unnamed arguments.
+  2) _3onwards : All arguments from the 3rd onwards.
+</pre>
+
+I haven't personally found a need for multiple ranges of variadic arguments, or more complicated chopping (such as getting the last few arguments), and I'd want to hopefully keep this simple if possible!
+</p>
+<p>
+Bristol 2013: Defer to LEWG. 
+</p>
+
+
+
+
+<hr>
+<h3><a name="45"></a>45. 
+[tiny] Type Trait is_range&lt;T&gt;
+</h3>
+<p><b>Section:</b> 20.9.4.3 [meta.unary.prop] <b>Status:</b> <a href="ewg-active.html#Ready">Ready</a>
+ <b>Submitter:</b> Nevin Liber <b>Opened:</b> 2013-02-05 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View other</b> <a href="ewg-index-open.html#meta.unary.prop">active issues</a> in [meta.unary.prop].</p>
+<p><b>View all other</b> <a href="ewg-index.html#meta.unary.prop">issues</a> in [meta.unary.prop].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Ready">Ready</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+I'd like to have an is_range&lt;T, R = void&gt; type trait, which derives from true_type if and only if T can be used in range-based for, and *__begin is convertible to R (where R == void means don't bother checking this condition).
+</p>
+<p>
+Bristol 2013: Submitter is encouraged to proceed and present to LWG. Apparently LEWG doesn't handle these. 
+</p>
+
+
+
+
+<hr>
+<h3><a name="46"></a>46. 
+[tiny] Type Trait is_final&lt;T&gt;
+</h3>
+<p><b>Section:</b> 20.9.4.3 [meta.unary.prop] <b>Status:</b> <a href="ewg-active.html#Ready">Ready</a>
+ <b>Submitter:</b> Nevin Liber <b>Opened:</b> 2013-02-05 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View other</b> <a href="ewg-index-open.html#meta.unary.prop">active issues</a> in [meta.unary.prop].</p>
+<p><b>View all other</b> <a href="ewg-index.html#meta.unary.prop">issues</a> in [meta.unary.prop].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Ready">Ready</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+I'd like to have an is_final&lt;T&gt; type trait, which is true if and only if T is a final type.
+</p>
+<p>
+Bristol 2013: Submitter is encouraged to proceed and present to LWG. Apparently LEWG doesn't handle these. 
+</p>
+
+
+
+
+<hr>
+<h3><a name="48"></a>48. 
+[tiny] Specializing templates in different namespaces
+</h3>
+<p><b>Section:</b> 14.7.3 [temp.expl.spec] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Mike Spertus <b>Opened:</b> 2013-03-06 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View other</b> <a href="ewg-index-open.html#temp.expl.spec">active issues</a> in [temp.expl.spec].</p>
+<p><b>View all other</b> <a href="ewg-index.html#temp.expl.spec">issues</a> in [temp.expl.spec].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+This is a proposal to allow specializing templates from within a different namespace. The motivation is that when we declare a new class, it is natural to want to provide associated template specializations. For example, it is really painful that whenever I declare a class, I need to leave my namespace and enter namespace std just to specialize std::less as shown below
+
+<pre>
+  namespace A {
+    namespace B {
+      class C {...};
+    }
+  }
+
+  namespace std {
+    template &lt;&gt;
+    struct less&lt;C&gt; : binary_function &lt;C, C, bool&gt; {
+       bool operator() (const C &amp; x, const C &amp; y) const {...}
+   };
+  }
+
+  namespace A {
+    namespace B {
+      ... // Continue working in A::B
+    }
+  }
+</pre>
+ 
+
+Instead, I should be able to specialize std::less without having to break out of my namespace:
+
+<pre> 
+  namespace A {
+    namespace B {
+      class C {...};
+      template &lt;&gt;
+      struct ::std::less&lt;C&gt; : binary_function &lt;C, C, bool&gt; {
+        bool operator() (const C &amp; x, const C &amp; y) const {...}
+      };
+    ... // Continue working in A::B
+    }
+  }
+</pre>
+</p>
+<p>
+Bristol 2013:  Stroustrup expressed concern about unqualified name lookup in the specializations, and Voutilainen thought that that just might be the reason why the current rules don't allow it. Gottschling voiced concern about the implementation impact, and Voutilainen suggested asking for a quick review of the overall idea from Spicer. Austern thought that this could be palatable if it's expressed as a set of rewrite rules. Spertus asked about an alternative which is to be able to open another namespace without having to exit the current namespace. This alternative didn't gain success.
+
+Spertus to write a paper. 
+</p>
+
+
+
+
+<hr>
+<h3><a name="49"></a>49. 
+N3463 Portable Program Source Files
+</h3>
+<p><b>Section:</b> 2.2 [lex.phases] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Beman Dawes <b>Opened:</b> 2012-11-02 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3463.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3463.html</a>
+
+
+
+
+<hr>
+<h3><a name="50"></a>50. 
+N3466 More Perfect Forwarding
+</h3>
+<p><b>Section:</b> 18.1 [support.general] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Mike Spertus <b>Opened:</b> 2012-11-03 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View other</b> <a href="ewg-index-open.html#support.general">active issues</a> in [support.general].</p>
+<p><b>View all other</b> <a href="ewg-index.html#support.general">issues</a> in [support.general].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3466.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3466.html</a>
+
+
+
+
+<hr>
+<h3><a name="51"></a>51. 
+N3490 ADL Control for C++
+</h3>
+<p><b>Section:</b> 3.4.2 [basic.lookup.argdep] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Dave Abrahams <b>Opened:</b> 2012-10-31 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View other</b> <a href="ewg-index-open.html#basic.lookup.argdep">active issues</a> in [basic.lookup.argdep].</p>
+<p><b>View all other</b> <a href="ewg-index.html#basic.lookup.argdep">issues</a> in [basic.lookup.argdep].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3490.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3490.html</a>
+
+
+
+
+<hr>
+<h3><a name="52"></a>52. 
+N3515 Toward Opaque Typedefs for C++1Y
+</h3>
+<p><b>Section:</b> 7.1.3 [dcl.typedef] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Walter Brown <b>Opened:</b> 2013-01-11 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3515.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3515.pdf</a>
+
+
+
+
+<hr>
+<h3><a name="56"></a>56. 
+N3583 	Exploring constexpr at Runtime
+</h3>
+<p><b>Section:</b> 5.19 [expr.const] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Scott Schurr <b>Opened:</b> 2013-03-13 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all other</b> <a href="ewg-index.html#expr.const">issues</a> in [expr.const].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3583.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3583.pdf</a>
+</p>
+<p>
+Bristol 2013: We won't move forward with this at this time, but we might want to see a followup paper focusing on the trait. 
+</p>
+</p>
+
+
+
+
+<hr>
+<h3><a name="57"></a>57. 
+N3587 For Loop Exit Strategies
+</h3>
+<p><b>Section:</b> 6.5 [stmt.iter] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Alan Talbot <b>Opened:</b> 2013-03-17 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3587.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3587.pdf</a>
+</p>
+<p>
+Bristol 2013: Van Winkel pointed out that this allows jumping out of nested 
+loops. Naumann expressed doubt over whether the problem is so big that we 
+need such a big extension to solve it. Van Winkel and Spertus thought that 
+this would likely be a popular feature. Voutilainen thought that it would be 
+beneficial to revisit a lambda solution. Talbot expressed doubt whether that's 
+a suitable solution, syntax-wise and performance-wise. Austern thought that 
+this seems to be in flux, and thought we aren't necessarily ready to choose 
+between the various options. Gottschling thought Vandevoorde's option is 
+nice, since it's still structured. Spertus said he likes the idea of having 
+a control structure be an expression. Austern recommended looking closely 
+at Clause 5 in the follow-up paper. 
+</p>
+<p>
+The author is encouraged to write a follow-up paper.
+</p>
+</p>
+
+
+
+
+<hr>
+<h3><a name="58"></a>58. 
+N3595 Simplifying Argument-Dependent Lookup Rules
+</h3>
+<p><b>Section:</b> 3.4.2 [basic.lookup.argdep] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Peter Gottschling <b>Opened:</b> 2013-03-15 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View other</b> <a href="ewg-index-open.html#basic.lookup.argdep">active issues</a> in [basic.lookup.argdep].</p>
+<p><b>View all other</b> <a href="ewg-index.html#basic.lookup.argdep">issues</a> in [basic.lookup.argdep].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3595.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3595.pdf</a>
+</p>
+<p>
+Bristol 2013: Looked at briefly, the EWG thinks this should be considered
+alongside other ADL proposals.
+</p>
+</p>
+
+
+
+
+<hr>
+<h3><a name="59"></a>59. 
+N3596 Code Reuse in Class Template Specialization 	
+</h3>
+<p><b>Section:</b> 3.4.2 [basic.lookup.argdep] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Peter Gottschling <b>Opened:</b> 2013-03-15 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View other</b> <a href="ewg-index-open.html#basic.lookup.argdep">active issues</a> in [basic.lookup.argdep].</p>
+<p><b>View all other</b> <a href="ewg-index.html#basic.lookup.argdep">issues</a> in [basic.lookup.argdep].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3596.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3596.pdf</a>
+</p>
+</p>
+
+
+
+
+<hr>
+<h3><a name="60"></a>60. 
+N3602 Template parameter deduction for constructors
+</h3>
+<p><b>Section:</b> 14.8.2 [temp.deduct] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Mike Spertus <b>Opened:</b> 2013-03-14 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+This issue is split from EWG Issue <a href="ewg-active.html#9">9</a>.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3602.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3602.html</a>
+</p>
+<p>
+Bristol 2013: Reviewed and accepted by EWG, needs redrafting before
+ready for core.
+</p>
+
+
+
+
+<hr>
+<h3><a name="63"></a>63. 
+N3614 unwinding_exception
+</h3>
+<p><b>Section:</b> 15.5 [except.special] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Herb Sutter <b>Opened:</b> 2013-03-11 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3614.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3614.pdf</a>
+</p>
+<p>
+Bristol 2013: Voutilainen pointed out that there are previous proposals on similar facilities (http://open-std.org/JTC1/SC22/WG21/docs/papers/2009/n2952.html), and that there's existing practice that is different from this proposal (existing practice returns an int, not a bool). Stroustrup thought that he would need convincing examples about the int, and thought that the facility in general needs better motivation. Voutilainen said that it would be best to create a revisions/synthesis paper that covers the existing practice and the previous proposals and improves the motivational examples. 
+</p>
+<p>
+Author is encouraged to revise.
+</p>
+
+
+
+
+<hr>
+<h3><a name="65"></a>65. 
+N3617 Lifting overload sets into function objects
+</h3>
+<p><b>Section:</b> 20.8.2 [func.require] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Philipp Juschka <b>Opened:</b> 2013-03-14 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3617.htm">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3617.htm</a>
+</p>
+
+
+
+
+<hr>
+<h3><a name="66"></a>66. 
+N3599 Literal operator templates for strings
+</h3>
+<p><b>Section:</b> 2.14.8 [lex.ext] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Richard Smith <b>Opened:</b> 2013-03-13 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3599.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3599.html</a>
+</p>
+<p>
+Bristol 2013: 
+<p>
+Straw Poll: Adopt N3599, send to core: SF:2 WF:1 N:6 WA:4 SA:1
+</p>
+<p>
+No consensus for moving forward as is.
+</p>
+<p>
+Straw Poll: Revise with additional machinery for compile time string processing
+</p>
+<p>
+SF: 10 WF: 2 N: 0 WA: 0 SA: 0
+</p>
+<p>
+Encouragement for Smith and Vandevoorde to revise. 
+</p>
+</p>
+
+
+
+
+<hr>
+<h3><a name="67"></a>67. 
+[tiny] Unspecialized std::tuple_size should be defined
+</h3>
+<p><b>Section:</b> 20.4.1 [tuple.general] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Nevin Liber <b>Opened:</b> 2013-03-19 <b>Last modified:</b> 2013-08-26</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+In 20.4.1p2, the unspecialized std::tuple_size is undefined.  It would be a lot more useful if it were defined as an empty struct; that way, it can be used with enable_if for determining whether or not it is valid to use tuple_size, tuple_element and get on the corresponding data structure.
+</p>
+
+
+
+
+<hr>
+<h3><a name="68"></a>68. 
+[tiny] C++ DR about global placement array new
+</h3>
+<p><b>Section:</b> 5.3.4 [expr.new] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Thomas Koeppke <b>Opened:</b> 2013-04-22 <b>Last modified:</b> 2013-08-26</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+Basically, I would like to file a Defect Report: The global array placement new, as described in C++11, 5.3.4/10-12, is unusable. The reason for this is that the standard allows the operator to consume an arbitrary amount of memory, which is impossible for the user to learn, and thus impossible to provide. The fix is to remove the ability for placement-new to require more size than required for the array itself to the allocation function.
+</p>
+<p>
+Current wording, in 5.3.4/12 says:
+<pre>
+    new(2,f) T[5] results in a call of operator new[](sizeof(T)*5+y,2,f)
+</pre>
+    Here, x and y are non-negative unspecified values representing array allocation overhead; the result of the new-expression will be offset by this amount from the value returned by operator new[].
+</p>
+<p>
+Unfortunately, the presence of "y" means that it is impossible to pass a usable address to placement-array-new:
+<pre>
+    void * addr = std::malloc(?);
+    new (addr) T[10];
+</pre>
+</p>
+<p>
+In the above, it is impossible to know the required argument for malloc, since the placement-new can ask for sizeof(T) * 10 + y bytes for any y.
+</p>
+<p>
+The fix would be to remove the possiblity of placement-new requiring more memory for arrays, i.e. insert into 5.3.4/10 something like:
+<pre>
+    A new-expression passes the amount of space requested to the allocation 
+    function as the first argument of type std::size_t. That argument shall 
+    be no less than the size of the object being created; it may be greater 
+    than the size of the object being created only if the object is an array 
+    and the new-expression is a default new-expression.
+</pre>
+</p>
+<p>
+What do you think? I don't think the change could break anything, since nothing could be using placement-array-new at the moment, and it makes sense that a placement version doesn't require extra space, since the caller already knows the array size and has to perform destruction manually anyway.
+</p>
+<p> Mike Miller points out the following:
+</p>
+<p>
+You're not the first one to notice a problem with this; see
+</p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_closed.html#476">http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_closed.html#476</a>
+</p>
+<p>
+To summarize, CWG agreed that that's a problem but felt that the
+resolution was more appropriately handled in EWG, since it requires
+evaluations of the tradeoffs of various possible options to address it.
+Your approach, for example, focuses on the placement operator new
+provided by the library, which simply runs the constructor(s) on a
+previously-allocated buffer.  However, that's not the only use of the
+placement new syntax, which can pass arbitrary arguments to
+allocation functions that actually do allocate memory, and it's not
+clear that none of those will need to add padding similar to the way
+the standard allocation function does.
+</p>
+
+
+
+
+<hr>
+<h3><a name="69"></a>69. 
+[tiny] Returning a void expression from a constructor or destructor
+</h3>
+<p><b>Section:</b> 6.6.3 [stmt.return] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Richard Smith <b>Opened:</b> 2013-07-02 <b>Last modified:</b> 2013-08-26</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+A thread on std-discussion[1] has highlighted that
+<pre>
+  return E;
+</pre>
+</p>
+<p>
+where E has type void is valid in a function with a return type of 'void' but not valid in a constructor or destructor. There is implementation variance here, and we have examples of code which very reasonably wants to use "return E;" in a constructor, from within the expansion of a macro, and fails on some compilers due to this rule. The inconsistency between "return;" and "return void();" seems extremely jarring here, and I'd like to propose that we treat this as a defect.
+</p>
+<p>
+(I'm not suggesting that we treat constructors and destructors as having a return type of 'void', as was suggested on the thread on std-discussion, but I'm not opposed to it.)
+</p>
+<p>
+[1] <a href="https://groups.google.com/a/isocpp.org/forum/#!topic/std-discussion/ehqGBMsswjk">https://groups.google.com/a/isocpp.org/forum/#!topic/std-discussion/ehqGBMsswjk</a>
+</p>
+
+
+
+
+<hr>
+<h3><a name="70"></a>70. 
+[tiny] Const in expressions
+</h3>
+<p><b>Section:</b> 5.2 [expr.post] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Herb Sutter <b>Opened:</b> 2013-06-06 <b>Last modified:</b> 2013-08-27</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+Example:
+<pre>
+#include &lt;string>
+using namespace std;
+int main() {
+ const string{ "Hello" };                   // 1: error
+ "xyzzy" + const string{"Hello"};           // 2: error
+ typedef const string const_string;
+ const_string{"Hello"};                     // 3: ok
+ "xyzzy" + const_string{"Hello"};           // 4: ok
+ unsigned long{0};                          // 5: error
+ 42ul + unsigned long{0};                   // 6: error
+
+ typedef unsigned long unsigned_long;
+ unsigned_long{0};                          // 7: ok
+ 42ul + unsigned_long{0};                   // 8: ok
+
+}
+</pre>
+Sutter says:
+<p>
+The issue is "lines 1 to 8 below should all work." That they don't is just because of the reason Nikolay pointed out using line 1 below as an example:
+<p>
+> The error is purely syntactic: 'const string' is not a simple-type-specifier
+</p>
+</p>
+</p>
+<p>
+Richard Smith points out the following:
+<p>
+I can't comment on what was noticed in the abstract, but I was certainly aware of all the above cases. And the rules make sense to me: function-style casts are supposed to be function-style, and the above error cases doesn't look like a function call (and not just because you've put the paren next to the type in the function-call-like cases, and added an extra space in the other cases!).
+<p>
+I'm not sure exactly what rules you're proposing, but I hope we don't make this valid:
+</p>
+<pre>
+  struct A { int n; }; // ok, struct definition
+  struct A { 0 }; // might now be an expression?
+</pre>
+</p>
+</p>
+<p>
+Regarding using a parenthesized type as a work-around, Sutter explained:
+<p>
+I think it needs to be an open EWG issue after all, because as Johannes pointed out the workaround doesn't work because it can't call multi-argument constructors, such as that
+<pre>
+    (const vector&lt;int>)( 1, 2  )
+</pre>
+drops the 1 on the floor and creates a vector containing two zeroes.
+And that it doesn't work for list initializations, such as that
+<pre>
+    (unsigned int){ 1, 2, 3, 4 }   // C compound literal(?!)
+</pre>
+doesn't work.
+</p>
+</p>
+
+
+
+
+<hr>
+<h3><a name="71"></a>71. 
+N3626 Relaxed switch statement
+</h3>
+<p><b>Section:</b> 6.4.2 [stmt.switch] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Zhihao Yuan <b>Opened:</b> 2013-02-02 <b>Last modified:</b> 2013-08-27</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3626.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3626.pdf</a>
+</p>
+
+
+
+
+<hr>
+<h3><a name="72"></a>72. 
+N3635 Towards restrict-like semantics for C++
+</h3>
+<p><b>Section:</b> 8.3.1 [dcl.ptr] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> M. Wong, R. Silvera, R. Mak, C. Cambly, et al. <b>Opened:</b> 2013-04-29 <b>Last modified:</b> 2013-08-27</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3635.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3635.pdf</a>
+</p>
+<p>
+See also issue <a href="ewg-active.html#26">26</a>.
+</p>
+
+
+
+
+<hr>
+<h3><a name="73"></a>73. 
+N3681 Auto and braced-init lists
+</h3>
+<p><b>Section:</b> 7.1.6.4 [dcl.spec.auto] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Ville Voutilainen <b>Opened:</b> 2013-05-02 <b>Last modified:</b> 2013-08-27</p>
+<p><b>View all other</b> <a href="ewg-index.html#dcl.spec.auto">issues</a> in [dcl.spec.auto].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3681.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3681.html</a>
+</p>
+
+
+
+
+</body>
+</html>

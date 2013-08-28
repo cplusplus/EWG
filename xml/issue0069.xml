@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="69" status="New">
+<title>
+[tiny] Returning a void expression from a constructor or destructor
+</title>
+<section><sref ref="[stmt.return]"/></section>
+<submitter>Richard Smith</submitter>
+<date>02 Jul 2013</date>
+
+<discussion>
+<p>
+A thread on std-discussion[1] has highlighted that
+<pre>
+  return E;
+</pre>
+</p>
+<p>
+where E has type void is valid in a function with a return type of 'void' but not valid in a constructor or destructor. There is implementation variance here, and we have examples of code which very reasonably wants to use "return E;" in a constructor, from within the expansion of a macro, and fails on some compilers due to this rule. The inconsistency between "return;" and "return void();" seems extremely jarring here, and I'd like to propose that we treat this as a defect.
+</p>
+<p>
+(I'm not suggesting that we treat constructors and destructors as having a return type of 'void', as was suggested on the thread on std-discussion, but I'm not opposed to it.)
+</p>
+<p>
+[1] <a href="https://groups.google.com/a/isocpp.org/forum/#!topic/std-discussion/ehqGBMsswjk">https://groups.google.com/a/isocpp.org/forum/#!topic/std-discussion/ehqGBMsswjk</a>
+</p>
+</discussion>
+</issue>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="72" status="New">
+<title>
+N3635 Towards restrict-like semantics for C++
+</title>
+<section><sref ref="[dcl.ptr]"/></section>
+<submitter>M. Wong, R. Silvera, R. Mak, C. Cambly, et al.</submitter>
+<date>29 Apr 2013</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3635.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3635.pdf</a>
+</p>
+<p>
+See also issue <iref ref="26"/>.
+</p>
+</discussion>
+</issue>

@@ -1,0 +1,350 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>C++ Standard Evolution Completed Issues List</title>
+<style type="text/css">
+  p {text-align:justify}
+  li {text-align:justify}
+  blockquote.note
+  {
+    background-color:#E0E0E0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+  ins {background-color:#A0FFA0}
+  del {background-color:#FFA0A0}
+</style>
+</head>
+<body>
+<table>
+<tr>
+  <td align="left">Doc. no.</td>
+  <td align="left">N3737</td>
+</tr>
+<tr>
+  <td align="left">Date:</td>
+  <td align="left">2013-08-27</td>
+</tr>
+<tr>
+  <td align="left">Project:</td>
+  <td align="left">Programming Language C++</td>
+</tr>
+<tr>
+  <td align="left">Reply to:</td>
+  <td align="left">Ville Voutilainen &lt;<a href="mailto:ville.voutilainen@gmail.com">ville.voutilainen@gmail.com</a>&gt;</td>
+</tr>
+</table>
+<h1>C++ Standard Evolution Completed Issues List (Revision R03)</h1>
+<p>Revised 2013-08-27 at 16:08:33 UTC</p>
+
+  <p>Reference ISO/IEC IS 14882:2003(E)</p>
+  <p>Also see:</p>
+    <ul>
+      <li><a href="ewg-toc.html">Table of Contents</a> for all evolution issues.</li>
+      <li><a href="ewg-index.html">Index by Section</a> for all evolution issues.</li>
+      <li><a href="ewg-status.html">Index by Status</a> for all evolution issues.</li>
+      <li><a href="ewg-active.html">Evolution Active Issues List</a></li>
+      <li><a href="ewg-closed.html">Evolution Closed Issues List</a></li>
+    </ul>
+  <p>This document contains only evolution issues which have been closed
+  by the Evolution Working Group (EWG) after being found to be acceptable
+  extensions to the standard.  That is, issues which have a status of <a href="ewg-active.html#DR">DR</a>,
+  <a href="ewg-active.html#TC1">TC1</a>, <a href="ewg-active.html#WP">WP</a>, <a href="ewg-active.html#C++11">C++11</a>, 
+  or <a href="ewg-active.html#Resolved">Resolved</a>. See the
+  <a href="ewg-closed.html">Evolution Closed Issues List</a> for issues closed as non-defects.  See the
+  <a href="ewg-active.html">Evolution Active Issues List</a> for active issues and more information.  The
+  introductory material in that document also applies to this
+  document.</p>
+
+<h2>Revision History</h2>
+<ul>
+<li>R03: 2013-08-27 pre-Chicago mailing<ul>
+<li><b>Summary:</b><ul>
+<li>55 open issues, up by 7.</li>
+<li>18 closed issues, up by 0.</li>
+<li>73 issues total, up by 7.</li>
+</ul></li>
+<li><b>Details:</b><ul>
+<li>Added the following 7 New issues: <a href="ewg-active.html#67">67</a>, <a href="ewg-active.html#68">68</a>, <a href="ewg-active.html#69">69</a>, <a href="ewg-active.html#70">70</a>, <a href="ewg-active.html#71">71</a>, <a href="ewg-active.html#72">72</a>, <a href="ewg-active.html#73">73</a>.</li>
+</ul></li>
+</ul>
+</li>
+<li>R02: 
+2013-05-06 post-Bristol mailing
+<ul>
+<li><b>Summary:</b><ul>
+<li>49 open issues, up by 2.</li>
+<li>18 closed issues, up by 17.</li>
+<li>67 issues total, up by 19.</li>
+</ul></li>
+<li><b>Details:</b><ul>
+<li>Added the following 3 NAD issues: <a href="ewg-closed.html#53">53</a>, <a href="ewg-closed.html#54">54</a>, <a href="ewg-closed.html#55">55</a>.</li>
+<li>Added the following 6 New issues: <a href="ewg-active.html#49">49</a>, <a href="ewg-active.html#50">50</a>, <a href="ewg-active.html#51">51</a>, <a href="ewg-active.html#52">52</a>, <a href="ewg-active.html#59">59</a>, <a href="ewg-active.html#65">65</a>.</li>
+<li>Added the following 7 Open issues: <a href="ewg-active.html#56">56</a>, <a href="ewg-active.html#57">57</a>, <a href="ewg-active.html#58">58</a>, <a href="ewg-active.html#60">60</a>, <a href="ewg-active.html#63">63</a>, <a href="ewg-active.html#66">66</a>, <a href="ewg-active.html#66">66</a>.</li>
+<li>Added the following 3 WP issues: <a href="ewg-complete.html#61">61</a>, <a href="ewg-complete.html#62">62</a>, <a href="ewg-complete.html#64">64</a>.</li>
+<li>Changed the following 5 issues from New to NAD: <a href="ewg-closed.html#31">31</a>, <a href="ewg-closed.html#36">36</a>, <a href="ewg-closed.html#37">37</a>, <a href="ewg-closed.html#38">38</a>, <a href="ewg-closed.html#47">47</a>.</li>
+<li>Changed the following 8 issues from New to Open: <a href="ewg-active.html#14">14</a>, <a href="ewg-active.html#30">30</a>, <a href="ewg-active.html#32">32</a>, <a href="ewg-active.html#33">33</a>, <a href="ewg-active.html#34">34</a>, <a href="ewg-active.html#35">35</a>, <a href="ewg-active.html#43">43</a>, <a href="ewg-active.html#48">48</a>.</li>
+<li>Changed the following 6 issues from New to Ready: <a href="ewg-active.html#40">40</a>, <a href="ewg-active.html#41">41</a>, <a href="ewg-active.html#42">42</a>, <a href="ewg-active.html#44">44</a>, <a href="ewg-active.html#45">45</a>, <a href="ewg-active.html#46">46</a>.</li>
+<li>Changed the following 2 issues from Open to WP: <a href="ewg-complete.html#16">16</a>, <a href="ewg-complete.html#25">25</a>.</li>
+<li>Changed the following 4 issues from Ready to WP: <a href="ewg-complete.html#1">1</a>, <a href="ewg-complete.html#6">6</a>, <a href="ewg-complete.html#7">7</a>, <a href="ewg-complete.html#13">13</a>.</li>
+</ul></li>
+</ul>
+</li>
+<li>R01: 
+2013-03-18 Pre-Bristol mailing
+<ul>
+<li><b>Summary:</b><ul>
+<li>47 open issues, up by 47.</li>
+<li>1 closed issues, up by 1.</li>
+<li>48 issues total, up by 48.</li>
+</ul></li>
+<li><b>Details:</b><ul>
+<li>Added the following NAD issue: <a href="ewg-closed.html#39">39</a>.</li>
+<li>Added the following 32 New issues: <a href="ewg-active.html#2">2</a>, <a href="ewg-active.html#5">5</a>, <a href="ewg-active.html#8">8</a>, <a href="ewg-active.html#10">10</a>, <a href="ewg-active.html#11">11</a>, <a href="ewg-active.html#12">12</a>, <a href="ewg-active.html#14">14</a>, <a href="ewg-active.html#15">15</a>, <a href="ewg-active.html#17">17</a>, <a href="ewg-active.html#19">19</a>, <a href="ewg-active.html#23">23</a>, <a href="ewg-active.html#24">24</a>, <a href="ewg-active.html#26">26</a>, <a href="ewg-active.html#28">28</a>, <a href="ewg-active.html#30">30</a>, <a href="ewg-active.html#31">31</a>, <a href="ewg-active.html#32">32</a>, <a href="ewg-active.html#33">33</a>, <a href="ewg-active.html#34">34</a>, <a href="ewg-active.html#35">35</a>, <a href="ewg-active.html#36">36</a>, <a href="ewg-active.html#37">37</a>, <a href="ewg-active.html#38">38</a>, <a href="ewg-active.html#40">40</a>, <a href="ewg-active.html#41">41</a>, <a href="ewg-active.html#42">42</a>, <a href="ewg-active.html#43">43</a>, <a href="ewg-active.html#44">44</a>, <a href="ewg-active.html#45">45</a>, <a href="ewg-active.html#46">46</a>, <a href="ewg-active.html#47">47</a>, <a href="ewg-active.html#48">48</a>.</li>
+<li>Added the following 9 Open issues: <a href="ewg-active.html#4">4</a>, <a href="ewg-active.html#9">9</a>, <a href="ewg-active.html#16">16</a>, <a href="ewg-active.html#18">18</a>, <a href="ewg-active.html#21">21</a>, <a href="ewg-active.html#22">22</a>, <a href="ewg-active.html#25">25</a>, <a href="ewg-active.html#27">27</a>, <a href="ewg-active.html#29">29</a>.</li>
+<li>Added the following 6 Ready issues: <a href="ewg-active.html#1">1</a>, <a href="ewg-active.html#3">3</a>, <a href="ewg-active.html#6">6</a>, <a href="ewg-active.html#7">7</a>, <a href="ewg-active.html#13">13</a>, <a href="ewg-active.html#20">20</a>.</li>
+</ul></li>
+</ul>
+</li>
+</ul>
+
+</li>
+</ul>
+
+<h2>Completed Issues</h2>
+<hr>
+<h3><a name="1"></a>1. N3638, N3582, N3386 Return type deduction for normal functions</h3>
+<p><b>Section:</b> 7.1.6.4 [dcl.spec.auto] <b>Status:</b> <a href="ewg-active.html#WP">WP</a>
+ <b>Submitter:</b> Jason Merrill <b>Opened:</b> 2012-03-27 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all other</b> <a href="ewg-index.html#dcl.spec.auto">issues</a> in [dcl.spec.auto].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#WP">WP</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3386.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3386.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3582.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3582.html</a>
+</p>
+<p>Reviewed by EWG in Portland 2012, proceeding to CWG.</p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3638.</p>
+
+
+<p><b>Wording available:</b></p>
+<p>The paper contains the proposed wording.</p>
+
+
+
+
+<hr>
+<h3><a name="6"></a>6. 
+N3667, N3401 Generating move operations (elaborating on Core 1402)
+</h3>
+<p><b>Section:</b> 12.8 [class.copy] <b>Status:</b> <a href="ewg-active.html#WP">WP</a>
+ <b>Submitter:</b> Ville Voutilainen <b>Opened:</b> 2012-09-21 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all other</b> <a href="ewg-index.html#class.copy">issues</a> in [class.copy].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#WP">WP</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3401.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3401.html</a>
+<p>Reviewed by EWG in Portland 2012, proceeding to CWG.</p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3667.</p>
+
+
+<p><b>Wording available:</b></p>
+<p>The related Core issue contains the proposed wording.</p>
+
+
+
+
+<hr>
+<h3><a name="7"></a>7. 
+N3642, N3468, N3402 User-defined Literals for Standard Library Types, N3472 Binary Literals in the C++ Core Language
+</h3>
+<p><b>Section:</b> 2.14.2 [lex.icon] <b>Status:</b> <a href="ewg-active.html#WP">WP</a>
+ <b>Submitter:</b> Peter Sommerlad <b>Opened:</b> 2012-09-08 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#WP">WP</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3402.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3402.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3468.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3468.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3472.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3472.pdf</a>
+</p>
+<p>Reviewed by EWG in Portland 2012, binary literals to be added into the core language, the rest of the paper is on LWG's plate. The binary literals are proceeding to CWG.</p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3642.</p>
+<p>N3472 also accepted into the Working Draft in Bristol 2013.</p>
+
+
+<p><b>Wording available:</b></p>
+<p>The paper contains the Library wording, Dennett has written the Core
+wording (N3472) for binary literals.</p>
+
+
+
+
+<hr>
+<h3><a name="13"></a>13. 
+N3639, N3497, N3467, N3412 Runtime-sized arrays with automatic storage duration
+</h3>
+<p><b>Section:</b> 3.9 [basic.types] <b>Status:</b> <a href="ewg-active.html#WP">WP</a>
+ <b>Submitter:</b> Jens Maurer <b>Opened:</b> 2012-09-19 <b>Last modified:</b> 2013-04-30</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#WP">WP</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3412.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3412.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3467.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2012/n3467.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3497.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3497.html</a>
+</p>
+<p>
+Reviewed by EWG in Portland 2012, proceeding to CWG. The library part is <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2008/n2648.html">N2648 C++ Dynamic Arrays</a>, and that part is proceeding to LWG.
+</p>
+<p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3639.</p>
+</p>
+
+
+<p><b>Wording available:</b></p>
+The paper contains the proposed wording, as does the Library counterpart.
+
+
+
+
+<hr>
+<h3><a name="16"></a>16. 
+N3649, N3560, N3559, N3418 Proposal for Generic (Polymorphic) Lambda Expressions  
+</h3>
+<p><b>Section:</b> 5.1.2 [expr.prim.lambda] <b>Status:</b> <a href="ewg-active.html#WP">WP</a>
+ <b>Submitter:</b> Faisal Vali <b>Opened:</b> 2012-09-21 <b>Last modified:</b> 2013-08-27</p>
+<p><b>View all other</b> <a href="ewg-index.html#expr.prim.lambda">issues</a> in [expr.prim.lambda].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#WP">WP</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3418.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3418.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3559.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3559.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3560.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3560.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3649.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3649.html</a>
+</p>
+<p>
+Reviewed by EWG in Portland 2012, proceeding with a follow-up paper.
+</p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3649.</p>
+<p>Bristol 2013: Do not re-open proposals 2.1 and 2.2 in N3560,
+they are considered NAD. The proposals 2.3 and 2.4 are covered by
+N3649.
+</p>
+
+
+
+
+
+<hr>
+<h3><a name="25"></a>25. 
+N3652, N3597, N3598, N3444 Relaxing syntactic constraints on constexpr function definitions
+</h3>
+<p><b>Section:</b> 5.19 [expr.const] <b>Status:</b> <a href="ewg-active.html#WP">WP</a>
+ <b>Submitter:</b> Richard Smith <b>Opened:</b> 2012-09-21 <b>Last modified:</b> 2013-08-27</p>
+<p><b>View all other</b> <a href="ewg-index.html#expr.const">issues</a> in [expr.const].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#WP">WP</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3444.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3444.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3597.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3597.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3598.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3598.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3652.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3652.html</a>
+</p>
+<p>
+Reviewed by EWG in Portland 2012, proceeding with a follow-up paper.
+</p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3652.</p>
+
+
+
+
+
+<hr>
+<h3><a name="61"></a>61. 
+N3653, N3605 Member initializers and aggregates
+</h3>
+<p><b>Section:</b> 8.5.1 [dcl.init.aggr] <b>Status:</b> <a href="ewg-active.html#WP">WP</a>
+ <b>Submitter:</b> Ville Voutilainen <b>Opened:</b> 2013-03-15 <b>Last modified:</b> 2013-08-27</p>
+<p><b>View all other</b> <a href="ewg-index.html#dcl.init.aggr">issues</a> in [dcl.init.aggr].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#WP">WP</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3605.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3605.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3653.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3653.html</a>
+</p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3653.</p>
+
+
+
+
+<hr>
+<h3><a name="62"></a>62. 
+N3648, N3610 Generic lambda-capture initializers, supporting capture-by-move
+</h3>
+<p><b>Section:</b> 5.1.2 [expr.prim.lambda] <b>Status:</b> <a href="ewg-active.html#WP">WP</a>
+ <b>Submitter:</b> Ville Voutilainen <b>Opened:</b> 2013-03-15 <b>Last modified:</b> 2013-08-27</p>
+<p><b>View all other</b> <a href="ewg-index.html#expr.prim.lambda">issues</a> in [expr.prim.lambda].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#WP">WP</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3610.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3610.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3648.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3648.html</a>
+</p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3648.</p>
+
+
+
+
+<hr>
+<h3><a name="64"></a>64. 
+N3651, N3615 Constexpr Variable Templates, N3552 Introducing Object Aliases
+</h3>
+<p><b>Section:</b> 14.1 [temp.param] <b>Status:</b> <a href="ewg-active.html#WP">WP</a>
+ <b>Submitter:</b> Gabriel Dos Reis <b>Opened:</b> 2013-03-18 <b>Last modified:</b> 2013-08-27</p>
+<p><b>View other</b> <a href="ewg-index-open.html#temp.param">active issues</a> in [temp.param].</p>
+<p><b>View all other</b> <a href="ewg-index.html#temp.param">issues</a> in [temp.param].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#WP">WP</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3552.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3552.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3615.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3615.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3651.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3651.pdf</a>
+</p>
+<p>Accepted into the Working Draft in Bristol 2013, as N3651.</p>
+
+
+
+
+</body>
+</html>
