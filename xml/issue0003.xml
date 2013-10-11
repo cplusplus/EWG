@@ -3,16 +3,22 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="3" status="Ready">
-<title>N3394 [[deprecated]] attribute</title>
+<issue num="3" status="WP">
+<title>N3760, N3394 [[deprecated]] attribute</title>
 <section><sref ref="[dcl.attr]"/></section>
 <submitter>Alberto Ganesh Barbati</submitter>
 <date>12 Jun 2012</date>
 
 <discussion>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3760.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3760.html</a>
+</p>
+<p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3394.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3394.html</a>
+</p>
 
 <p>Reviewed by EWG in Portland 2012, proceeding to CWG.</p>
+<p>Adopted in Chicago 2013</p>
 </discussion>
 
 <resolution>

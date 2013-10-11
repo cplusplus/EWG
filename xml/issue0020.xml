@@ -3,15 +3,19 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="20" status="Ready">
+<issue num="20" status="WP">
 <title>
-N3536, N3432 C++ Sized Deallocation
+N3778, N3663, N3536, N3432 C++ Sized Deallocation
 </title>
 <section><sref ref="[basic.stc.dynamic]"/></section>
 <submitter>Lawrence Crowl</submitter>
 <date>23 Sep 2012</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3663.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3663.html</a>
+</p>
+
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3536.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3536.html</a>
 </p>
@@ -25,5 +29,6 @@ Reviewed by EWG in Portland 2012, proceeding to CWG.
 
 <resolution>
 <p>The paper contains the proposed wording.</p>
+<p>Adopted in the Chicago 2013 meeting as N3778.</p>
 </resolution>
 </issue>

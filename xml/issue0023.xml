@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="23" status="New">
+<issue num="23" status="Open">
 <title>
 N3437 Type Name Strings For C++
 </title>
@@ -16,6 +16,7 @@ N3437 Type Name Strings For C++
 <p>
 Not reviewed by EWG yet, to be handled by the Reflection Study Group (SG7).
 </p>
+<p>In Chicago 2013, EWG decided to let SG7 handle this.</p>
 </discussion>
 
 </issue>

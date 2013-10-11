@@ -3,9 +3,9 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="27" status="Open">
+<issue num="27" status="WP">
 <title>
-N3661, N3499 Digit Separators, N3448 Painless Digit Separation
+N3781 Single-Quotation-Mark as a Digit Separator, N3661, N3499 Digit Separators, N3448 Painless Digit Separation
 </title>
 <section><sref ref="[lex.ppnumber]"/></section>
 <submitter>Daveed Vandevoorde</submitter>
@@ -45,6 +45,7 @@ SF: 10 F: 3 N: 0 A: 0 SA: 0
 <p>
 The paper was not adopted in Bristol, because its motion didn't pass.
 </p>
+<p>Adopted in Chicago 2013, as N3781.</p>
 </discussion>
 
 <resolution>

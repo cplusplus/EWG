@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="18" status="Open">
+<issue num="18" status="WP">
 <title>
 N3424 Lambda Correctness and Usability Issues
 </title>
@@ -16,7 +16,10 @@ N3424 Lambda Correctness and Usability Issues
 <p>
 Reviewed by EWG in Portland 2012, proceeding with a follow-up paper. Changes to const captures rejected, capturing of 'this' and members encouraged to continue with a follow-up paper.
 </p>
-
+<p>
+Init-captures in C++14 provide the necessary facilities for capturing
+'this' and class members, voted into the WP in Bristol 2013.
+</p>
 </discussion>
 
 </issue>

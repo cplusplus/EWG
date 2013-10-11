@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="68" status="New">
+<issue num="68" status="NAD">
 <title>
 [tiny] C++ DR about global placement array new
 </title>
@@ -65,5 +65,10 @@ allocation functions that actually do allocate memory, and it's not
 clear that none of those will need to add padding similar to the way
 the standard allocation function does.
 </p>
+<p>
+In Chicago 2013, EWG deemed this NAD. Remarks from the discussion:
+"The problem is in trying to use array new to put an array into pre-existing storage. We don't need to use array new for that; just construct them." 
+and "You can find what padding was used after the fact, because new returns a pointer to the start of the first element of the array. But that can happen only after UB. "
+</p
 </discussion>
 </issue>

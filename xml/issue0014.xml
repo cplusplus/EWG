@@ -43,6 +43,10 @@ F: 1 A: 3
 <p>
 The issue is not pushed at this time. 
 </p>
+<p>
+Deemed post-C++14 material in Chicago 2013, Stroustrup expressed
+interest in writing papers about the subject targeting C++17.
+</p>
 </discussion>
 
 <resolution>

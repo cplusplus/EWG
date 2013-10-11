@@ -3,15 +3,24 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="52" status="New">
+<issue num="52" status="Open">
 <title>
-N3515 Toward Opaque Typedefs for C++1Y
+N3741, N3515 Toward Opaque Typedefs for C++1Y
 </title>
 <section><sref ref="[dcl.typedef]"/></section>
 <submitter>Walter Brown</submitter>
 <date>11 Jan 2013</date>
 
 <discussion>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3741.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3741.pdf</a>
+</p>
+<p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3515.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3515.pdf</a>
+</p>
+<p>
+Reviewed in Chicago 2013, author encouraged to pursue the idea further
+with revised papers.
+</p>
 </discussion>
 </issue>

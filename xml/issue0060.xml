@@ -22,5 +22,13 @@ This issue is split from EWG Issue <iref ref="9"/>.
 Bristol 2013: Reviewed and accepted by EWG, needs redrafting before
 ready for core.
 </p>
+<p>
+Core pointed out problems in Bristol. Gregor summarized in Chicago 2013 that
+The primary template might not be the right place to pick constructors from. (Partial) specializations might have completely different constructors. 
+Stroustrup thought that there's only two ways: all specializations have to be 
+in scope, and you look at all of those, or look only at the primary and give 
+an error if that doesn't work.  Spertus is encouraged to write a follow-up 
+paper.
+</p>
 </discussion>
 </issue>

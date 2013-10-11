@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="19" status="New">
+<issue num="19" status="Open">
 <title>
 N3429 A C++ Library Solution To Parallelism
 </title>

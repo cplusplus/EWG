@@ -1,9 +1,9 @@
-<issueslist revision="R03"
+<issueslist revision="D04"
             maintainer="Ville Voutilainen &lt;ville.voutilainen@gmail.com&gt;"
-            active_docno="N3736"
-            defect_docno="N3737"
-            closed_docno="N3738"
-            date="2013-08-27"
+            active_docno="N????"
+            defect_docno="N????"
+            closed_docno="N????"
+            date="2013-10-11"
 >
 
 <intros>
@@ -200,6 +200,20 @@ ownership of it.
 </intros>
 
 <revision_history>
+<revision tag="R03">
+<ul>
+<li>R03: 2013-08-27 pre-Chicago mailing<ul>
+<li><b>Summary:</b><ul>
+<li>55 open issues, up by 7.</li>
+<li>18 closed issues, up by 0.</li>
+<li>73 issues total, up by 7.</li>
+</ul></li>
+<li><b>Details:</b><ul>
+<li>Added the following 7 New issues: <a href="ewg-active.html#67">67</a>, <a href="ewg-active.html#68">68</a>, <a href="ewg-active.html#69">69</a>, <a href="ewg-active.html#70">70</a>, <a href="ewg-active.html#71">71</a>, <a href="ewg-active.html#72">72</a>, <a href="ewg-active.html#73">73</a>.</li>
+</ul></li>
+</ul>
+</li>
+</revision>
 <revision tag="R02">
 2013-05-06 post-Bristol mailing
 <ul>

@@ -3,9 +3,9 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="71" status="New">
+<issue num="71" status="Open">
 <title>
-N3626 Relaxed switch statement
+N3627 Relaxed switch statement
 </title>
 <section><sref ref="[stmt.switch]"/></section>
 <submitter>Zhihao Yuan</submitter>
@@ -13,7 +13,10 @@ N3626 Relaxed switch statement
 
 <discussion>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3626.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3626.pdf</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3627.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3627.html</a>
+</p>
+<p>
+Reviewed in Chicago 2013, author is encouraged to pursue this further.
 </p>
 </discussion>
 </issue>

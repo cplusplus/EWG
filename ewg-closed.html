@@ -22,11 +22,11 @@
 <table>
 <tr>
   <td align="left">Doc. no.</td>
-  <td align="left">N3738</td>
+  <td align="left">N????</td>
 </tr>
 <tr>
   <td align="left">Date:</td>
-  <td align="left">2013-08-27</td>
+  <td align="left">2013-10-11</td>
 </tr>
 <tr>
   <td align="left">Project:</td>
@@ -37,8 +37,8 @@
   <td align="left">Ville Voutilainen &lt;<a href="mailto:ville.voutilainen@gmail.com">ville.voutilainen@gmail.com</a>&gt;</td>
 </tr>
 </table>
-<h1>C++ Standard Evolution Closed Issues List (Revision R03)</h1>
-<p>Revised 2013-08-27 at 16:08:33 UTC</p>
+<h1>C++ Standard Evolution Closed Issues List (Revision D04)</h1>
+<p>Revised 2013-10-11 at 23:10:01 UTC</p>
 
   <p>Reference ISO/IEC IS 14882:2003(E)</p>
   <p>Also see:</p>
@@ -60,6 +60,24 @@
 
 <h2>Revision History</h2>
 <ul>
+<li>R04: 2013-10-11 post-Chicago mailing<ul>
+<li><b>Summary:</b><ul>
+<li>46 open issues, down by 9.</li>
+<li>30 closed issues, up by 12.</li>
+<li>76 issues total, up by 3.</li>
+</ul></li>
+<li><b>Details:</b><ul>
+<li>Added the following 3 Open issues: <a href="ewg-active.html#74">74</a>, <a href="ewg-active.html#75">75</a>, <a href="ewg-active.html#76">76</a>.</li>
+<li>Changed the following 4 issues from New to NAD: <a href="ewg-closed.html#12">12</a>, <a href="ewg-closed.html#68">68</a>, <a href="ewg-closed.html#69">69</a>, <a href="ewg-closed.html#73">73</a>.</li>
+<li>Changed the following 2 issues from Open to NAD: <a href="ewg-closed.html#32">32</a>, <a href="ewg-closed.html#33">33</a>.</li>
+<li>Changed the following 6 issues from New to Open: <a href="ewg-active.html#2">2</a>, <a href="ewg-active.html#17">17</a>, <a href="ewg-active.html#19">19</a>, <a href="ewg-active.html#23">23</a>, <a href="ewg-active.html#52">52</a>, <a href="ewg-active.html#71">71</a>.</li>
+<li>Changed the following 4 issues from Open to WP: <a href="ewg-complete.html#18">18</a>, <a href="ewg-complete.html#21">21</a>, <a href="ewg-complete.html#22">22</a>, <a href="ewg-complete.html#27">27</a>.</li>
+<li>Changed the following 2 issues from Ready to WP: <a href="ewg-complete.html#3">3</a>, <a href="ewg-complete.html#20">20</a>.</li>
+</ul></li>
+</ul>
+</li>
+<li>R03: 
+<ul>
 <li>R03: 2013-08-27 pre-Chicago mailing<ul>
 <li><b>Summary:</b><ul>
 <li>55 open issues, up by 7.</li>
@@ -70,6 +88,7 @@
 <li>Added the following 7 New issues: <a href="ewg-active.html#67">67</a>, <a href="ewg-active.html#68">68</a>, <a href="ewg-active.html#69">69</a>, <a href="ewg-active.html#70">70</a>, <a href="ewg-active.html#71">71</a>, <a href="ewg-active.html#72">72</a>, <a href="ewg-active.html#73">73</a>.</li>
 </ul></li>
 </ul>
+</li>
 </li>
 <li>R02: 
 2013-05-06 post-Bristol mailing
@@ -115,11 +134,30 @@
 
 <h2>Closed Issues</h2>
 <hr>
+<h3><a name="12"></a>12. 
+N3410 Rich Pointers with Dynamic and Static Introspection
+</h3>
+<p><b>Section:</b> 20.9 [meta] <b>Status:</b> <a href="ewg-active.html#NAD">NAD</a>
+ <b>Submitter:</b> Dean Michael Berris <b>Opened:</b> 2012-09-18 <b>Last modified:</b> 2013-10-10</p>
+<p><b>View other</b> <a href="ewg-index-open.html#meta">active issues</a> in [meta].</p>
+<p><b>View all other</b> <a href="ewg-index.html#meta">issues</a> in [meta].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#NAD">NAD</a> status.</p>
+<p><b>Discussion:</b></p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3410.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3410.pdf</a>
+<p>To be handled by the Reflection Study Group (SG7).</p>
+<p>Discussed by SG7 in Chicago, SG7 doesn't think the paper is going
+into the right direction and the paper author has acknowledged so.</p>
+
+
+
+
+
+<hr>
 <h3><a name="31"></a>31. 
 [tiny] constexpr functions must work at runtime
 </h3>
 <p><b>Section:</b> 5.19 [expr.const] <b>Status:</b> <a href="ewg-active.html#NAD">NAD</a>
- <b>Submitter:</b> Dave Abrahams <b>Opened:</b> 2012-10-16 <b>Last modified:</b> 2013-04-30</p>
+ <b>Submitter:</b> Dave Abrahams <b>Opened:</b> 2012-10-16 <b>Last modified:</b> 2013-10-10</p>
 <p><b>View all other</b> <a href="ewg-index.html#expr.const">issues</a> in [expr.const].</p>
 <p><b>View all issues with</b> <a href="ewg-status.html#NAD">NAD</a> status.</p>
 <p><b>Discussion:</b></p>
@@ -147,11 +185,100 @@ Bristol 2013: Gregor thought that wrt general direction, constexpr is specifical
 
 
 <hr>
+<h3><a name="32"></a>32. 
+[tiny] Templated constructor accidentally preferred over copy constructor
+</h3>
+<p><b>Section:</b> 13 [over] <b>Status:</b> <a href="ewg-active.html#NAD">NAD</a>
+ <b>Submitter:</b> Nevin Liber <b>Opened:</b> 2012-10-19 <b>Last modified:</b> 2013-10-11</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#NAD">NAD</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<pre>
+
+struct Silly
+{
+    template&lt;class... Ts&gt;
+    Silly(Ts&amp;&amp;...)
+    {}
+};
+
+int main()
+{
+    Silly s;
+    Silly t(s);	// Silly::Silly(Ts &amp;&amp;...) [Ts = &lt;Silly &amp;&gt;]
+    const Silly u;
+    Silly v(u); // calls Silly::Silly(Silly const&amp;)
+}
+</pre>
+
+The problem is that users expect the copy constructor to be called in both situations.
+
+Note:  you do not need variadics for this; it made the example smaller.  Also, this issue existed in C++03, but rarely happened in practice because templated parameters were usually declared const T&amp;.
+</p>
+<p>
+Bristol 2013: Sutton and Gregor proposed various work-arounds, like additional overloads and constraints. Stroustrup asked whether having a copying template have different semantics from a copy constructor isn't an error, and Gregor explained that tuples run into that issue and they have different semantics for the template. The submitter is encouraged to write a paper, and practical examples are desirable. 
+</p>
+<p>
+The EWG decided to close this issue as a NAD in Chicago 2013.
+</p>
+
+
+
+
+
+<hr>
+<h3><a name="33"></a>33. 
+[tiny] contextual bool conversion from scoped enum
+</h3>
+<p><b>Section:</b> 7.2 [dcl.enum] <b>Status:</b> <a href="ewg-active.html#NAD">NAD</a>
+ <b>Submitter:</b> Jeffrey Yasskin <b>Opened:</b> 2012-10-20 <b>Last modified:</b> 2013-10-11</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#NAD">NAD</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+In Beman's filesystem code, I found the following problem, which he
+didn't see because he's been building with MSVC 10:
+
+A scoped enum defined at
+<p>
+<a href="https://github.com/Beman/filesystem-proposal/blob/master/include/boost/filesystem/operations.hpp#L230">https://github.com/Beman/filesystem-proposal/blob/master/include/boost/filesystem/operations.hpp#L230</a>
+</p>
+is used like
+
+<p>
+if (opts &amp; copy_options::skip_existing) ++ct;
+</p>
+
+at 
+<p>
+<a href="https://github.com/Beman/filesystem-proposal/blob/master/src/operations.cpp#L773">https://github.com/Beman/filesystem-proposal/blob/master/src/operations.cpp#L773</a>.
+</p>
+
+This causes an error like:
+
+<p>../../../libs/filesystem/src/operations.cpp:773:9: error: value of
+type 'boost::filesystem::copy_options' is not contextually convertible
+to 'bool'
+</p>
+
+I believe it makes sense to define a contextual conversion to bool for
+certain scoped enumerations, but I don't see a way to do it. I do see
+a way to overload &amp; to return bool, but that seems to prevent using &amp;
+to remove bits from a value, which shouldn't always be prevented.
+</p>
+<p>
+Bristol 2013: Stroustrup pointed out that the existing behavior is deliberately trying to avoid supporting anything like this, in order to play safe. He further explained that allowing member functions for scoped enums has been attempted but the attempts failed. Gregor pointed out that not all scoped enums have a zero value, so doing it generally is hard. Stroustrup said he would want to have member functions for enums. Yasskin said he's not interested in writing a paper. Other people are invited to do so. 
+</p>
+
+
+
+
+
+<hr>
 <h3><a name="36"></a>36. 
 [tiny] no way to say "prefer this implicit conversion over that"
 </h3>
 <p><b>Section:</b> 12.3 [class.conv] <b>Status:</b> <a href="ewg-active.html#NAD">NAD</a>
- <b>Submitter:</b> Jeffrey Yasskin <b>Opened:</b> 2012-10-24 <b>Last modified:</b> 2013-04-30</p>
+ <b>Submitter:</b> Jeffrey Yasskin <b>Opened:</b> 2012-10-24 <b>Last modified:</b> 2013-10-10</p>
 <p><b>View all issues with</b> <a href="ewg-status.html#NAD">NAD</a> status.</p>
 <p><b>Discussion:</b></p>
 <p>
@@ -171,7 +298,7 @@ Bristol 2013: The group doesn't see this as something that we should pursue, and
 [tiny] Logical xor operator
 </h3>
 <p><b>Section:</b> 5 [expr] <b>Status:</b> <a href="ewg-active.html#NAD">NAD</a>
- <b>Submitter:</b> Alisdair Meredith <b>Opened:</b> 2012-10-28 <b>Last modified:</b> 2013-04-30</p>
+ <b>Submitter:</b> Alisdair Meredith <b>Opened:</b> 2012-10-28 <b>Last modified:</b> 2013-10-10</p>
 <p><b>View all issues with</b> <a href="ewg-status.html#NAD">NAD</a> status.</p>
 <p><b>Discussion:</b></p>
 <p>
@@ -201,7 +328,7 @@ Bristol 2013: EWG doesn't believe reopening this discussion, it's been tried pre
 [tiny] Core issue 1542
 </h3>
 <p><b>Section:</b> 5.17 [expr.ass] <b>Status:</b> <a href="ewg-active.html#NAD">NAD</a>
- <b>Submitter:</b> Mike Miller <b>Opened:</b> 2012-11-02 <b>Last modified:</b> 2013-04-30</p>
+ <b>Submitter:</b> Mike Miller <b>Opened:</b> 2012-11-02 <b>Last modified:</b> 2013-10-10</p>
 <p><b>View all issues with</b> <a href="ewg-status.html#NAD">NAD</a> status.</p>
 <p><b>Discussion:</b></p>
 <p>
@@ -247,7 +374,7 @@ In Bristol 2013: EWG thinks the answer _is_ just "why would you use the { } form
 [tiny] local class and friendship
 </h3>
 <p><b>Section:</b> 11.3 [class.friend] <b>Status:</b> <a href="ewg-active.html#NAD">NAD</a>
- <b>Submitter:</b> Gabriel Dos Reis <b>Opened:</b> 2012-11-10 <b>Last modified:</b> 2013-04-30</p>
+ <b>Submitter:</b> Gabriel Dos Reis <b>Opened:</b> 2012-11-10 <b>Last modified:</b> 2013-10-10</p>
 <p><b>View all issues with</b> <a href="ewg-status.html#NAD">NAD</a> status.</p>
 <p><b>Discussion:</b></p>
 <p>
@@ -282,7 +409,7 @@ member function, and the same access as the nested class.
 [tiny] Fix the relation operators on standard templated types
 </h3>
 <p><b>Section:</b> 17 [library] <b>Status:</b> <a href="ewg-active.html#NAD">NAD</a>
- <b>Submitter:</b> Nevin Liber <b>Opened:</b> 2013-02-05 <b>Last modified:</b> 2013-04-30</p>
+ <b>Submitter:</b> Nevin Liber <b>Opened:</b> 2013-02-05 <b>Last modified:</b> 2013-10-10</p>
 <p><b>View all other</b> <a href="ewg-index.html#library">issues</a> in [library].</p>
 <p><b>View all issues with</b> <a href="ewg-status.html#NAD">NAD</a> status.</p>
 <p><b>Discussion:</b></p>
@@ -304,7 +431,7 @@ Bristol 2013: NAD. The operators have no opportunity for substitution failure.
 N3526 	Uniform initialization for arrays and class aggregate types
 </h3>
 <p><b>Section:</b> 8.5.1 [dcl.init.aggr] <b>Status:</b> <a href="ewg-active.html#NAD">NAD</a>
- <b>Submitter:</b> Michael Price <b>Opened:</b> 2013-01-21 <b>Last modified:</b> 2013-04-30</p>
+ <b>Submitter:</b> Michael Price <b>Opened:</b> 2013-01-21 <b>Last modified:</b> 2013-10-10</p>
 <p><b>View all other</b> <a href="ewg-index.html#dcl.init.aggr">issues</a> in [dcl.init.aggr].</p>
 <p><b>View all issues with</b> <a href="ewg-status.html#NAD">NAD</a> status.</p>
 <p><b>Discussion:</b></p>
@@ -322,12 +449,15 @@ No recommendation to move forward, considered NAD.
 
 <hr>
 <h3><a name="54"></a>54. 
-N3553 Proposing a C++1Y Swap Operator
+N3746, N3553 Proposing a C++1Y Swap Operator
 </h3>
 <p><b>Section:</b> 13.5 [over.oper] <b>Status:</b> <a href="ewg-active.html#NAD">NAD</a>
- <b>Submitter:</b> Walter Brown <b>Opened:</b> 2013-03-13 <b>Last modified:</b> 2013-04-30</p>
+ <b>Submitter:</b> Walter Brown <b>Opened:</b> 2013-03-13 <b>Last modified:</b> 2013-10-12</p>
 <p><b>View all issues with</b> <a href="ewg-status.html#NAD">NAD</a> status.</p>
 <p><b>Discussion:</b></p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3746.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3746.pdf</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3553.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3553.pdf</a>
 </p>
@@ -364,7 +494,7 @@ No recommendation to move forward, considered NAD.
 N3578 Proposing the Rule of Five
 </h3>
 <p><b>Section:</b> 12.8 [class.copy] <b>Status:</b> <a href="ewg-active.html#NAD">NAD</a>
- <b>Submitter:</b> Walter Brown <b>Opened:</b> 2013-03-12 <b>Last modified:</b> 2013-04-30</p>
+ <b>Submitter:</b> Walter Brown <b>Opened:</b> 2013-03-12 <b>Last modified:</b> 2013-10-10</p>
 <p><b>View all other</b> <a href="ewg-index.html#class.copy">issues</a> in [class.copy].</p>
 <p><b>View all issues with</b> <a href="ewg-status.html#NAD">NAD</a> status.</p>
 <p><b>Discussion:</b></p>
@@ -378,6 +508,126 @@ C++11, breaks valid programs that use C++11 semantics (defaulted destructor
 outside class definition, otherwise generated members, used with various
 smart pointer members).
 </p>
+</p>
+
+
+
+
+<hr>
+<h3><a name="68"></a>68. 
+[tiny] C++ DR about global placement array new
+</h3>
+<p><b>Section:</b> 5.3.4 [expr.new] <b>Status:</b> <a href="ewg-active.html#NAD">NAD</a>
+ <b>Submitter:</b> Thomas Koeppke <b>Opened:</b> 2013-04-22 <b>Last modified:</b> 2013-10-11</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#NAD">NAD</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+Basically, I would like to file a Defect Report: The global array placement new, as described in C++11, 5.3.4/10-12, is unusable. The reason for this is that the standard allows the operator to consume an arbitrary amount of memory, which is impossible for the user to learn, and thus impossible to provide. The fix is to remove the ability for placement-new to require more size than required for the array itself to the allocation function.
+</p>
+<p>
+Current wording, in 5.3.4/12 says:
+<pre>
+    new(2,f) T[5] results in a call of operator new[](sizeof(T)*5+y,2,f)
+</pre>
+    Here, x and y are non-negative unspecified values representing array allocation overhead; the result of the new-expression will be offset by this amount from the value returned by operator new[].
+</p>
+<p>
+Unfortunately, the presence of "y" means that it is impossible to pass a usable address to placement-array-new:
+<pre>
+    void * addr = std::malloc(?);
+    new (addr) T[10];
+</pre>
+</p>
+<p>
+In the above, it is impossible to know the required argument for malloc, since the placement-new can ask for sizeof(T) * 10 + y bytes for any y.
+</p>
+<p>
+The fix would be to remove the possiblity of placement-new requiring more memory for arrays, i.e. insert into 5.3.4/10 something like:
+<pre>
+    A new-expression passes the amount of space requested to the allocation 
+    function as the first argument of type std::size_t. That argument shall 
+    be no less than the size of the object being created; it may be greater 
+    than the size of the object being created only if the object is an array 
+    and the new-expression is a default new-expression.
+</pre>
+</p>
+<p>
+What do you think? I don't think the change could break anything, since nothing could be using placement-array-new at the moment, and it makes sense that a placement version doesn't require extra space, since the caller already knows the array size and has to perform destruction manually anyway.
+</p>
+<p> Mike Miller points out the following:
+</p>
+<p>
+You're not the first one to notice a problem with this; see
+</p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_closed.html#476">http://www.open-std.org/jtc1/sc22/wg21/docs/cwg_closed.html#476</a>
+</p>
+<p>
+To summarize, CWG agreed that that's a problem but felt that the
+resolution was more appropriately handled in EWG, since it requires
+evaluations of the tradeoffs of various possible options to address it.
+Your approach, for example, focuses on the placement operator new
+provided by the library, which simply runs the constructor(s) on a
+previously-allocated buffer.  However, that's not the only use of the
+placement new syntax, which can pass arbitrary arguments to
+allocation functions that actually do allocate memory, and it's not
+clear that none of those will need to add padding similar to the way
+the standard allocation function does.
+</p>
+<p>
+In Chicago 2013, EWG deemed this NAD. Remarks from the discussion:
+"The problem is in trying to use array new to put an array into pre-existing storage. We don't need to use array new for that; just construct them." 
+and "You can find what padding was used after the fact, because new returns a pointer to the start of the first element of the array. But that can happen only after UB. "
+</p
+</discussion>
+
+
+
+<hr>
+<h3><a name="69"></a>69. 
+[tiny] Returning a void expression from a constructor or destructor
+</h3>
+<p><b>Section:</b> 6.6.3 [stmt.return] <b>Status:</b> <a href="ewg-active.html#NAD">NAD</a>
+ <b>Submitter:</b> Richard Smith <b>Opened:</b> 2013-07-02 <b>Last modified:</b> 2013-10-11</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#NAD">NAD</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+A thread on std-discussion[1] has highlighted that
+<pre>
+  return E;
+</pre>
+</p>
+<p>
+where E has type void is valid in a function with a return type of 'void' but not valid in a constructor or destructor. There is implementation variance here, and we have examples of code which very reasonably wants to use "return E;" in a constructor, from within the expansion of a macro, and fails on some compilers due to this rule. The inconsistency between "return;" and "return void();" seems extremely jarring here, and I'd like to propose that we treat this as a defect.
+</p>
+<p>
+(I'm not suggesting that we treat constructors and destructors as having a return type of 'void', as was suggested on the thread on std-discussion, but I'm not opposed to it.)
+</p>
+<p>
+[1] <a href="https://groups.google.com/a/isocpp.org/forum/#!topic/std-discussion/ehqGBMsswjk">https://groups.google.com/a/isocpp.org/forum/#!topic/std-discussion/ehqGBMsswjk</a>
+</p>
+<p>Discussed in Chicago 2013 (as the NB comment FI 6), no consensus
+to make a change, NB comment rejected, the issue is NAD. Vandevoorde said this rubs him the wrong way, because this suggests that a constructor returns nothing even though that's not the case.</p>
+
+
+
+
+<hr>
+<h3><a name="73"></a>73. 
+N3681 Auto and braced-init lists
+</h3>
+<p><b>Section:</b> 7.1.6.4 [dcl.spec.auto] <b>Status:</b> <a href="ewg-active.html#NAD">NAD</a>
+ <b>Submitter:</b> Ville Voutilainen <b>Opened:</b> 2013-05-02 <b>Last modified:</b> 2013-10-11</p>
+<p><b>View all other</b> <a href="ewg-index.html#dcl.spec.auto">issues</a> in [dcl.spec.auto].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#NAD">NAD</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3681.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3681.html</a>
+</p>
+<p>
+Discussed in Chicago 2013 (as FI 3 NB comment), no consensus to change
+(concerns about breaking existing code), the NB comment is rejected, the
+issue is NAD.
 </p>
 
 

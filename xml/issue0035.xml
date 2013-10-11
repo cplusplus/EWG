@@ -33,6 +33,12 @@ as an argument, which is similar but not identical.
 <p>
 Bristol 2013: Stroustrup wondered how unique the name needs to be, and wondered whether parallel builds would have problems ensuring the uniqueness. Naumann pointed out that having an unnamed variable is useful also for cases where you don't want the variable's address to be taken etc. Stroustrup and Van Winkel said this is not tiny, and a proper paper is necessary for this issue. 
 </p>
+<p>
+Chicago 2013: Deemed not as C++14 material, Yasskin or someone else
+invited to write a paper, straw polls in favor of the feature. Things
+to consider in the paper: Consider double underscore "__". Can 
+it be used only in local scope? For class members? For globals? 
+</p>
 </discussion>
 
 </issue>

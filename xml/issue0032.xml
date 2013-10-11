@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="32" status="Open">
+<issue num="32" status="NAD">
 <title>
 [tiny] Templated constructor accidentally preferred over copy constructor
 </title>
@@ -37,6 +37,9 @@ Note:  you do not need variadics for this; it made the example smaller.  Also, t
 </p>
 <p>
 Bristol 2013: Sutton and Gregor proposed various work-arounds, like additional overloads and constraints. Stroustrup asked whether having a copying template have different semantics from a copy constructor isn't an error, and Gregor explained that tuples run into that issue and they have different semantics for the template. The submitter is encouraged to write a paper, and practical examples are desirable. 
+</p>
+<p>
+The EWG decided to close this issue as a NAD in Chicago 2013.
 </p>
 </discussion>
 

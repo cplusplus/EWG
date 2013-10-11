@@ -15,5 +15,8 @@
 <p>
 In 20.4.1p2, the unspecialized std::tuple_size is undefined.  It would be a lot more useful if it were defined as an empty struct; that way, it can be used with enable_if for determining whether or not it is valid to use tuple_size, tuple_element and get on the corresponding data structure.
 </p>
+<p>
+This should go to LEWG.
+</p>
 </discussion>
 </issue>

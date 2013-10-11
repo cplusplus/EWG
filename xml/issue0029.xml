@@ -14,7 +14,12 @@ N3329 Proposal: static if declaration
 <discussion>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3329.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3329.pdf</a>
 <p>
-Reviewed by EWG in Portland 2012, to be handled by the Concepts Study Group (SG8).
+Reviewed by EWG in Portland 2012, deemed to be handled by the Concepts Study Group (SG8).
+</p>
+<p>
+Deemed post-C++14 material in Chicago 2013. SG8 isn't including it in their
+scope for the near future. Voutilainen is planning to write a simplified
+proposal for C++17.
 </p>
 </discussion>
 

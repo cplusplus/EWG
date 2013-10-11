@@ -68,5 +68,8 @@ And that it doesn't work for list initializations, such as that
 doesn't work.
 </p>
 </p>
+<p>
+Deemed post-C++14 material in Chicago 2013. A paper is needed.
+</p>
 </discussion>
 </issue>

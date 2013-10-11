@@ -5,13 +5,16 @@
 
 <issue num="54" status="NAD">
 <title>
-N3553 Proposing a C++1Y Swap Operator
+N3746, N3553 Proposing a C++1Y Swap Operator
 </title>
 <section><sref ref="[over.oper]"/></section>
 <submitter>Walter Brown</submitter>
 <date>13 Mar 2013</date>
 
 <discussion>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3746.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3746.pdf</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3553.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3553.pdf</a>
 </p>

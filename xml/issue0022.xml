@@ -3,18 +3,30 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="22" status="Open">
+<issue num="22" status="WP">
 <title>
-N3435 Standardized feature-test macros
+N3745, N3694 Feature-testing recommendations for C++, N3435 Standardized feature-test macros
 </title>
 <section><sref ref="[support.general]"/></section>
 <submitter>Clark Nelson</submitter>
 <date>18 Sep 2012</date>
 
 <discussion>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3745.htm">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3745.htm</a>
+</p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3694.htm">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3694.htm</a>
+</p>
+<p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3435.htm">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3435.htm</a>
+</p>
 <p>
 Reviewed by EWG in Portland 2012, proceeding in SG10, Feature Test.
+</p>
+<p>
+Handled by SG10 to the first desired outcome in Chicago2013, no
+need for further EWG follow-up.
 </p>
 </discussion>
 

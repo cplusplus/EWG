@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="69" status="New">
+<issue num="69" status="NAD">
 <title>
 [tiny] Returning a void expression from a constructor or destructor
 </title>
@@ -27,5 +27,7 @@ where E has type void is valid in a function with a return type of 'void' but no
 <p>
 [1] <a href="https://groups.google.com/a/isocpp.org/forum/#!topic/std-discussion/ehqGBMsswjk">https://groups.google.com/a/isocpp.org/forum/#!topic/std-discussion/ehqGBMsswjk</a>
 </p>
+<p>Discussed in Chicago 2013 (as the NB comment FI 6), no consensus
+to make a change, NB comment rejected, the issue is NAD. Vandevoorde said this rubs him the wrong way, because this suggests that a constructor returns nothing even though that's not the case.</p>
 </discussion>
 </issue>

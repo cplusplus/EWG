@@ -3,19 +3,28 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="21" status="Open">
+<issue num="21" status="WP">
 <title>
-N3433 Clarifying Memory Allocation
+N3664, N3537, N3433 Clarifying Memory Allocation
 </title>
 <section><sref ref="[basic.stc.dynamic]"/></section>
 <submitter>Lawrence Crowl</submitter>
 <date>23 Sep 2012</date>
 
 <discussion>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3664.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3664.html</a>
+</p>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3537.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3537.html</a>
+</p>
+<p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3433.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3433.html</a>
+</p>
 <p>
 Reviewed by EWG in Portland 2012, proceeding with a follow-up paper.
 </p>
+<p>Adopted in Bristol 2013</p>
 </discussion>
 
 <resolution>

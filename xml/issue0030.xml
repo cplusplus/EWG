@@ -23,6 +23,8 @@ index argument packs with integral constant expressions, "take" or
 <p>
 In Bristol 2013: N3493 may solve parts of the problem. The submitter is encouraged to write a paper, and practical examples are desirable. 
 </p>
+<p>N3761 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3761.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3761.html</a> seems related.
+</p>
 </discussion>
 
 </issue>

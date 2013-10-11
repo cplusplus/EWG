@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="74" status="Open">
+<title>
+N3723 Extend operator-> to support rvalues
+</title>
+<section><sref ref="[over.ref]"/></section>
+<submitter>Pascal Costanza</submitter>
+<date>23 Aug 2013</date>
+
+<discussion>
+<p>
+<a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3723.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3723.html</a>
+</p>
+<p>
+Discussed in Chicago 2013: Return object that overloads -> to point to 
+subobject. Wrapper that points into itself. Boost "iterator facade" that 
+uses curiously recursive template pattern that does this. It's a pain. 
+What other motivating use cases demonstrate this is a general problem? 
+Has to be a relation to operator. that we've tried to invent a few times. 
+Extra integer looks odd, more so than hack for operator++. We're not yet 
+convinced problem is general enough to require a language change. Not 
+opposed to change, but feels like it's tail end of bigger problem. 
+Didn't quite like the syntax. 
+</p>
+</discussion>
+</issue>

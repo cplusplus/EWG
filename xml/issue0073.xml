@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="73" status="New">
+<issue num="73" status="NAD">
 <title>
 N3681 Auto and braced-init lists
 </title>
@@ -14,6 +14,11 @@ N3681 Auto and braced-init lists
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3681.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3681.html</a>
+</p>
+<p>
+Discussed in Chicago 2013 (as FI 3 NB comment), no consensus to change
+(concerns about breaking existing code), the NB comment is rejected, the
+issue is NAD.
 </p>
 </discussion>
 </issue>

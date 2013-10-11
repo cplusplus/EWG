@@ -10,8 +10,12 @@
 <date>30 Aug 2012</date>
 
 <discussion>
+<p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3396.htm">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3396.htm</a>
+</p>
 <p>Reviewed by EWG in Portland, author encouraged to revise.</p>
+<p>Deemed post-C++14 material in Chicago 2013. Has an associated
+NB comment, FI 16, although the comment is rejected for C++14.</p>
 </discussion>
 
 <resolution>
