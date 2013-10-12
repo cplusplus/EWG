@@ -69,6 +69,6 @@ the standard allocation function does.
 In Chicago 2013, EWG deemed this NAD. Remarks from the discussion:
 "The problem is in trying to use array new to put an array into pre-existing storage. We don't need to use array new for that; just construct them." 
 and "You can find what padding was used after the fact, because new returns a pointer to the start of the first element of the array. But that can happen only after UB. "
-</p
+</p>
 </discussion>
 </issue>
