@@ -1,9 +1,9 @@
-<issueslist revision="R04"
+<issueslist revision="R05"
             maintainer="Ville Voutilainen &lt;ville.voutilainen@gmail.com&gt;"
-            active_docno="N3811"
-            defect_docno="N3812"
-            closed_docno="N3813"
-            date="2013-10-12"
+            active_docno="N3836"
+            defect_docno="N3837"
+            closed_docno="N3838"
+            date="2014-01-17"
 >
 
 <intros>
@@ -200,6 +200,26 @@ ownership of it.
 </intros>
 
 <revision_history>
+<revision tag="R04">
+<ul>
+<li>R04: 2013-10-11 post-Chicago mailing<ul>
+<li><b>Summary:</b><ul>
+<li>46 open issues, down by 9.</li>
+<li>30 closed issues, up by 12.</li>
+<li>76 issues total, up by 3.</li>
+</ul></li>
+<li><b>Details:</b><ul>
+<li>Added the following 3 Open issues: <a href="ewg-active.html#74">74</a>, <a href="ewg-active.html#75">75</a>, <a href="ewg-active.html#76">76</a>.</li>
+<li>Changed the following 4 issues from New to NAD: <a href="ewg-closed.html#12">12</a>, <a href="ewg-closed.html#68">68</a>, <a href="ewg-closed.html#69">69</a>, <a href="ewg-closed.html#73">73</a>.</li>
+<li>Changed the following 2 issues from Open to NAD: <a href="ewg-closed.html#32">32</a>, <a href="ewg-closed.html#33">33</a>.</li>
+<li>Changed the following 6 issues from New to Open: <a href="ewg-active.html#2">2</a>, <a href="ewg-active.html#17">17</a>, <a href="ewg-active.html#19">19</a>, <a href="ewg-active.html#23">23</a>, <a href="ewg-active.html#52">52</a>, <a href="ewg-active.html#71">71</a>.</li>
+<li>Changed the following 4 issues from Open to WP: <a href="ewg-complete.html#18">18</a>, <a href="ewg-complete.html#21">21</a>, <a href="ewg-complete.html#22">22</a>, <a href="ewg-complete.html#27">27</a>.</li>
+<li>Changed the following 2 issues from Ready to WP: <a href="ewg-complete.html#3">3</a>, <a href="ewg-complete.html#20">20</a>.</li>
+</ul></li>
+</ul>
+</li>
+</ul>
+</revision>
 <revision tag="R03">
 <ul>
 <li>R03: 2013-08-27 pre-Chicago mailing<ul>
@@ -213,6 +233,7 @@ ownership of it.
 </ul></li>
 </ul>
 </li>
+</ul>
 </revision>
 <revision tag="R02">
 2013-05-06 post-Bristol mailing

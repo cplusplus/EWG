@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="41" status="Ready">
+<issue num="41" status="Open">
 <title>
 [tiny] In-class explicit specializations forbidden but not partial specializations
 </title>
@@ -34,6 +34,10 @@ There does not seem to be a good reason for this inconsistency.
 </p>
 <p>
 Bristol 2013: Defer to Core, with the guidance to reopen the DR mentioned and remove the restriction. 
+</p>
+<p>
+Before this can go over to Core, it needs wording. It's likely that it
+needs a paper. Vali should create either the wording or the paper.
 </p>
 </discussion>
 

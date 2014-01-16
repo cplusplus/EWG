@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="72" status="New">
+<issue num="72" status="Open">
 <title>
 N3635 Towards restrict-like semantics for C++
 </title>
@@ -17,6 +17,10 @@ N3635 Towards restrict-like semantics for C++
 </p>
 <p>
 See also issue <iref ref="26"/>.
+</p>
+<p>
+According to Wong, this paper was reviewed on the last day in EWG in Chicago
+2013, although with no recorder. The summary was that many people liked the 1st solution (AliasGrouping), and authors are encouraged to develop it further. 
 </p>
 </discussion>
 </issue>
