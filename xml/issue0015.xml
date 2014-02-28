@@ -12,7 +12,13 @@ N3416 Packaging Parameter Packs
 <date>21 Sep 2012</date>
 
 <discussion>
+<p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3416.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3416.html</a>
+</p>
+
+<p>
+There is a closed (extension status) Core issue for this, see <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1643">Core issue 1643</a>.
+</p>
 </discussion>
 
 </issue>

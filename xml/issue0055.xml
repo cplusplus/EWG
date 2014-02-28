@@ -5,7 +5,7 @@
 
 <issue num="55" status="NAD">
 <title>
-N3578 Proposing the Rule of Five
+N3839, Proposing the Rule of Five, v2, N3578 Proposing the Rule of Five
 </title>
 <section><sref ref="[class.copy]"/></section>
 <submitter>Walter Brown</submitter>
@@ -14,6 +14,9 @@ N3578 Proposing the Rule of Five
 <discussion>
 <p>
 <p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3839.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3839.pdf</a>
+</p>
+<p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3578.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3578.pdf</a>
 </p>
 <p>
@@ -21,6 +24,19 @@ Bristol 2013: Considered NAD, too early for such a breaking change after
 C++11, breaks valid programs that use C++11 semantics (defaulted destructor
 outside class definition, otherwise generated members, used with various
 smart pointer members).
+</p>
+<p>
+Issaquah 2014: Brown pointed out that he wasn't in Bristol. Vandevoorde
+explained that users rely on the current semantics, and that there's
+existing code in various library headers that would break with this
+change, and users cannot necessarily fix that breakage due to licensing
+issues that prevent modifying such code. Voutilainen pointed out that
+while there are cases where not suppressing copy operations when
+a destructor is declared leads to incorrect code, there's also quite
+many cases where the code is correct. Brown opined that he doesn't
+want to close the door for this kind of changes forever, but EWG
+didn't see a practical way to be able to enable this rule. The
+issue therefore stays closed.
 </p>
 </p>
 </discussion>

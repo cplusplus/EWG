@@ -13,112 +13,154 @@
 
 <discussion>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#13">13 extern "C" for Parameters of Function Templates</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#13">13 extern "C" for Parameters of Function Templates</a> -> request Core to close as NAD, Daveed says aliases with linkage are the solution. 1463 will be opened as an EWG issue to solve this.
 </p> 	
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#92">92 	Should exception-specifications be part of the type system?</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#92">92 	Should exception-specifications be part of the type system?</a> -> Instruct Core to close 92 as NAD. Maurer points out that he's
+going to be dealing with the area with TM. The rationale for
+closing is that EWG doesn't agree that being able to overload
+on noexcept is worth the trouble, nor does EWG think being
+able to have pointers-to-functions being different parameter
+types if they have different noexcept-specifications.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#203">203 	Type of address-of-member expression</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#203">203 	Type of address-of-member expression</a> -> new EWG issue, <iref ref="89"/>.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#230">230 	Calls to pure virtual functions</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#230">230 	Calls to pure virtual functions</a> -> Instruct Core to close 230 as NAD. Pure virtual functions can be called by non-virtual calls only, and it is by design that virtual calls should never
+resolve to the definition of a pure virtual function. The behaviour is undefined because implementations aren't required to prevent ending up in the pure virtual function definition. That is also by design.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#476">476 	Determining the buffer size for placement new</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#476">476 	Determining the buffer size for placement new</a> -> new EWG issue, <iref ref="90"/>.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#622">622 	Relational comparisons of arbitrary pointers</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#622">622 	Relational comparisons of arbitrary pointers</a> -> new EWG issue, <iref ref="91"/>.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#623">623 	Use of pointers to deallocated storage</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#623">623 	Use of pointers to deallocated storage</a> -> Instruct Core to close 623 as WP. The behavior is implementation-defined rather than undefined in the current working draft, and thus the requirements are no longer draconian. 312, which was resolved as DRWP points to 623, so also close 623 as DRWP.
+
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#687">687 	template keyword with unqualified-ids</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#687">687 	template keyword with unqualified-ids</a> -> new EWG issue, <iref ref="92"/>.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#728">728 	Restrictions on local classes</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#728">728 	Restrictions on local classes</a> -> new EWG issue, <iref ref="93"/>.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#755">755 	Generalized lambda-captures</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#755">755 	Generalized lambda-captures</a> -> Instruct Core to close 755 as WP. Generalized lambda-captures are
+in C++14.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#794">794 	Base-derived conversion in member type of pointer-to-member conversion</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#794">794 	Base-derived conversion in member type of pointer-to-member conversion</a> -> Open an EWG issue for 794, <iref ref="94"/>. Snyder reports he is interested in authoring
+a paper.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#822">822 	Additional contexts for template aliases</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#822">822 	Additional contexts for template aliases</a> -> new EWG issue, <iref ref="95"/>.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#914">914 	Value-initialization of array types</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#914">914 	Value-initialization of array types</a> -> Open an EWG issue for 914 and 1300, <iref ref="96"/>. Instruct Core to close either
+(probably 914)as a DUP. Instruct Core not to think EWG has looked at 1300,
+because EWG hasn't. Include 1326 in the EWG issue, leave that open in
+Core as well.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#947">947 	Deducing type template arguments from default function arguments</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#947">947 	Deducing type template arguments from default function arguments</a> -> Open an EWG issue, <iref ref="97"/>, for 947, immediately close as NAD, explaining that
+the group doesn't think it's generally implementable. Leave the door
+open (but not the issue :)) for a restricted implementation.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1008">1008 	Querying the alignment of an object</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1008">1008 	Querying the alignment of an object</a> -> new EWG issue, <iref ref="98"/>.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1048">1048 	auto deduction and lambda return type deduction.</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1048">1048 	auto deduction and lambda return type deduction.</a> -> Instruct Core to reopen 1048 and clarify the issue, since there
+is implementation divergence. Ask Merrill whether he has implemented
+what he thought was right. clang seems to be consistent. decltype(f())
+is const A in gcc, decltype(b()) is A in gcc. in clang, both are
+const A.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1077">1077 	Explicit specializations in non-containing namespaces</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1077">1077 	Explicit specializations in non-containing namespaces</a> -> EWG has an issue for 1077. Link to the core issue from that (done), and
+vice versa if CWG chair so chooses.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1259">1259 	Deleting a POD via a pointer to base</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1259">1259 	Deleting a POD via a pointer to base</a> -> new EWG issue, <iref ref="99"/>.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1272">1272 	Implicit definition of static data member of const literal type</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1272">1272 	Implicit definition of static data member of const literal type</a> -> new EWG issue, <iref ref="100"/>.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1300">1300 	T() for array types</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1300">1300 	T() for array types</a> -> Open an EWG issue for 914 and 1300, <iref ref="96"/>. Instruct Core to close either
+(probably 914)as a DUP. Instruct Core not to think EWG has looked at 1300,
+because EWG hasn't. Include 1326 in the EWG issue, leave that open in
+Core as well.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1326">1326 	Deducing an array bound from an initializer-list</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1326">1326 	Deducing an array bound from an initializer-list</a> -> see above
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1331">1331 	const mismatch with defaulted copy constructor</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1331">1331 	const mismatch with defaulted copy constructor</a> -> Open an EWG issue for 1331, <iref ref="101"/>. Needs analysis and implementation vendor
+feedback.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1393">1393 	Pack expansions in using-declarations</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1393">1393 	Pack expansions in using-declarations</a> -> Open an EWG issue for 1393, <iref ref="102"/>. There are other related extension
+almost-proposals that should be considered in addition to the
+case in point.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1426">1426 	Allowing additional parameter types in defaulted functions</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1426">1426 	Allowing additional parameter types in defaulted functions</a> -> new EWG issue, <iref ref="103"/>.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1433">1433 	trailing-return-type and point of declaration</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1433">1433 	trailing-return-type and point of declaration</a> -> new EWG issue, <iref ref="104"/>.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1451">1451 	Objects with no linkage in non-type template arguments</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1451">1451 	Objects with no linkage in non-type template arguments</a> -> new EWG issue, <iref ref="105"/>.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1461">1461 	Narrowing conversions to bit-fields</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1461">1461 	Narrowing conversions to bit-fields</a> -> Instruct Core to close 1461 as NAD. It would break existing code and
+EWG doesn't consider the breakage to be worth it. Vandevoorde pointed
+out valid existing code that initializes bitfields (even with one bit) with
+-1.
+
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1463">1463 	extern "C" alias templates</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1463">1463 	extern "C" alias templates</a> -> new EWG issue, <iref ref="106"/>, see above about 13.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1474">1474 	User-defined literals and &lt;inttypes.h> format macros</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1469">1469 Omitted bound in array new-expression</a>
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1519">1519 	Conflicting default and variadic constructors</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1474">1474 	User-defined literals and &lt;inttypes.h> format macros</a> -> Instruct Core to close 1474 as NAD. The fix would be to remove
+UDLs.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1555">1555 	Language linkage and function type compatibility</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1519">1519 	Conflicting default and variadic constructors</a> -> Open an EWG issue for 1519, <iref ref="107"/>. Mark as NAD, there is a work-around
+and Concepts Lite will make the work-around much easier.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1561">1561 	Aggregates with empty base classes</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1555">1555 	Language linkage and function type compatibility</a> -> Instruct SG12 to handle 1555. (done, SG12 chair has been notified)
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1564">1564 	Template argument deduction from an initializer list</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1561">1561 	Aggregates with empty base classes</a> -> new EWG issue, <iref ref="108"/>.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1577">1577 	Unnecessary restrictions on partial specializations</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1564">1564 	Template argument deduction from an initializer list</a> -> new EWG issue, <iref ref="109"/>.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1643">1643 	Default arguments for template parameter packs</a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1577">1577 	Unnecessary restrictions on partial specializations</a> -> new EWG issue, <iref ref="110"/>.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1657">1657 	Attributes for namespaces and enumerators </a>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1582">1582 Template default arguments and deduction failure</a> -> new EWG issue, <iref ref="111"/>.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1586">1586 Naming a destructor via decltype</a> -> new EWG issue, <iref ref="112"/>.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1643">1643 	Default arguments for template parameter packs</a> -> Link 1643 to EWG issue 15 (done) and vice versa.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1657">1657 	Attributes for namespaces and enumerators </a> -> Open an EWG issue for 1657, <iref ref="113"/>. Remember to consider inline namespaces
+and anon namespaces. Rationale for both namespaces and enumerators
+is [[deprecated]].
 </p>
 </discussion>
 </issue>

@@ -1,8 +1,8 @@
-<issueslist revision="R05"
+<issueslist revision="R06"
             maintainer="Ville Voutilainen &lt;ville.voutilainen@gmail.com&gt;"
-            active_docno="N3836"
-            defect_docno="N3837"
-            closed_docno="N3838"
+            active_docno="N3957"
+            defect_docno="N3958"
+            closed_docno="N3959"
             date="2014-01-17"
 >
 
@@ -200,6 +200,23 @@ ownership of it.
 </intros>
 
 <revision_history>
+<revision tag="R05">
+<ul>
+<li>R05: 2014-01-17 pre-Issaquah mailing<ul>
+<li><b>Summary:</b><ul>
+<li>49 open issues, up by 3.</li>
+<li>30 closed issues, up by 0.</li>
+<li>79 issues total, up by 3.</li>
+</ul></li>
+<li><b>Details:</b><ul>
+<li>Added the following 3 New issues: <a href="ewg-active.html#77">77</a>, <a href="ewg-active.html#78">78</a>, <a href="ewg-active.html#79">79</a>.</li>
+<li>Changed the following issue from New to Open: <a href="ewg-active.html#72">72</a>.</li>
+<li>Changed the following issue from Ready to Open: <a href="ewg-active.html#41">41</a>.</li>
+</ul></li>
+</ul>
+</li>
+</ul>
+</revision>
 <revision tag="R04">
 <ul>
 <li>R04: 2013-10-11 post-Chicago mailing<ul>

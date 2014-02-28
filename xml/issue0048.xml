@@ -5,7 +5,7 @@
 
 <issue num="48" status="Open">
 <title>
-N3730 Specializations and namespaces (was "Specializing templates in different namespaces" before the paper)
+N3867, N3730 Specializations and namespaces (was "Specializing templates in different namespaces" before the paper)
 </title>
 <section><sref ref="[temp.expl.spec]"/></section>
 <submitter>Mike Spertus</submitter>
@@ -13,7 +13,13 @@ N3730 Specializations and namespaces (was "Specializing templates in different n
 
 <discussion>
 <p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3867.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3867.html</a>
+</p>
+<p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3730.html">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3730.html</a>
+</p>
+<p>
+There is a closed (extension status) Core issue for this, see <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1077">Core issue 1077</a>.
 </p>
 <p>
 This is a proposal to allow specializing templates from within a different namespace. The motivation is that when we declare a new class, it is natural to want to provide associated template specializations. For example, it is really painful that whenever I declare a class, I need to leave my namespace and enter namespace std just to specialize std::less as shown below
