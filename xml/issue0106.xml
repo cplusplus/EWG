@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="106" status="New">
+<title>
+[tiny] Core issue 1463, extern "C" alias templates, Core issue 13, extern "C" for Parameters of Function Templates
+</title>
+<section><sref ref="[temp]"/></section>
+<submitter>Daveed Vandevoorde</submitter>
+<date>19 Aug 2011</date>
+
+<discussion>
+<p>
+See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1463">Core issue 1463</a> and <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#13">Core issue 13</a>.
+</p>
+</discussion>
+</issue>

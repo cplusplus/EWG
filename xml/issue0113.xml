@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="113" status="New">
+<title>
+[tiny] Core issue 1657, Attributes for namespaces and enumerators
+</title>
+<section><sref ref="[namespace.def]"/></section>
+<submitter>Richard Smith</submitter>
+<date>26 Aug 2013</date>
+
+<discussion>
+<p>
+See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1657">Core issue 1657</a>.
+</p>
+<p>
+Issaquah 2014: EWG wants to point out that it's important to remember to consider inline namespaces
+and anonymous namespaces, and that the rationale for both namespaces and enumerators is [[deprecated]]. 
+</p>
+</discussion>
+</issue>

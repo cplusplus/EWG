@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="97" status="NAD">
+<title>
+[tiny] Core issue 947, Deducing type template arguments from default function arguments
+</title>
+<section><sref ref="[temp.over]"/></section>
+<submitter>Dave Abrahams</submitter>
+<date>27 Jul 2009</date>
+
+<discussion>
+<p>
+See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#947">Core issue 947</a>.
+</p>
+<p>
+Issaquah 2014: EWG doesn't think it's generally implementable. A restricted
+implentation could be separately explored.
+</p>
+</discussion>
+</issue>

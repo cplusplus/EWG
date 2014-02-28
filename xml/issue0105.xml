@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="105" status="New">
+<title>
+[tiny] Core issue 1451, Objects with no linkage in non-type template arguments
+</title>
+<section><sref ref="[temp.arg.nontype]"/></section>
+<submitter>Daniel Krügler</submitter>
+<date>01 Feb 2012</date>
+
+<discussion>
+<p>
+See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1451">Core issue 1451</a>.
+</p>
+</discussion>
+</issue>

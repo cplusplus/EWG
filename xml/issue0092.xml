@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="92" status="New">
+<title>
+[tiny] Core issue 687, template keyword with unqualified-ids
+</title>
+<section><sref ref="[expr.prim.general]"/></section>
+<submitter>Mihai Rusu</submitter>
+<date>27 Feb 2008</date>
+
+<discussion>
+<p>
+See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#687">Core issue 687</a>.
+</p>
+</discussion>
+</issue>

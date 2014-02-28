@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="80" status="Ready">
+<title>
+N3846 Extending static_assert
+</title>
+<section><sref ref="[dcl.dcl]"/></section>
+<submitter>Walter E. Brown</submitter>
+<date>01 Jan 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3846.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3846.pdf</a>
+</p>
+<p>
+Issaquah 2014: EWG discussed the paper, and found preference towards
+option 3, which allows implementations to use useful messages, but
+doesn't force them to document what they provide, so it was
+seen superior to the other alternatives. The proposal is expected
+to go forward to Core, and it has wording already.
+</p>
+</discussion>
+<resolution>
+The paper contains the proposed wording.
+</resolution>
+</issue>

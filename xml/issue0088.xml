@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="88" status="New">
+<title>
+[tiny] Uniform handling of operator[] and operator().
+</title>
+<section><sref ref="[over.oper]"/></section>
+<submitter>Gabriel Dos Reis</submitter>
+<date>14 Feb 2014</date>
+
+<discussion>
+<p>
+In c++std-core-14770, Dos Reis suggests that operator[] and
+operator() should both be allowed to be static. In addition
+to that, he suggests that both should allow multiple parameters.
+It's well known that there's a possibility that this breaks
+existing code (foo[1,2] is valid, the thing in brackets
+is a comma-expression) but there are possibilities to fix
+such cases (by requiring parens if a comma-expression
+is desired). EWG should discuss whether such unification
+is to be strived for.
+</p>
+</discussion>
+</issue>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="95" status="New">
+<title>
+[tiny] Core issue 822, Additional contexts for template aliases
+</title>
+<section><sref ref="[conv.mem]"/></section>
+<submitter>UK</submitter>
+<date>03 Mar 2009</date>
+
+<discussion>
+<p>
+See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#822">Core issue 822</a>. 
+</p>
+</discussion>
+</issue>

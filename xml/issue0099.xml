@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="99" status="New">
+<title>
+[tiny] Core issue 1259, Deleting a POD via a pointer to base
+</title>
+<section><sref ref="[expr.delete]"/></section>
+<submitter>Herb Sutter</submitter>
+<date>10 Mar 2010</date>
+
+<discussion>
+<p>
+See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1259">Core issue 1259</a>.
+</p>
+<p>See also the discussion thread starting at <a href="https://groups.google.com/a/isocpp.org/d/msg/std-proposals/9PxiUu0Tr1k/3gextFEMi8sJ">https://groups.google.com/a/isocpp.org/d/msg/std-proposals/9PxiUu0Tr1k/3gextFEMi8sJ</a>.
+</p>
+</discussion>
+</issue>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="96" status="New">
+<title>
+[tiny] Core issue 914, Value-initialization of array types, Core issue 1300, T() for array types, Core issue 1326, Deducing an array bound from an initializer-list
+</title>
+<section><sref ref="[expr.type.conv]"/></section>
+<submitter>Gabriel Dos Reis</submitter>
+<date>10 Jun 2009</date>
+
+<discussion>
+<p>
+See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#914">Core issue 914</a>, <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1300">Core issue 1300</a> and <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1326">Core issue 1326</a>. 
+</p>
+</discussion>
+</issue>

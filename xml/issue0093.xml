@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="93" status="New">
+<title>
+[tiny] Core issue 728, Restrictions on local classes
+</title>
+<section><sref ref="[temp]"/></section>
+<submitter>Faisal Vali</submitter>
+<date>05 Oct 2008</date>
+
+<discussion>
+<p>
+See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#728">Core issue 728</a>.
+</p>
+</discussion>
+</issue>

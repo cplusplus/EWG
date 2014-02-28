@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="108" status="New">
+<title>
+[tiny] Core issue 1561, Aggregates with empty base classes
+</title>
+<section><sref ref="[dcl.init.aggr]"/></section>
+<submitter>Gabriel Dos Reis</submitter>
+<date>29 Sep 2012</date>
+
+<discussion>
+<p>
+See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1561">Core issue 1561</a>.
+</p>
+</discussion>
+</issue>

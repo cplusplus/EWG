@@ -3,122 +3,17 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="79" status="New">
+<issue num="89" status="New">
 <title>
-[tiny] Core issues with extension status
+[tiny] Core issue 203, Type of address-of-member expression
 </title>
-<section><sref ref="[intro]"/></section>
-<submitter>Ville Voutilainen</submitter>
-<date>16 Jan 2014</date>
+<section><sref ref="[expr.unary.op]"/></section>
+<submitter>Lisa Lippincott</submitter>
+<date>8 Feb 2000</date>
 
 <discussion>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#13">13 extern "C" for Parameters of Function Templates</a>
-</p> 	
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#92">92 	Should exception-specifications be part of the type system?</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#203">203 	Type of address-of-member expression</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#230">230 	Calls to pure virtual functions</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#476">476 	Determining the buffer size for placement new</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#622">622 	Relational comparisons of arbitrary pointers</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#623">623 	Use of pointers to deallocated storage</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#687">687 	template keyword with unqualified-ids</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#728">728 	Restrictions on local classes</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#755">755 	Generalized lambda-captures</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#794">794 	Base-derived conversion in member type of pointer-to-member conversion</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#822">822 	Additional contexts for template aliases</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#914">914 	Value-initialization of array types</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#947">947 	Deducing type template arguments from default function arguments</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1008">1008 	Querying the alignment of an object</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1048">1048 	auto deduction and lambda return type deduction.</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1077">1077 	Explicit specializations in non-containing namespaces</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1259">1259 	Deleting a POD via a pointer to base</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1272">1272 	Implicit definition of static data member of const literal type</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1300">1300 	T() for array types</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1326">1326 	Deducing an array bound from an initializer-list</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1331">1331 	const mismatch with defaulted copy constructor</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1393">1393 	Pack expansions in using-declarations</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1426">1426 	Allowing additional parameter types in defaulted functions</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1433">1433 	trailing-return-type and point of declaration</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1451">1451 	Objects with no linkage in non-type template arguments</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1461">1461 	Narrowing conversions to bit-fields</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1463">1463 	extern "C" alias templates</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1474">1474 	User-defined literals and &lt;inttypes.h> format macros</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1519">1519 	Conflicting default and variadic constructors</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1555">1555 	Language linkage and function type compatibility</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1561">1561 	Aggregates with empty base classes</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1564">1564 	Template argument deduction from an initializer list</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1577">1577 	Unnecessary restrictions on partial specializations</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1643">1643 	Default arguments for template parameter packs</a>
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1657">1657 	Attributes for namespaces and enumerators </a>
+See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#203">Core issue 203</a>.
 </p>
 </discussion>
 </issue>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="112" status="New">
+<title>
+[tiny] Core issue 1586, Naming a destructor via decltype
+</title>
+<section><sref ref="[class.dtor]"/></section>
+<submitter>Steve Clamage</submitter>
+<date>14 Nov 2012</date>
+
+<discussion>
+<p>
+See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1586">Core issue 1586</a>.
+</p>
+</discussion>
+</issue>

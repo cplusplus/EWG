@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="85" status="New">
+<title>
+N3879 Explicit Flow Control: break label, goto case and explicit switch
+</title>
+<section><sref ref="[stmt.switch]"/></section>
+<submitter>Andrew Tomazos</submitter>
+<date>16 Jan 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3879.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3879.pdf</a>
+</p>
+</discussion>
+</issue>

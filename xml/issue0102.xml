@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="102" status="New">
+<title>
+[tiny] Core issue 1393, Pack expansions in using-declarations
+</title>
+<section><sref ref="[temp.variadic]"/></section>
+<submitter>Daniel Krügler</submitter>
+<date>10 Sep 2011</date>
+
+<discussion>
+<p>
+See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1393">Core issue 1393</a>.
+</p>
+<p>
+There are other related extension
+almost-proposals that should be considered in addition to the
+case in point.
+</p>
+</discussion>
+</issue>
