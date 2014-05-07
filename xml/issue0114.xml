@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="114" status="Open">
+<title>
+N3452 (unpublished) Let {x,y,z} => explicit
+</title>
+<section><sref ref="[stmt.return]"/></section>
+<submitter>Herb Sutter</submitter>
+<date>09 Apr 2014</date>
+
+<discussion>
+<p>
+See <a href="http://wiki.edg.com/twiki/pub/Wg21portland2012/EvolutionWorkingGroup/N3452.pdf">unpublished paper N3452</a>.
+</p>
+<p>
+Portland 2012:
+<p>Straw polls:</p>
+<p>return as in the proposal: SF: 3 F: 2 N: 2 A: 4 SA: 5</p>
+<p>arguments as in the proposal: SF: 2 F: 2 N: 1 A: 4 SA: 7</p>
+<p>= {} vs. {} as in the proposal: SF: 2 F: 0 N: 4 A: 4 SA: 5</p>
+<p>The author interprets these as dead, and does not plan to pursue this further.</p>
+</p>
+<p>
+Sutter reopened the issue in [c++std-ext-14770], Lavavej and Voutilainen
+reiterated reasons why the proposal was originally rejected. Sutter has
+indicated that he wishes to create a revised paper focusing on the return
+part, this issue is for him to reference in the paper.
+</p>
+</discussion>
+</issue>
