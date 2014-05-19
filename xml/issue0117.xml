@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="117" status="New">
+<title>
+N3955 Group Member Specifiers
+</title>
+<section><sref ref="[class.mem]"/></section>
+<submitter>Andrew Tomazos</submitter>
+<date>25 Feb 2014</date>
+
+<discussion>
+<p>
+See <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3955.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3955.pdf</a>.
+</p>
+</discussion>
+<resolution>
+The paper contains the proposed wording.
+</resolution>
+</issue>

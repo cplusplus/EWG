@@ -5,13 +5,16 @@
 
 <issue num="82" status="Open">
 <title>
-N3859, N3718 Transactional Memory Support for C++
+N3919, N3859, N3718 Transactional Memory Support for C++
 </title>
 <section><sref ref="[intro.multithread]"/></section>
 <submitter>M. Wong, V. Luchangco, J. Maurer, M. Moir, et al.</submitter>
 <date>20 Jan 2014</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3919.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3919.pdf</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3859.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3859.pdf</a>
 </p>

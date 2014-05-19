@@ -5,7 +5,7 @@
 
 <issue num="111" status="New">
 <title>
-[tiny] Core issue 1582, Unnecessary restrictions on partial specializations
+[tiny] Core issue 1582, Template default arguments and deduction failure
 </title>
 <section><sref ref="[temp.deduct]"/></section>
 <submitter>John Spicer</submitter>
