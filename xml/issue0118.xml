@@ -17,7 +17,7 @@ With core issue 393, we're allowing function parameters to have type 'T (*)[]' o
 <p>
 <pre>
 // guaranteed to be passed an actual array, not just a pointer, but the array can be of any size.
-void f(int n, int (&a)[]) {
+void f(int n, int (&amp;a)[]) {
   ... do stuff with first n elements of a ...
 }
 
@@ -31,7 +31,7 @@ void i() { f(100, arr); } // error!
 </pre>
 </p>
 <p>
-Note that if you actually know the bound of 'arr', you *cannot* pass it to f, because you can't pass 'int [100]' glvalues to a 'int (&)[]' parameter.
+Note that if you actually know the bound of 'arr', you *cannot* pass it to f, because you can't pass 'int [100]' glvalues to a 'int (&amp;)[]' parameter.
 </p>
 <p>
 So, I'd like EWG to consider this extension:

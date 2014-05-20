@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="119" status="New">
+<title>[tiny] Why no u8 character literals?
+</title>
+<section><sref ref="[lex.ccon]"/></section>
+<submitter>Richard Smith</submitter>
+<date>14 Apr 2014</date>
+
+<discussion>
+<p>
+The discussion thread started at [c++std-ext-14798].
+</p>
+<p>
+We have five encoding-prefixes for string-literals (none, L, u8, u, U) but only four for character literals -- the missing one is u8 for character literals.
+</p>
+<p>
+This matters for implementations where the narrow execution character set is not ASCII. In such a case, u8 character literals would provide an ideal way to write character literals with guaranteed ASCII encoding (the single-code-unit u8 encodings are exactly ASCII), but... we don't provide them. Instead, the best one can do is something like this:
+<pre>
+  char x_ascii = { u'x' };
+</pre>
+... where we'll get a narrowing error if the codepoint doesn't fit in a 'char'. (Note that this is not quite the same as u8'x', which would give us an error if the codepoint was not representable as a single code unit in UTF-8.)
+</p>
+<p>
+Is there a good reason for omitting this (useful and natural) functionality?
+</p>
+</discussion>
+</issue>
