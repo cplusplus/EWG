@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="118" status="New">
+<title>[tiny] Allow conversion from pointer to array of known bound to pointer to array of unknown bound
+</title>
+<section><sref ref="[conv]"/></section>
+<submitter>Richard Smith</submitter>
+<date>15 Feb 2014</date>
+
+<discussion>
+<p>
+With core issue 393, we're allowing function parameters to have type 'T (*)[]' or 'T (&amp;)[]'. This has always been allowed for variables, and is useful in practice:
+</p>
+<p>
+<pre>
+// guaranteed to be passed an actual array, not just a pointer, but the array can be of any size.
+void f(int n, int (&a)[]) {
+  ... do stuff with first n elements of a ...
+}
+
+extern int arr[];
+void g() { f(100, arr); }
+void h(int *p) { f(100, p); } // error, not an array!
+
+// elsewhere
+int arr[100]; // ok, no problem
+void i() { f(100, arr); } // error!
+</pre>
+</p>
+<p>
+Note that if you actually know the bound of 'arr', you *cannot* pass it to f, because you can't pass 'int [100]' glvalues to a 'int (&)[]' parameter.
+</p>
+<p>
+So, I'd like EWG to consider this extension:
+</p>
+<p>
+We should allow "array of N T" glvalues to convert to "array of unknown bound of T", and likewise we should allow "cv pointer to array of N T" prvalues to convert to "cv pointer to array of unknown bound of T" prvalues.
+</p>
+</discussion>
+</issue>

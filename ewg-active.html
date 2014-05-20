@@ -26,7 +26,7 @@
 </tr>
 <tr>
   <td align="left">Date:</td>
-  <td align="left">2014-05-19</td>
+  <td align="left">2014-05-20</td>
 </tr>
 <tr>
   <td align="left">Project:</td>
@@ -38,7 +38,7 @@
 </tr>
 </table>
 <h1>C++ Standard Evolution Active Issues List (Revision D07)</h1>
-<p>Revised 2014-05-19 at 12:05:41 UTC</p>
+<p>Revised 2014-05-20 at 11:05:14 UTC</p>
 
   <p>Reference ISO/IEC IS 14882:2003(E)</p>
   <p>Also see:</p>
@@ -152,12 +152,12 @@ ownership of it.
 <ul>
 <li>D07: 2014-05-04 Working version<ul>
 <li><b>Summary:</b><ul>
-<li>84 open issues, up by 4.</li>
+<li>85 open issues, up by 5.</li>
 <li>33 closed issues, up by 0.</li>
-<li>117 issues total, up by 4.</li>
+<li>118 issues total, up by 5.</li>
 </ul></li>
 <li><b>Details:</b><ul>
-<li>Added the following 3 New issues: <a href="ewg-active.html#115">115</a>, <a href="ewg-active.html#116">116</a>, <a href="ewg-active.html#117">117</a>.</li>
+<li>Added the following 4 New issues: <a href="ewg-active.html#115">115</a>, <a href="ewg-active.html#116">116</a>, <a href="ewg-active.html#117">117</a>, <a href="ewg-active.html#118">118</a>.</li>
 <li>Added the following Open issue: <a href="ewg-active.html#114">114</a>.</li>
 </ul></li>
 </ul>
@@ -2424,6 +2424,45 @@ See <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3955.pdf">http
 
 <p><b>Wording available:</b></p>
 The paper contains the proposed wording.
+
+
+
+
+<hr>
+<h3><a name="118"></a>118. [tiny] Allow conversion from pointer to array of known bound to pointer to array of unknown bound
+</h3>
+<p><b>Section:</b> 4 [conv] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Richard Smith <b>Opened:</b> 2014-02-15 <b>Last modified:</b> 2014-05-20</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+With core issue 393, we're allowing function parameters to have type 'T (*)[]' or 'T (&amp;)[]'. This has always been allowed for variables, and is useful in practice:
+</p>
+<p>
+<pre>
+// guaranteed to be passed an actual array, not just a pointer, but the array can be of any size.
+void f(int n, int (&a)[]) {
+  ... do stuff with first n elements of a ...
+}
+
+extern int arr[];
+void g() { f(100, arr); }
+void h(int *p) { f(100, p); } // error, not an array!
+
+// elsewhere
+int arr[100]; // ok, no problem
+void i() { f(100, arr); } // error!
+</pre>
+</p>
+<p>
+Note that if you actually know the bound of 'arr', you *cannot* pass it to f, because you can't pass 'int [100]' glvalues to a 'int (&)[]' parameter.
+</p>
+<p>
+So, I'd like EWG to consider this extension:
+</p>
+<p>
+We should allow "array of N T" glvalues to convert to "array of unknown bound of T", and likewise we should allow "cv pointer to array of N T" prvalues to convert to "cv pointer to array of unknown bound of T" prvalues.
+</p>
 
 
 
