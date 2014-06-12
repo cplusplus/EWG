@@ -5,13 +5,16 @@
 
 <issue num="72" status="Open">
 <title>
-N3635 Towards restrict-like semantics for C++
+N3988 Towards restrict-like aliasing semantics for C++ N3635 Towards restrict-like semantics for C++
 </title>
 <section><sref ref="[dcl.ptr]"/></section>
-<submitter>M. Wong, R. Silvera, R. Mak, C. Cambly, et al.</submitter>
+<submitter>Hal Finker, Hubert Tong, M. Wong, R. Silvera, R. Mak, C. Cambly, et al.</submitter>
 <date>29 Apr 2013</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3988.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3988.pdf</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3635.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3635.pdf</a>
 </p>

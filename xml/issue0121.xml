@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="121" status="New">
+<title>N3981 Removing trigraphs??!
+</title>
+<section><sref ref="[lex.phases]"/></section>
+<submitter>Richard Smith</submitter>
+<date>06 May 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3981.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3981.html</a>
+</p>
+<resolution>
+<p>
+The paper contains the proposed wording.
+</p>
+</resolution>
+</discussion>
+</issue>

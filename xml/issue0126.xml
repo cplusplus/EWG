@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="126" status="New">
+<title>N4026 Nested namespace definition
+</title>
+<section><sref ref="[basic.scope.namespace]"/></section>
+<submitter>Robert Kawulak</submitter>
+<date>23 May 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4026.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4026.html</a>
+</p>
+</discussion>
+</issue>

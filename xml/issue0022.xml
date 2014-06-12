@@ -3,15 +3,18 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="22" status="WP">
+<issue num="22" status="Open">
 <title>
-N3745, N3694 Feature-testing recommendations for C++, N3435 Standardized feature-test macros
+N4030, 3745, N3694 Feature-testing recommendations for C++, N3435 Standardized feature-test macros
 </title>
 <section><sref ref="[support.general]"/></section>
 <submitter>Clark Nelson</submitter>
 <date>18 Sep 2012</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4030.htm">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4030.htm</a>
+</p>
 <p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3745.htm">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3745.htm</a>
 </p>

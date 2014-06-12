@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="122" status="New">
+<title>N3986 Adding Standard support to avoid padding within structures
+</title>
+<section><sref ref="[class.bit]"/></section>
+<submitter>S. Davalle, D. Gutson, A. Bustamante</submitter>
+<date>06 May 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3986.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3986.pdf</a>
+</p>
+<resolution>
+<p>
+The paper contains the proposed wording.
+</p>
+</resolution>
+</discussion>
+</issue>

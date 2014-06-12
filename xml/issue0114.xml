@@ -5,13 +5,16 @@
 
 <issue num="114" status="Open">
 <title>
-N3452 (unpublished) Let {x,y,z} => explicit
+N4029 Let return Be Direct and explicit N3452 (unpublished) Let {x,y,z} => explicit
 </title>
 <section><sref ref="[stmt.return]"/></section>
 <submitter>Herb Sutter</submitter>
 <date>09 Apr 2014</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4029.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4029.pdf</a>
+</p>
 <p>
 See <a href="http://wiki.edg.com/twiki/pub/Wg21portland2012/EvolutionWorkingGroup/N3452.pdf">unpublished paper N3452</a>.
 </p>
@@ -28,6 +31,15 @@ Sutter reopened the issue in [c++std-ext-14770], Lavavej and Voutilainen
 reiterated reasons why the proposal was originally rejected. Sutter has
 indicated that he wishes to create a revised paper focusing on the return
 part, this issue is for him to reference in the paper.
+</p>
+<p>
+Hinnant pointed to <a href="http://htmlpreview.github.io/?https://github.com/HowardHinnant/papers/blob/master/return_direct.html">his response writeup</a> in [c++std-ext-14883], and it was noted that [c++std-lib-34985] is also related, and mentions <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3739.html">a paper by Krügler</a> that would solve some of the library issues
+without introducing the problems Hinnant writes about.
+</p>
+<p>
+Dimov presented a different incarnation of some of these problems in
+[c++std-lib-36408] "map&lt;K,V>::emplace and explicit V constructors", and
+Krügler pointed out his paper solves that issue as well.
 </p>
 </discussion>
 </issue>

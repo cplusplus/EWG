@@ -1,9 +1,9 @@
-<issueslist revision="R07"
+<issueslist revision="D08"
             maintainer="Ville Voutilainen &lt;ville.voutilainen@gmail.com&gt;"
-            active_docno="N4010"
-            defect_docno="N4011"
-            closed_docno="N4012"
-            date="2014-05-20"
+            active_docno="N???"
+            defect_docno="N???"
+            closed_docno="N???"
+            date="2014-06-01"
 >
 
 <intros>
@@ -200,10 +200,22 @@ ownership of it.
 </intros>
 
 <revision_history>
+<revision tag="R07">
+2014-05-20 pre-Rapperswil mailing
+<ul><li><b>Summary:</b><ul>
+<li>86 open issues, up by 6.</li>
+<li>33 closed issues, up by 0.</li>
+<li>119 issues total, up by 6.</li>
+</ul></li>
+<li><b>Details:</b><ul>
+<li>Added the following 5 New issues: <a href="ewg-active.html#115">115</a>, <a href="ewg-active.html#116">116</a>, <a href="ewg-active.html#117">117</a>, <a href="ewg-active.html#118">118</a>, <a href="ewg-active.html#119">119</a>.</li>
+<li>Added the following Open issue: <a href="ewg-active.html#114">114</a>.</li>
+</ul></li>
+</ul>
+</revision>
 <revision tag="R06">
-<ul>
-<li>R06: 2014-02-21 post-Issaquah mailing<ul>
-<li><b>Summary:</b><ul>
+2014-02-21 post-Issaquah mailing
+<ul><li><b>Summary:</b><ul>
 <li>80 open issues, up by 31.</li>
 <li>33 closed issues, up by 3.</li>
 <li>113 issues total, up by 34.</li>
@@ -215,13 +227,10 @@ ownership of it.
 <li>Added the following 2 Ready issues: <a href="ewg-active.html#80">80</a>, <a href="ewg-active.html#81">81</a>.</li>
 </ul></li>
 </ul>
-</li>
-</ul>
 </revision>
 <revision tag="R05">
-<ul>
-<li>R05: 2014-01-17 pre-Issaquah mailing<ul>
-<li><b>Summary:</b><ul>
+2014-01-17 pre-Issaquah mailing
+<ul><li><b>Summary:</b><ul>
 <li>49 open issues, up by 3.</li>
 <li>30 closed issues, up by 0.</li>
 <li>79 issues total, up by 3.</li>
@@ -232,13 +241,10 @@ ownership of it.
 <li>Changed the following issue from Ready to Open: <a href="ewg-active.html#41">41</a>.</li>
 </ul></li>
 </ul>
-</li>
-</ul>
 </revision>
 <revision tag="R04">
-<ul>
-<li>R04: 2013-10-11 post-Chicago mailing<ul>
-<li><b>Summary:</b><ul>
+2013-10-11 post-Chicago mailing
+<ul><li><b>Summary:</b><ul>
 <li>46 open issues, down by 9.</li>
 <li>30 closed issues, up by 12.</li>
 <li>76 issues total, up by 3.</li>
@@ -252,13 +258,10 @@ ownership of it.
 <li>Changed the following 2 issues from Ready to WP: <a href="ewg-complete.html#3">3</a>, <a href="ewg-complete.html#20">20</a>.</li>
 </ul></li>
 </ul>
-</li>
-</ul>
 </revision>
 <revision tag="R03">
-<ul>
-<li>R03: 2013-08-27 pre-Chicago mailing<ul>
-<li><b>Summary:</b><ul>
+2013-08-27 pre-Chicago mailing
+<ul><li><b>Summary:</b><ul>
 <li>55 open issues, up by 7.</li>
 <li>18 closed issues, up by 0.</li>
 <li>73 issues total, up by 7.</li>
@@ -266,8 +269,6 @@ ownership of it.
 <li><b>Details:</b><ul>
 <li>Added the following 7 New issues: <a href="ewg-active.html#67">67</a>, <a href="ewg-active.html#68">68</a>, <a href="ewg-active.html#69">69</a>, <a href="ewg-active.html#70">70</a>, <a href="ewg-active.html#71">71</a>, <a href="ewg-active.html#72">72</a>, <a href="ewg-active.html#73">73</a>.</li>
 </ul></li>
-</ul>
-</li>
 </ul>
 </revision>
 <revision tag="R02">
@@ -305,8 +306,6 @@ ownership of it.
 <li>Added the following 9 Open issues: <a href="ewg-active.html#4">4</a>, <a href="ewg-active.html#9">9</a>, <a href="ewg-active.html#16">16</a>, <a href="ewg-active.html#18">18</a>, <a href="ewg-active.html#21">21</a>, <a href="ewg-active.html#22">22</a>, <a href="ewg-active.html#25">25</a>, <a href="ewg-active.html#27">27</a>, <a href="ewg-active.html#29">29</a>.</li>
 <li>Added the following 6 Ready issues: <a href="ewg-active.html#1">1</a>, <a href="ewg-active.html#3">3</a>, <a href="ewg-active.html#6">6</a>, <a href="ewg-active.html#7">7</a>, <a href="ewg-active.html#13">13</a>, <a href="ewg-active.html#20">20</a>.</li>
 </ul></li>
-</ul>
-</li>
 </ul>
 
 </revision>

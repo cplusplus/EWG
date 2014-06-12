@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="120" status="New">
+<title>[tiny] CWG 900 and 1498
+</title>
+<section><sref ref="[class.temporary]"/></section>
+<submitter>Geoffrey Romer</submitter>
+<date>31 May 2014</date>
+
+<discussion>
+<p>
+The discussion thread started at [c++std-core-25298]
+</p>
+<p>
+The core issues are <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#900">CWG 900</a> and <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1498">CWG 1498</a>
+</p>
+<p>Romer wrote:
+</p>
+
+<p>
+The current resolutions of CWG 900 and 1498 don't seem right to me. The NAD rationale for CWG 900 appears to be saying that there is no problem, because the lifetime of _expression_ is extended by being bound to a reference. However, that applies only to the value of _expression_ itself; the lifetimes of any proper sub-expressions of _expression_ are not so extended. CWG 900 may be a little ambiguous about which temporaries it's referring to, but CWG 1498 is not; it's quite explicitly concerned with sub-expression temporaries, so the rationale for CWG 900 definitely does not apply.
+</p>
+<p>
+To make this concrete, consider the following example, taken from <a href="https://svn.boost.org/trac/boost/ticket/7630">https://svn.boost.org/trac/boost/ticket/7630</a>:
+</p>
+<p>
+<pre>
+<code>
+ std::vector&lt;int> vec;
+ for (int val : vec | boost::adaptors::reversed
+                    | boost::adaptors::uniqued) {
+   // Do stuff with val
+ }
+</code>
+</pre>
+</p>
+<p>
+The behavior of this code is undefined, because the temporary returned by the subexpression (vec | boost::adaptors::reversed) is destroyed before the loop body is entered, leaving __range's referent holding a dangling reference to it. The adaptors can mostly fix the issue by overloading on rvalue references, but at the cost of a substantial increase in code complexity.
+</p>
+<p>Smith suggested handling this as an EWG issue.
+</p>
+</discussion>
+</issue>

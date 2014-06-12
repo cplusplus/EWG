@@ -162,5 +162,18 @@ and Concepts Lite will make the work-around much easier.
 and anon namespaces. Rationale for both namespaces and enumerators
 is [[deprecated]].
 </p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1754">1754 Declaration of partial specialization of static data member template</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1798">1798 exception-specifications of template arguments</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1826">1826 const floating-point in constant expressions</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1833">1833 friend declarations naming implicitly-declared member functions</a>
+</p>
+
 </discussion>
 </issue>

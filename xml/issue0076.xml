@@ -5,13 +5,16 @@
 
 <issue num="76" status="Open">
 <title>
-N3748 Implicit Evaluation of "auto" Variables and Arguments
+N4035, N3748 Implicit Evaluation of "auto" Variables and Arguments
 </title>
 <section><sref ref="[dcl.spec.auto]"/></section>
 <submitter>Peter Gottschling</submitter>
 <date>30 Aug 2013</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4035.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4035.pdf</a>
+</p>
 <p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3748.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3748.pdf</a>
 </p>

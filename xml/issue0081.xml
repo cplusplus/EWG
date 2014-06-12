@@ -5,13 +5,17 @@
 
 <issue num="81" status="Ready">
 <title>
-N3853 Range-Based For-Loops: The Next Generation
+N3994, N3853 Range-Based For-Loops: The Next Generation
 </title>
 <section><sref ref="[stmt.iter]"/></section>
 <submitter>Stephan T. Lavavej</submitter>
 <date>17 Jan 2014</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3994.htm">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3994.htm</a>
+</p>
+
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3853.htm">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3853.htm</a>
 </p>
