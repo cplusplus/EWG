@@ -8,7 +8,7 @@
 [tiny] Core issue 1331, const mismatch with defaulted copy constructor
 </title>
 <section><sref ref="[class.copy]"/></section>
-<submitter>Daniel Krügler</submitter>
+<submitter>Daniel Kr&uuml;gler</submitter>
 <date>18 Mar 2011</date>
 
 <discussion>

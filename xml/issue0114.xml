@@ -33,13 +33,13 @@ indicated that he wishes to create a revised paper focusing on the return
 part, this issue is for him to reference in the paper.
 </p>
 <p>
-Hinnant pointed to <a href="http://htmlpreview.github.io/?https://github.com/HowardHinnant/papers/blob/master/return_direct.html">his response writeup</a> in [c++std-ext-14883], and it was noted that [c++std-lib-34985] is also related, and mentions <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3739.html">a paper by Krügler</a> that would solve some of the library issues
+Hinnant pointed to <a href="http://htmlpreview.github.io/?https://github.com/HowardHinnant/papers/blob/master/return_direct.html">his response writeup</a> in [c++std-ext-14883], and it was noted that [c++std-lib-34985] is also related, and mentions <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2013/n3739.html">a paper by Kr&uuml;gler</a> that would solve some of the library issues
 without introducing the problems Hinnant writes about.
 </p>
 <p>
 Dimov presented a different incarnation of some of these problems in
 [c++std-lib-36408] "map&lt;K,V>::emplace and explicit V constructors", and
-Krügler pointed out his paper solves that issue as well.
+Kr&uuml;gler pointed out his paper solves that issue as well.
 </p>
 </discussion>
 </issue>

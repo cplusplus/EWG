@@ -8,7 +8,7 @@
 [tiny] Core issue 1451, Objects with no linkage in non-type template arguments
 </title>
 <section><sref ref="[temp.arg.nontype]"/></section>
-<submitter>Daniel Krügler</submitter>
+<submitter>Daniel Kr&uuml;gler</submitter>
 <date>01 Feb 2012</date>
 
 <discussion>
