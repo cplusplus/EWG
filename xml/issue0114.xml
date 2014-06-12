@@ -41,5 +41,9 @@ Dimov presented a different incarnation of some of these problems in
 [c++std-lib-36408] "map&lt;K,V>::emplace and explicit V constructors", and
 Kr&uuml;gler pointed out his paper solves that issue as well.
 </p>
+<p>
+The Library issue related to Dimov's issue report is
+<a href="http://cplusplus.github.io/LWG/lwg-toc.html#2397">LWG 2397</a>
+</p>
 </discussion>
 </issue>
