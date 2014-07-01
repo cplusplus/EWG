@@ -25,5 +25,10 @@ See also issue <iref ref="26"/>.
 According to Wong, this paper was reviewed on the last day in EWG in Chicago
 2013, although with no recorder. The summary was that many people liked the 1st solution (AliasGrouping), and authors are encouraged to develop it further. 
 </p>
+<p>Discussed further in Rapperswil 2014.</p>
+<p>Straw poll: Encourage continued work?</p>
+<p>SF 11, WF 9, N 3, WA 0, SA 0.</p>
+<p>Carruth enumerated the following questions, which were encouraged
+to be answered: should it be ill-formed if this expression has side-effects? Is it an evaluated expression? That changes whether it odr-uses things, whether we have to emit code? Can it be allowed to instantiate templates, and is so what is the point of instantiation?</p>
 </discussion>
 </issue>

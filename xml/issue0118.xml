@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="118" status="New">
+<issue num="118" status="Open">
 <title>[tiny] Allow conversion from pointer to array of known bound to pointer to array of unknown bound
 </title>
 <section><sref ref="[conv]"/></section>
@@ -39,5 +39,8 @@ So, I'd like EWG to consider this extension:
 <p>
 We should allow "array of N T" glvalues to convert to "array of unknown bound of T", and likewise we should allow "cv pointer to array of N T" prvalues to convert to "cv pointer to array of unknown bound of T" prvalues.
 </p>
+<p>Discussed in Rapperswil 2014. EWG wishes to encourage Smith to write
+a paper for EWG review, EWG expects to send it forwards to CWG without much
+ado.</p>
 </discussion>
 </issue>

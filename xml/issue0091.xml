@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="91" status="New">
+<issue num="91" status="NAD">
 <title>
 [tiny] Core issue 622, Relational comparisons of arbitrary pointers
 </title>
@@ -14,6 +14,12 @@
 <discussion>
 <p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#622">Core issue 622</a>.
+</p>
+<p>
+Discussed in Rapperswil 2014. EWG finds that there's a preference for defining this, but some architectures have separate memory spaces for data/code/constants, it's non-trivial to define.</p>
+<p>
+Closing as NAD. If someone wants to argue that the results of such
+pointer comparisons should be implementation-defined, papers are welcome.
 </p>
 </discussion>
 </issue>

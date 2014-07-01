@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="120" status="New">
+<issue num="120" status="Open">
 <title>[tiny] CWG 900 and 1498
 </title>
 <section><sref ref="[class.temporary]"/></section>
@@ -42,5 +42,9 @@ The behavior of this code is undefined, because the temporary returned by the su
 </p>
 <p>Smith suggested handling this as an EWG issue.
 </p>
+<p>Discussed in Rapperswil 2014. EWG wants a solution, and welcomes
+a paper tackling the issue. Vandevoorde raised concerns introducing any 
+new lifetime models. Stroustrup pointed out that the end-of-full-expression rule came about to reduce memory footprint compared to the end-of-block rule, and is good for RAII uses. Is it possible to solve the issue by just modifying
+the specification of a range-for loop?</p>
 </discussion>
 </issue>

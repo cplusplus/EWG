@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="8" status="New">
+<issue num="8" status="Resolved">
 <title>
 N3492, N3403 Use Cases for Compile-Time Reflection
 </title>

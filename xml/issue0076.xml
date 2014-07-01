@@ -25,5 +25,12 @@ since there doesn't seem to a palatable reason for running code, and thought
 that the solution should be simplified, and it should be much better than 
 what you can hack today. The author is encouraged to pursue the idea further.
 </p>
+<p>Discussed in Rapperswil 2014.</p>
+<p>Straw poll: On the proposal as is:</p>
+<p>SF 0 - WF 1 - N 8 - WA 13 - SA 2</p>
+<p>Stroustrup said his reading of this is that we agree there's a problem, but we don't think that this is the solution.</p>
+<p>Straw poll: See a new proposal based on this one, but with "using auto" only applying to variable and data member initializers:</p>
+<p>SF 2 - WF 8 - N 8 - WA 1 - SA 3</p>
+<p>Carruth suggested writing a new paper with more rationale/explanation of the tradeoffs, decisions, etc., and Dennett agreed.</p>
 </discussion>
 </issue>

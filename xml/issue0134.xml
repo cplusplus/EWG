@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="134" status="Resolved">
+<title>
+[tiny] Core closed issues with a previous extension status
+</title>
+<section><sref ref="[intro]"/></section>
+<submitter>Ville Voutilainen</submitter>
+<date>01 Jul 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#13">13 extern "C" for Parameters of Function Templates</a> -> request Core to close as NAD, Daveed says aliases with linkage are the solution. 1463 will be opened as an EWG issue to solve this.
+</p> 	
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#92">92 	Should exception-specifications be part of the type system?</a> -> Instruct Core to close 92 as NAD. Maurer points out that he's
+going to be dealing with the area with TM. The rationale for
+closing is that EWG doesn't agree that being able to overload
+on noexcept is worth the trouble, nor does EWG think being
+able to have pointers-to-functions being different parameter
+types if they have different noexcept-specifications.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#230">230 	Calls to pure virtual functions</a> -> Instruct Core to close 230 as NAD. Pure virtual functions can be called by non-virtual calls only, and it is by design that virtual calls should never
+resolve to the definition of a pure virtual function. The behaviour is undefined because implementations aren't required to prevent ending up in the pure virtual function definition. That is also by design.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#623">623 	Use of pointers to deallocated storage</a> -> Instruct Core to close 623 as WP. The behavior is implementation-defined rather than undefined in the current working draft, and thus the requirements are no longer draconian. 312, which was resolved as DRWP points to 623, so also close 623 as DRWP.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#755">755 	Generalized lambda-captures</a> -> Instruct Core to close 755 as WP. Generalized lambda-captures are
+in C++14.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#947">947 	Deducing type template arguments from default function arguments</a> -> Open an EWG issue, <iref ref="97"/>, for 947, immediately close as NAD, explaining that
+the group doesn't think it's generally implementable. Leave the door
+open (but not the issue :)) for a restricted implementation.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1461">1461 	Narrowing conversions to bit-fields</a> -> Instruct Core to close 1461 as NAD. It would break existing code and
+EWG doesn't consider the breakage to be worth it. Vandevoorde pointed
+out valid existing code that initializes bitfields (even with one bit) with
+-1.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1474">1474 	User-defined literals and &lt;inttypes.h> format macros</a> -> Instruct Core to close 1474 as NAD. The fix would be to remove
+UDLs.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1519">1519 	Conflicting default and variadic constructors</a> -> Open an EWG issue for 1519, <iref ref="107"/>. Mark as NAD, there is a work-around
+and Concepts Lite will make the work-around much easier.
+</p>
+</discussion>
+</issue>

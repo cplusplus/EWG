@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="98" status="New">
+<issue num="98" status="Open">
 <title>
 [tiny] Core issue 1008, Querying the alignment of an object
 </title>
@@ -15,5 +15,6 @@
 <p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1008">Core issue 1008</a>.
 </p>
+<p>Discussed in Rapperswil 2014. Vandevoorde to write a paper.</p>
 </discussion>
 </issue>

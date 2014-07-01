@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="100" status="New">
+<issue num="100" status="NAD">
 <title>
 [tiny] Core issue 1272, Implicit definition of static data member of const literal type
 </title>
@@ -14,6 +14,12 @@
 <discussion>
 <p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1272">Core issue 1272</a>.
+</p>
+<p>
+Discussed in Rapperswil 2014. Vandevoorde pointed out that there are
+backwards compatibility issues, Dennett pointed out that the proposed
+resolution makes the language more irregular and less teachable. Closing
+as NAD.
 </p>
 </discussion>
 </issue>

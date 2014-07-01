@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="117" status="New">
+<issue num="117" status="NAD">
 <title>
 N3955 Group Member Specifiers
 </title>
@@ -15,6 +15,19 @@ N3955 Group Member Specifiers
 <p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3955.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3955.pdf</a>.
 </p>
+<p>
+Discussed in Rapperswil 2014. A fairly long discussion, with lots of
+concerns about the motivation.
+</p>
+<p>Straw polls:</p>
+<p>Proposal as stated:</p>
+<p> SF 1 - WF 1 - N 2 - WA 8 - SA 15</p> 
+<p>Just the virtual parts, in a new paper:</p> 
+<p>SF 4 - WF 3 - N 5 - WA 6 - SA 7</p>
+<p>Virtual parts and some others:</p>
+<p> SF 1 - WF 4 - N 1 - WA 9 - SA 10</p>
+<p>We're done for this meeting. We don't actually encourage this proposal to come back, but there are people who'd like improvements for virtual functions. </p>
+<p>Closing as NAD, no consensus to adopt.</p>
 </discussion>
 <resolution>
 The paper contains the proposed wording.

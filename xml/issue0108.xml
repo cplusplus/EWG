@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="108" status="New">
+<issue num="108" status="Open">
 <title>
 [tiny] Core issue 1561, Aggregates with empty base classes
 </title>
@@ -15,5 +15,6 @@
 <p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1561">Core issue 1561</a>.
 </p>
+<p>Discussed in Rapperswil 2014. Daryle Walker has an unpublished paper aiming to solve this <a href="http://htmlpreview.github.io/?https://raw.github.com/CTMacUser/multiarray-iso-proposal/master/expanded-aggregate-proposal.html">here</a>. EWG suggests that Dos Reis works with Walker to get the paper on EWG's plate.</p>
 </discussion>
 </issue>

@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="42" status="Ready">
+<issue num="42" status="Resolved">
 <title>
 [tiny] basic_string(const charT*, size_type, const Allocator&amp;) requires clause too restrictive
 </title>
@@ -37,6 +37,9 @@ Since a conforming implementation can return a null pointer for vc.data() when v
 This is likely to go onto the LEWG's plate.
 <p>
 Bristol 2013: Defer to LEWG. 
+</p>
+<p>
+Filed as <a href="https://issues.isocpp.org/show_bug.cgi?id=39">LEWG Bug 39</a>, closing as Resolved on the EWG side.
 </p>
 </discussion>
 

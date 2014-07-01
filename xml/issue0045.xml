@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="45" status="Ready">
+<issue num="45" status="Resolved">
 <title>
 [tiny] Type Trait is_range&lt;T&gt;
 </title>
@@ -17,6 +17,9 @@ I'd like to have an is_range&lt;T, R = void&gt; type trait, which derives from t
 </p>
 <p>
 Bristol 2013: Submitter is encouraged to proceed and present to LWG. Apparently LEWG doesn't handle these. 
+</p>
+<p>
+Filed as <a href="https://issues.isocpp.org/show_bug.cgi?id=41">LEWG Bug 41</a>, closing as Resolved on the EWG side.
 </p>
 </discussion>
 </issue>

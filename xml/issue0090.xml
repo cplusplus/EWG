@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="90" status="New">
+<issue num="90" status="NAD">
 <title>
 [tiny] Core issue 476, Determining the buffer size for placement new
 </title>
@@ -14,6 +14,13 @@
 <discussion>
 <p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#476">Core issue 476</a>.
+</p>
+<p>
+Discussed in Rapperswil 2014. EWG thinks there's no design defect here,
+and suggests that a placement array new should not have such 
+implementation-defined overhead. EWG suggests that CWG should
+clarify that placement array new T[n] needs n*sizeof(T) bytes of memory, 
+and clarify that an operator delete must only be called if the corresponding operator new has been called. Ask James Dennett/Chandler Carruth for any more feedback. 
 </p>
 </discussion>
 </issue>

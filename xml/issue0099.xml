@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="99" status="New">
+<issue num="99" status="NAD">
 <title>
 [tiny] Core issue 1259, Deleting a POD via a pointer to base
 </title>
@@ -16,6 +16,12 @@
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1259">Core issue 1259</a>.
 </p>
 <p>See also the discussion thread starting at <a href="https://groups.google.com/a/isocpp.org/d/msg/std-proposals/9PxiUu0Tr1k/3gextFEMi8sJ">https://groups.google.com/a/isocpp.org/d/msg/std-proposals/9PxiUu0Tr1k/3gextFEMi8sJ</a>.
+</p>
+<p>
+Discussed in Rapperswil 2014. Dennett pointed out that this idea doesn't
+work with sized deallocations, which we voted in. Voutilainen pointed
+out that sanitizers can catch such misuses if it's undefined behaviour.
+Closing as NAD.
 </p>
 </discussion>
 </issue>

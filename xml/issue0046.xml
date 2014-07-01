@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="46" status="Ready">
+<issue num="46" status="WP">
 <title>
 [tiny] Type Trait is_final&lt;T&gt;
 </title>
@@ -17,6 +17,10 @@ I'd like to have an is_final&lt;T&gt; type trait, which is true if and only if T
 </p>
 <p>
 Bristol 2013: Submitter is encouraged to proceed and present to LWG. Apparently LEWG doesn't handle these. 
+</p>
+<p>
+Voted into C++14 in Issaquah 2014 as the resolution of
+<a href="http://cplusplus.github.io/LWG/lwg-toc.html#2112">LWG issue 2112</a>.
 </p>
 </discussion>
 </issue>

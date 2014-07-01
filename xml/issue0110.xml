@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="110" status="New">
+<issue num="110" status="NAD">
 <title>
 [tiny] Core issue 1577, Unnecessary restrictions on partial specializations
 </title>
@@ -14,6 +14,10 @@
 <discussion>
 <p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1577">Core issue 1577</a>.
+</p>
+<p>
+Discussed in Rapperswil 2014. EWG considers the issue NAD, and suggests
+using Concepts instead.
 </p>
 </discussion>
 </issue>

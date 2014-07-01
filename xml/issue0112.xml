@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="112" status="New">
+<issue num="112" status="NAD">
 <title>
 [tiny] Core issue 1586, Naming a destructor via decltype
 </title>
@@ -15,5 +15,8 @@
 <p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1586">Core issue 1586</a>.
 </p>
+<p>Discussed in Rapperswil 2014. EWG found insufficient motivation for
+this extension. Dennett pointed out that work-arounds are straightforward
+and rarely needed. Closing as NAD.</p>
 </discussion>
 </issue>

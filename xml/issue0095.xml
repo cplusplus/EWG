@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="95" status="New">
+<issue num="95" status="NAD">
 <title>
 [tiny] Core issue 822, Additional contexts for template aliases
 </title>
@@ -14,6 +14,10 @@
 <discussion>
 <p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#822">Core issue 822</a>. 
+</p>
+<p>
+Discussed in Rapperswil 2014. EWG failed to find sufficient motivation
+for this extension, closing as NAD.
 </p>
 </discussion>
 </issue>

@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="131" status="New">
+<issue num="131" status="Ready">
 <title>N4051 Allow typename in a template template parameter
 </title>
 <section><sref ref="[temp.param]"/></section>
@@ -13,6 +13,9 @@
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4051.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4051.html</a>
+</p>
+<p>
+Discussed in Rapperswil 2014, approved by acclamation, ready to go to CWG. CWG already reviewed it and designated it ready for voting in Urbana.
 </p>
 </discussion>
 </issue>

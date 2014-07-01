@@ -31,6 +31,11 @@ Reviewed by EWG in Portland 2012, proceeding in SG10, Feature Test.
 Handled by SG10 to the first desired outcome in Chicago2013, no
 need for further EWG follow-up.
 </p>
+<p>
+Discussed again in Rapperswil 2014.</p>
+<p>Straw poll, has_cpp_attribute as a function-style macro:</p>
+<p>SF 7, WF 9, N 4, WA 0, SA 0.</p>
+<p>EWG's guidance was for the function-style macro.</p>
 </discussion>
 
 </issue>

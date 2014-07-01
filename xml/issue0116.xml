@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="116" status="New">
+<issue num="116" status="Open">
 <title>
 N3950 Defaulted comparison operators
 </title>
@@ -14,6 +14,31 @@ N3950 Defaulted comparison operators
 <discussion>
 <p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3950.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3950.html</a>.
+</p>
+<p>Discussed in Rapperswil 2014.</p>
+<p>Straw polls:</p>
+<p>Proposal + the ability to default as global</p>
+<p>SF: 10 F: 9 N: 2 A: 1 SA: 0</p>
+<p>Proposal + the ability to default as global + the generation of negated operators</p>
+<p>SF: 5 F: 9 N: 3 A: 1 SA: 2</p>
+<p>Terse syntaxes only</p>
+<p>SF: 7 F: 2 N: 4 A: 8 SA: 1</p>
+<p>Terse syntaxes in addition</p>
+<p>SF: 6 F: 6 N: 5 A: 4 SA: 1</p>
+<p>Library solution</p>
+<p>SF: 0 F: 0 N: 1 A: 12 SA: 7</p>
+<p>Mutable members are not special (participate in the comparisons)</p>
+<p>SF: 2 F: 6 N: 2 A: 5 SA: 6</p>
+<p>Mutable members make defaulting ill-formed</p>
+<p>SF: 3 F: 7 N: 6 A: 3 SA: 1</p>
+<p>Mutable members do not participate in generated comparisons</p>
+<p>SF: 7 F: 3 N: 0 A: 7 SA: 4</p>
+<p>Proposal + the ability to default as global + mutables ill-formed</p>
+<p>SF: 12 F: 7 N: 0 A: 1 SA: 2</p>
+<p>
+The guidance of the vote is not very clear, but what seems clear is that
+EWG more or less encouraged the paper author to come up with a revised
+proposal.
 </p>
 </discussion>
 <resolution>

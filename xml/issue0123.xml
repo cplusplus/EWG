@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="123" status="New">
+<issue num="123" status="Resolved">
 <title>N3990 Adding Standard Circular Shift operators for computer integers
 </title>
 <section><sref ref="[expr]"/></section>
@@ -19,5 +19,9 @@
 The paper contains the proposed wording.
 </p>
 </resolution>
+<p>Discussed in Rapperswil 2014.</p>
+<p>EWG was unanimously against having an operator for this, and recommended
+taking the idea up with the Numerics SG and then with LWG. Closing as resolved,
+Vandevoorde sent a heads-up to the Numerics reflector.</p>
 </discussion>
 </issue>

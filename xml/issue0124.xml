@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="124" status="New">
+<issue num="124" status="NAD">
 <title>N4014 Uniform Copy Initialization
 </title>
 <section><sref ref="[dcl.init]"/></section>
@@ -14,5 +14,20 @@
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4014.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4014.pdf</a>
 </p>
+<p>Discussed in Rapperswil 2014.</p>
+<p>
+Voutilainen pointed out that it seems important to be able to express 
+whether explicit operations are ok or not. Vandevoorde said there's a 
+difference between conversions and initializations. Dennett pointed out that 
+this proposal clashes with the direction of N3912, and showed an example 
+of the different directions; N3912 makes copy vs. direct initialization 
+more significant with auto, whereas the Josuttis proposal makes it less 
+significant. Josuttis in addition mentioned that it's unfortunate that we 
+have no guidelines for when to use explicit and when not, and that makes 
+things difficult for the library.
+</p>
+<p>Straw poll, accept the proposal:</p>
+<p>SF: 1 F: 2 N: 6 A: 8 SA: 1</p>
+<p>No consensus to adopt, closing as NAD.</p>
 </discussion>
 </issue>

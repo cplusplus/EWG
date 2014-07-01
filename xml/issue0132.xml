@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="132" status="NAD">
+<title>Core Issue 1754 Declaration of partial specialization of static data member template
+</title>
+<section><sref ref="[temp.class.spec]"/></section>
+<submitter>Richard Smith</submitter>
+<date>19 Sep 2013</date>
+
+<discussion>
+<p>
+See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1754">Core Issue 1754</a>
+</p>
+<p>
+Discussed in Rapperswil 2014. EWG consider the issue esoteric, and failed
+to see the motivation of the change. Closing as NAD for now, if this
+should be reopened, stronger motivation should be provided.
+</p>
+</discussion>
+</issue>

@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="102" status="New">
+<issue num="102" status="Open">
 <title>
 [tiny] Core issue 1393, Pack expansions in using-declarations
 </title>
@@ -19,6 +19,9 @@ See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1393">Core iss
 There are other related extension
 almost-proposals that should be considered in addition to the
 case in point.
+</p>
+<p>
+Vandevoorde to write a paper and bring it back to EWG. The guidance is to allow multiple names in using-declarations, and also allowing a pack.
 </p>
 </discussion>
 </issue>

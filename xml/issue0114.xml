@@ -45,5 +45,53 @@ Kr&uuml;gler pointed out his paper solves that issue as well.
 The Library issue related to Dimov's issue report is
 <a href="http://cplusplus.github.io/LWG/lwg-toc.html#2397">LWG 2397</a>
 </p>
+<p>
+Discussed in Rapperswil 2014. 
+</p>
+<p>
+Vandevoorde pointed out that he doesn't like returning an integer value and 
+having that automatically convert to a vector. Vandevoorde said that the same 
+arguments apply as with Josuttis's paper, because there's a difference between 
+conversions and initializations, and that there are differences with auto. 
+Sutter and Stroustrup suggested that the function author should know the 
+return type of their function, so the argument that the return type 
+isn't known doesn't hold water.
+</p>
+<p>
+Voutilainen pointed out that there is a difference between initializations 
+of local variables and returns, since the former allows deciding whether 
+conversions are allowed, whereas this proposal would remove the ability to 
+make that decision for returns.
+</p>
+<p>Dennett thought that the diagnostic is not problematic because the worst 
+kind of diagnostic is a missing diagnostic, especially ones that change a 
+compiler error to a runtime error. Dennett asked what happens if a function 
+vector f() {return {42};} has new semantics, and Vandevoorde warned that 
+it seems like this would be a breaking change.
+</p>
+<p>Voutilainen emphasized that this will turn compile-time errors into 
+run-time errors, and warned about doing that lightly. Vandevoorde thought 
+that this proposal makes code easier to write but not easier to read. 
+Stroustrup disagreed with that point. 
+</p>
+<p>Voutilainen emphasized that in his opinion ownership transfer needs to 
+stand out. Bos asked whether a compromise like return auto(2); would work. 
+Dennett reported he has a wrap_unique() in internal use that solves the 
+problem of having to repeat the type. Vandevoorde explained the difference 
+between returning a value and returning a value constructed (possibly 
+via conversion) from another value. Naumann pointed out the problems in 
+refactoring code that returns a value but is changed to return eg. a vector, 
+the status quo currently diagnoses those, but with this proposal, 
+that wouldn't be the case. 
+</p>
+<p>Straw polls:</p>
+<p>Proposal:</p>
+<p>SF: 2 F: 5 N: 4 A: 3 SA: 5</p>
+<p>Like the proposal, but just when braces are used:</p>
+<p>SF: 3 F: 8 N: 3 A: 0 SA: 4</p>
+<p>Sutter continued revising the proposal aiming for a solution
+that kicks in when braces are used. The current expectation
+is that the discussion will continue in Urbana, and there
+will be more papers related to this area.</p>
 </discussion>
 </issue>

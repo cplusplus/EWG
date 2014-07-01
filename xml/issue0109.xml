@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="109" status="New">
+<issue num="109" status="NAD">
 <title>
 [tiny] Core issue 1564, Template argument deduction from an initializer list
 </title>
@@ -15,5 +15,11 @@
 <p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1564">Core issue 1564</a>.
 </p>
+<p>Discussed in Rapperswil 2014. EWG points out that auto deduction is moving
+to the opposite direction, and there's a reason why the suggested deduction
+isn't done, Vandevoorde showed an example of an overload set including
+an unconstrained template and a function taking a vector, and explained that 
+the rules currently choose the function taking a vector, and advised against
+changing that. Closing as NAD.</p>
 </discussion>
 </issue>

@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="103" status="New">
+<issue num="103" status="Dup">
 <title>
 [tiny] Core issue 1426, Allowing additional parameter types in defaulted functions
 </title>
@@ -15,5 +15,6 @@
 <p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1426">Core issue 1426</a>.
 </p>
+<p>Covered by the paper we expect from <iref ref="101"/>.</p>
 </discussion>
 </issue>

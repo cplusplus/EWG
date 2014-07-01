@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="127" status="New">
+<issue num="127" status="Open">
 <title>N4028 Defining a Portable C++ ABI
 </title>
 <section><sref ref="[basic.link]"/></section>
@@ -14,5 +14,16 @@
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4028.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4028.pdf</a>
 </p>
+<p>Discussed in Rapperswil 2014</p>
+<p>Straw poll: should we encourage Sutter to go ahead:</p>
+<p> SF 10 F 8 N 3 A 3 SA 3</p>
+<p>Sutter asked the reason for the votes against, Gregor expressed
+doubt on whether the approach is feasible with regards to the amount
+of work, Carruth expressed doubt on having two slightly different
+standard libraries.</p>
+<p>Stra poll: language ABI:</p>
+<p>SF 12 F 14 N 0 A 1 SA 0</p>
+<p>Wong said something like this would be ideal for a Study Group. Wong
+and Sutter expressed interest in continuing to work on the idea.</p>
 </discussion>
 </issue>

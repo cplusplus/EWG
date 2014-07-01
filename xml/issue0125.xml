@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="125" status="New">
+<issue num="125" status="Open">
 <title>N4025 Exploring classes of runtime size
 </title>
 <section><sref ref="[basic.compound]"/></section>
@@ -13,6 +13,21 @@
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4025.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4025.pdf</a>
+</p>
+<p>Discussed in Rapperswil 2014, with a fairly long discussion that
+didn't yield very concrete conclusions.</p>
+<p>Straw polls:</p>
+<p>Array of runtime bounds:</p>
+<p>SF: 2 F: 2 N: 6 A: 11 SA: 2</p>
+<p>Objects of dynamic size:</p>
+<p>SF: 1 F: 7 N: 7 A: 6 SA: 2</p>
+<p>Magic allocation outside of a type:</p>
+<p>SF: 0 F: 11 N: 9 A: 1 SA: 0</p>
+<p>Nothing:</p>
+<p>SF: 2 F: 10 N: 6 A: 4 SA: 0</p>
+<p>The group found it difficult to interpret the results, and where to go from here.</p>
+<p>
+Carruth pointed out that it doesn't seem we can agree on an evolution path to take, and perhaps that should be our message to the full committee, and if someone disagrees, they should come up with a better evolution path. Voutilainen pointed out that this is not the first time we have failed to find real consensus about dynamic arrays. Smith said having nothing is the status quo of the C++ standard, and ARBs are what the TS proposes, and there would be a possibility to keep ARBs in a TS without integrating them to the main standard. 
 </p>
 </discussion>
 </issue>

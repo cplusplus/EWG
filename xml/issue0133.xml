@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="133" status="NAD">
+<title>Core Issue 1798,  exception-specifications of template arguments
+</title>
+<section><sref ref="[except.spec]"/></section>
+<submitter>Gabriel Dos Reis</submitter>
+<date>16 Oct 2013</date>
+
+<discussion>
+<p>
+See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1798">Core Issue 1798</a>
+</p>
+<p>
+Discussed in Rapperswil 2014. EWG previously decided that exception
+specifications should not become part of the type system. On this
+issue, EWG thought that the exception specification in a template
+parameter is effectively ignored, and that's fine. Closing as NAD 
+for now, if this should be reopened, a paper should be written
+to consider the impact of any suggested change.
+</p>
+</discussion>
+</issue>

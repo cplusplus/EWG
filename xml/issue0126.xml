@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="126" status="New">
+<issue num="126" status="Open">
 <title>N4026 Nested namespace definition
 </title>
 <section><sref ref="[basic.scope.namespace]"/></section>
@@ -14,5 +14,11 @@
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4026.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4026.html</a>
 </p>
+<p>Discussed in Rapperswil 2014.</p>
+<p> Straw poll, the full facility (JUST the basic syntactic sugar, no attributes, no aliases, no inline):</p>
+<p>
+SF: 11 F: 5 N: 3 A: 0 SA: 0 
+</p>
+<p>The guidance is to provide only the basic syntactic sugar, no attributes, no aliases. Initial wording is necessary before this can proceed to Core. It is expected that EWG will review a revised paper before CWG will review the wording.</p>
 </discussion>
 </issue>

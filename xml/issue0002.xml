@@ -16,6 +16,11 @@
 <p>
 Deemed post-C++14 material in Chicago 2013.
 </p>
+<p>
+Discussed in Rapperswil 2014. EWG stated that in order to move forward
+with such a proposal, it would need to provide data about the 
+compatibility/breakage issues, if any.
+</p>
 </discussion>
 
 <resolution>

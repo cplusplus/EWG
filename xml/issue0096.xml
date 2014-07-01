@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="96" status="New">
+<issue num="96" status="Open">
 <title>
 [tiny] Core issue 914, Value-initialization of array types, Core issue 1300, T() for array types, Core issue 1326, Deducing an array bound from an initializer-list
 </title>
@@ -15,5 +15,6 @@
 <p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#914">Core issue 914</a>, <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1300">Core issue 1300</a> and <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1326">Core issue 1326</a>. 
 </p>
+<p>Discussed in Rapperswil 2014. Dos Reis and Kr&uuml;gler encouraged to write a paper.</p>
 </discussion>
 </issue>

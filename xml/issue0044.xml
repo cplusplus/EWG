@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="44" status="Ready">
+<issue num="44" status="Resolved">
 <title>
 [tiny] variadic bind
 </title>
@@ -26,6 +26,9 @@ I haven't personally found a need for multiple ranges of variadic arguments, or 
 </p>
 <p>
 Bristol 2013: Defer to LEWG. 
+</p>
+<p>
+Filed as <a href="https://issues.isocpp.org/show_bug.cgi?id=40">LEWG Bug 40</a>, closing as Resolved on the EWG side.
 </p>
 </discussion>
 </issue>

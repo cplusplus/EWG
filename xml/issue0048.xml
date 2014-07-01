@@ -69,6 +69,11 @@ Spertus to write a paper.
 <p>
 In Chicago 2013, EWG guidance was to work based on the current proposal N3730 without the facility of specializing a namespace-scoped template from inside a class. 
 </p>
-
+<p>Discussed in Rapperswil 2014.</p>
+<p>Gregor and Vandevoorde expressed concern about changing name lookup, and thought that the problem space needs the help of Core experts. Dos Reis expressed concern about expanding the need to do more tentative parsing to resolve ambiguities. Stroustrup requested further study in order to explore the possibilities
+to find a solution that doesn't cause issues with lookup, and Spertus
+agreed that further exploration seems wise.</p>
+<p>EWG encouraged working further on the problem, looking at alternative
+solutions.</p>
 </discussion>
 </issue>

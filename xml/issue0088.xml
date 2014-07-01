@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="88" status="New">
+<issue num="88" status="Open">
 <title>
 [tiny] Uniform handling of operator[] and operator().
 </title>
@@ -22,6 +22,8 @@ is a comma-expression) but there are possibilities to fix
 such cases (by requiring parens if a comma-expression
 is desired). EWG should discuss whether such unification
 is to be strived for.
+</p>
+<p>Discussed in Rapperswil 2014. EWG points out that there are more issues to consider here, in terms of other operators, motivations, connections with captureless lambdas, who knows what else, so an analysis paper is requested.
 </p>
 </discussion>
 </issue>

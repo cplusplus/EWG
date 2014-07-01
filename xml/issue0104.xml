@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="104" status="New">
+<issue num="104" status="NAD">
 <title>
 [tiny] Core issue 1433, trailing-return-type and point of declaration
 </title>
@@ -15,5 +15,6 @@
 <p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1433">Core issue 1433</a>.
 </p>
+<p>Discussed in Rapperswil 2014. EWG is sympathetic to the request, but we have significant concerns about the implementation and specification complexity. Close as NAD without prejudice. We'd need more detail. Asking vendors including Microsoft and Oracle how implementable this is for them would be a courtesy.</p>
 </discussion>
 </issue>

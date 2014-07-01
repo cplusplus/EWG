@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="111" status="New">
+<issue num="111" status="Ready">
 <title>
 [tiny] Core issue 1582, Template default arguments and deduction failure
 </title>
@@ -15,5 +15,7 @@
 <p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1582">Core issue 1582</a>.
 </p>
+<p>Discussed in Rapperswil 2014. EWG wishes CWG to handle this, and
+to draft to implement Spicer's suggestion.</p>
 </discussion>
 </issue>

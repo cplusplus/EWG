@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="67" status="New">
+<issue num="67" status="Resolved">
 <title>
 [tiny] Unspecialized std::tuple_size should be defined
 </title>
@@ -17,6 +17,9 @@ In 20.4.1p2, the unspecialized std::tuple_size is undefined.  It would be a lot 
 </p>
 <p>
 This should go to LEWG.
+</p>
+<p>
+Filed as <a href="https://issues.isocpp.org/show_bug.cgi?id=42">LEWG Bug 42</a>, closing as Resolved on the EWG side.
 </p>
 </discussion>
 </issue>

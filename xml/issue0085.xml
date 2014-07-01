@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="85" status="New">
+<issue num="85" status="NAD">
 <title>
 N3879 Explicit Flow Control: break label, goto case and explicit switch
 </title>
@@ -15,5 +15,11 @@ N3879 Explicit Flow Control: break label, goto case and explicit switch
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3879.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3879.pdf</a>
 </p>
+<p>Discussed in Rapperswil 2014.</p>
+<p>Straw poll, proposal as a whole:</p>
+<p>SF 1 - WF 1 - N 1 - WA 13 - SA 10</p>
+<p>"break label;" + "continue label;":</p>
+<p>SF 3 - WF 8 - N 4 - WA 9 - SA 3</p>
+<p>Proposal not adopted, closing as NAD.</p>
 </discussion>
 </issue>

@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="77" status="New">
+<issue num="77" status="Dup">
 <title>
 N3772 Changing the type of address-of-member expression
 </title>
@@ -15,5 +15,6 @@ N3772 Changing the type of address-of-member expression
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3772.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3772.pdf</a>
 </p>
+<p>The issue was discussed in Rapperswil 2014. See issue <iref ref="89"/>. Closing as a duplicate.</p>
 </discussion>
 </issue>

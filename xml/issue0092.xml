@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="92" status="New">
+<issue num="92" status="Open">
 <title>
 [tiny] Core issue 687, template keyword with unqualified-ids
 </title>
@@ -15,5 +15,8 @@
 <p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#687">Core issue 687</a>.
 </p>
+<p>Discussed in Rapperswil 2014. EWG thinks the use of a template keyword
+in such cases should be allowed. Vandevoorde to write the wording for
+CWG review.</p>
 </discussion>
 </issue>

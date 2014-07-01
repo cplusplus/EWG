@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="105" status="New">
+<issue num="105" status="NAD">
 <title>
 [tiny] Core issue 1451, Objects with no linkage in non-type template arguments
 </title>
@@ -15,5 +15,7 @@
 <p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1451">Core issue 1451</a>.
 </p>
+<p>Discussed in Rapperswil 2014. It's not clear whether this is limited to static storage duration objects. EWG is worried about implications beyond that, and for Type&lt;"abs">. How would this work with function templates? For (non-template) functions, a workaround is to declare the object at namespace scope, but then you don't get the lazy initialization guarantees.</p>
+<p>Vandevoorde states that he'd like to actively vote against this. This would open special cases w.r.t. how we handle address constant expressions. 5.19 uses the same mechanism for string literals and static variables, both with no linkage. And we don't want to get into Type&lt;"abs"> being distinct form Type&lt;"abs">.</p> 
 </discussion>
 </issue>

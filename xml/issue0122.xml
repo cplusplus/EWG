@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="122" status="New">
+<issue num="122" status="Open">
 <title>N3986 Adding Standard support to avoid padding within structures
 </title>
 <section><sref ref="[class.bit]"/></section>
@@ -19,5 +19,43 @@
 The paper contains the proposed wording.
 </p>
 </resolution>
+<p>Discussed in Rapperswil 2014. Not polled yet.</p>
+<p>
+Garcia thought attributes should be explored as a solution rather than 
+using a bitfield of negative width. Stroustrup asked why the facility is 
+per-field rather than per-class. Gutson explained that he doesn't always want 
+pack whole structures, and Stroustrup and Tomazos pointed out that splitting 
+a larger class into smaller ones should solve the problem.
+</p>
+<p>
+Vandevoorde pointed out implementation issues and asked what happens if a 
+target architecture doesn't support the resulting padding (or the lack of it). 
+It was suggested that the current standard may allow implementations to 
+diagnose such cases anyway.
+</p>
+<p>
+Naumann made the point that he thinks code should be portable but that object 
+layout cannot be specified in such a strict manner due to architecture 
+differences. Smolsky asked whether there are plans to impose endianness 
+requirements on the representation of built-in types, and voiced concern 
+about a performance impact.
+</p>
+<p>
+Wong expressed doubt whether a standard solution is necessary, since every 
+vendor has a solution. Vandevoorde replied that that sounds like a good reason 
+to provide a standard solution. 
+</p>
+<p>
+Bos asked why there needs to be this support in classes rather than 
+manipulating bits with a function. Dennett pointed out that this proposal 
+turns things that aren't bitfields into bitfield-like things, because what 
+looks like an int cannot be treated as an int.
+</p>
+<p>
+Vandevoorde pointed out that alignas is almost a solution, but it doesn't 
+apply to bitfields, and suggested using arrays instead of plain ints for the 
+data that needs to be packed. Stroustrup recommended doing a survey of 
+existing practice.
+</p>
 </discussion>
 </issue>

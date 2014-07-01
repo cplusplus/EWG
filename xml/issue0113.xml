@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="113" status="New">
+<issue num="113" status="Open">
 <title>
 [tiny] Core issue 1657, Attributes for namespaces and enumerators
 </title>
@@ -19,5 +19,7 @@ See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1657">Core iss
 Issaquah 2014: EWG wants to point out that it's important to remember to consider inline namespaces
 and anonymous namespaces, and that the rationale for both namespaces and enumerators is [[deprecated]]. 
 </p>
+<p>Discussed in Rapperswil 2014. Smith is encouraged to write a proposal
+for EWG review, EWG expects to send it towards CWG without much ado.</p>
 </discussion>
 </issue>

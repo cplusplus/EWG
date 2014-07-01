@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="70" status="New">
+<issue num="70" status="NAD">
 <title>
 [tiny] Const in expressions
 </title>
@@ -70,6 +70,8 @@ doesn't work.
 </p>
 <p>
 Deemed post-C++14 material in Chicago 2013. A paper is needed.
+</p>
+<p>Discussed in Rapperswil 2014. The consensus of EWG is that this is not a promising direction. The workaround is to add a typedef. Closing the issue as NAD.
 </p>
 </discussion>
 </issue>

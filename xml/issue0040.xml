@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="40" status="Ready">
+<issue num="40" status="Resolved">
 <title>
 [tiny] Relax the allocator requirements on vector so that the small object optimization is allowed
 </title>
@@ -17,6 +17,9 @@ I'd like it to be possible to use the small object optimization (embedding up to
 </p>
 <p>
 Bristol 2013: Designated for LEWG.
+</p>
+<p>
+Filed as <a href="https://issues.isocpp.org/show_bug.cgi?id=38">LEWG Bug 38</a>, closing as Resolved on the EWG side.
 </p>
 </discussion>
 
