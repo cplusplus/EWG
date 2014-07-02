@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="135" status="New">
+<title>
+[tiny] Mutable is part of a lambda-declarator, so when a lambda is mutable, the parentheses aren't optional
+</title>
+<section><sref ref="[expr.prim.lambda]"/></section>
+<submitter>Herb Sutter</submitter>
+<date>02 Jul 2014</date>
+
+<discussion>
+<p>
+In [c++std-lib-36507], Dinka Ranns reports that various people, including
+Scott Meyers, have noticed that it's possible to write</p>
+<pre>
+<code>
+auto lambda = []{};
+</code>
+</pre>
+<p>but not</p>
+<pre>
+<code>
+auto lambda2 = [] mutable {};
+</code>
+</pre>
+<p>
+In the mutable case, parentheses are required, thus:
+</p>
+<pre>
+<code>
+auto lambda3 = []() mutable {};
+</code>
+</pre>
+<p>
+The proposed consistency fix is to change the grammar to allow omitting the parentheses
+for mutable lambdas as well.
+</p>
+</discussion>
+</issue>
