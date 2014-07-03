@@ -37,23 +37,16 @@ auto lambda3 = []() mutable {};
 The proposed consistency fix is to change the grammar to allow omitting the parentheses
 for mutable lambdas as well.
 </p>
-<resolution>
-<p>Change in [expr.prim.lambda]/1:</p>
+<p>
+An additional question EWG needs to decide is whether the empty parentheses
+could be omitted for other cases besides mutable, such as</p>
+<p>
 <pre>
-lambda-expression:
-    lambda-introducer <ins><code>mutable<sub>opt</sub></code> </ins>lambda-declarator<sub>opt</sub> compound-statement
+<code>
+[] -> float {return 42;};
+[] noexcept {foo();};
+</code>
 </pre>
-<p>Change in [expr.prim.lambda]/4:</p>
-<pre>
-<ins>If the <em>lambda-introducer</em> is followed by <code>mutable</code>, the <em>lambda-expression</em> shall not include a <em>lambda-declarator</em>. </ins>
-If a <em>lambda-expression</em> does not include a <em>lambda-declarator</em>, it is as if the <em>lambda-declarator</em> were ().
-</pre>
-<p>Change in [expr.prim.lambda]/5:</p>
-<pre>
-This function call operator or operator template is declared const (9.3.1) if and only if
-the <ins><em>lambda-declarator</em>'s</ins><del><em>lambda-expression</em>'s</del> <em>parameter-declaration-clause</em> is not followed by <code>mutable</code><ins> and the <em>lambda-introducer</em> is not followed by <code>mutable</code></ins>.
-</pre>
-
-</resolution>
+</p>
 </discussion>
 </issue>
