@@ -38,7 +38,7 @@
 </tr>
 </table>
 <h1>C++ Standard Evolution Active Issues List (Revision D09)</h1>
-<p>Revised 2014-07-02 at 17:07:14 UTC</p>
+<p>Revised 2014-07-02 at 19:07:38 UTC</p>
 
   <p>Reference ISO/IEC IS 14882:2003(E)</p>
   <p>Also see:</p>
@@ -2515,8 +2515,7 @@ Discussed in Rapperswil 2014, approved by acclamation, ready to go to CWG. CWG a
 <p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
 <p><b>Discussion:</b></p>
 <p>
-In [c++std-lib-36507], Dinka Ranns reports that various people, including
-Scott Meyers, have noticed that it's possible to write</p>
+It has been reported that various people have noticed that it's possible to write</p>
 <pre>
 <code>
 auto lambda = []{};
@@ -2540,6 +2539,24 @@ auto lambda3 = []() mutable {};
 The proposed consistency fix is to change the grammar to allow omitting the parentheses
 for mutable lambdas as well.
 </p>
+<p><b>Wording available:</b></p>
+<p>Change in [expr.prim.lambda]/1:</p>
+<pre>
+lambda-expression:
+    lambda-introducer <ins><code>mutable<sub>opt</sub></code> </ins>lambda-declarator<sub>opt</sub> compound-statement
+</pre>
+<p>Change in [expr.prim.lambda]/4:</p>
+<pre>
+<ins>If the <em>lambda-introducer</em> is followed by <code>mutable</code>, the <em>lambda-expression</em> shall not include a <em>lambda-declarator</em>. </ins>
+If a <em>lambda-expression</em> does not include a <em>lambda-declarator</em>, it is as if the <em>lambda-declarator</em> were ().
+</pre>
+<p>Change in [expr.prim.lambda]/5:</p>
+<pre>
+This function call operator or operator template is declared const (9.3.1) if and only if
+the <ins><em>lambda-declarator</em>'s</ins><del><em>lambda-expression</em>'s</del> <em>parameter-declaration-clause</em> is not followed by <code>mutable</code><ins> and the <em>lambda-introducer</em> is not followed by <code>mutable</code></ins>.
+</pre>
+
+
 
 
 

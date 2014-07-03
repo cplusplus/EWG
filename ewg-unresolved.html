@@ -19,7 +19,7 @@
 </style>
 </head>
 <body>
-<p>Revised 2014-07-02 at 17:07:14 UTC</p>
+<p>Revised 2014-07-02 at 19:07:38 UTC</p>
 <h2>Unresolved Issues</h2>
 <hr>
 <h3><a name="2"></a>2. N3387 Overload resolution tiebreakers for integer types</h3>
@@ -1989,8 +1989,7 @@ and Sutter expressed interest in continuing to work on the idea.</p>
 <p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
 <p><b>Discussion:</b></p>
 <p>
-In [c++std-lib-36507], Dinka Ranns reports that various people, including
-Scott Meyers, have noticed that it's possible to write</p>
+It has been reported that various people have noticed that it's possible to write</p>
 <pre>
 <code>
 auto lambda = []{};
@@ -2014,6 +2013,24 @@ auto lambda3 = []() mutable {};
 The proposed consistency fix is to change the grammar to allow omitting the parentheses
 for mutable lambdas as well.
 </p>
+<p><b>Wording available:</b></p>
+<p>Change in [expr.prim.lambda]/1:</p>
+<pre>
+lambda-expression:
+    lambda-introducer <ins><code>mutable<sub>opt</sub></code> </ins>lambda-declarator<sub>opt</sub> compound-statement
+</pre>
+<p>Change in [expr.prim.lambda]/4:</p>
+<pre>
+<ins>If the <em>lambda-introducer</em> is followed by <code>mutable</code>, the <em>lambda-expression</em> shall not include a <em>lambda-declarator</em>. </ins>
+If a <em>lambda-expression</em> does not include a <em>lambda-declarator</em>, it is as if the <em>lambda-declarator</em> were ().
+</pre>
+<p>Change in [expr.prim.lambda]/5:</p>
+<pre>
+This function call operator or operator template is declared const (9.3.1) if and only if
+the <ins><em>lambda-declarator</em>'s</ins><del><em>lambda-expression</em>'s</del> <em>parameter-declaration-clause</em> is not followed by <code>mutable</code><ins> and the <em>lambda-introducer</em> is not followed by <code>mutable</code></ins>.
+</pre>
+
+
 
 
 
