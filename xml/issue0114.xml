@@ -5,13 +5,19 @@
 
 <issue num="114" status="Open">
 <title>
-N4029 Let return Be Direct and explicit N3452 (unpublished) Let {x,y,z} => explicit
+N4074 Let return {expr} Be Explicit, Revision 2, N4094 Response To: Let return {expr} Be Explicit, N4029 Let return Be Direct and explicit, N3452 (unpublished) Let {x,y,z} => explicit
 </title>
 <section><sref ref="[stmt.return]"/></section>
 <submitter>Herb Sutter</submitter>
 <date>09 Apr 2014</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4074.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4074.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4094.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4094.html</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4029.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4029.pdf</a>
 </p>
@@ -93,5 +99,8 @@ that wouldn't be the case.
 that kicks in when braces are used. The current expectation
 is that the discussion will continue in Urbana, and there
 will be more papers related to this area.</p>
+<p>
+N4094 contains a response to this proposal by Hinnant and Voutilainen.
+</p>
 </discussion>
 </issue>

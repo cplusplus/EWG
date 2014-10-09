@@ -4,13 +4,16 @@
 ] >
 
 <issue num="121" status="Ready">
-<title>N3981 Removing trigraphs??!
+<title>N4086, N3981 Removing trigraphs??!
 </title>
 <section><sref ref="[lex.phases]"/></section>
 <submitter>Richard Smith</submitter>
 <date>06 May 2014</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4086.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4086.html</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3981.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3981.html</a>
 </p>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="138" status="New">
+<title>
+N4120 Null Coalescing Conditional Operator
+</title>
+<section><sref ref="[expr.cond]"/></section>
+<submitter>Alexander Bock</submitter>
+<date>02 Jul 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4120.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4120.pdf</a>
+</p>
+</discussion>
+</issue>

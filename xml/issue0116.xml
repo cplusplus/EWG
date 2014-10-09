@@ -5,7 +5,7 @@
 
 <issue num="116" status="Open">
 <title>
-N3950 Defaulted comparison operators
+N4114, N3950 Defaulted comparison operators
 </title>
 <section><sref ref="[dcl.fct.def.default]"/></section>
 <submitter>Oleg Smolsky</submitter>
@@ -13,7 +13,10 @@ N3950 Defaulted comparison operators
 
 <discussion>
 <p>
-See <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3950.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3950.html</a>.
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4114.htm">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4114.htm</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3950.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3950.html</a>
 </p>
 <p>Discussed in Rapperswil 2014.</p>
 <p>Straw polls:</p>

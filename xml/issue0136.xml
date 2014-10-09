@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="136" status="Open">
+<title>
+N4072 Fixed Size Parameter Packs
+</title>
+<section><sref ref="[temp.arg]"/></section>
+<submitter>Maurice Bos</submitter>
+<date>26 May 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4072.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4072.html</a>
+</p>
+<p>
+Discussed in Rapperswil 2014.
+</p>
+<p>
+Vote: encourage the author to come back with a more complete proposal for ...[N]: SF 8 - WF 9 - N 5 - WA 1 - SA 0. 
+</p>
+</discussion>
+</issue>

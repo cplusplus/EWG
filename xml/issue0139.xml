@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="139" status="New">
+<title>
+N4121 Compile-Time String: std::string_literal&lt;n&gt;
+</title>
+<section><sref ref="[support.general]"/></section>
+<submitter>Andrew Tomazos</submitter>
+<date>04 Jul 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4121.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4121.pdf</a>
+</p>
+</discussion>
+</issue>
