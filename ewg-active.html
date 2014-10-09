@@ -22,11 +22,11 @@
 <table>
 <tr>
   <td align="left">Doc. no.</td>
-  <td align="left">N????</td>
+  <td align="left">N4206</td>
 </tr>
 <tr>
   <td align="left">Date:</td>
-  <td align="left">2014-07-03</td>
+  <td align="left">2014-10-09</td>
 </tr>
 <tr>
   <td align="left">Project:</td>
@@ -37,8 +37,8 @@
   <td align="left">Ville Voutilainen &lt;<a href="mailto:ville.voutilainen@gmail.com">ville.voutilainen@gmail.com</a>&gt;</td>
 </tr>
 </table>
-<h1>C++ Standard Evolution Active Issues List (Revision D09)</h1>
-<p>Revised 2014-07-03 at 16:07:55 UTC</p>
+<h1>C++ Standard Evolution Active Issues List (Revision R09)</h1>
+<p>Revised 2014-10-09 at 13:10:07 UTC</p>
 
   <p>Reference ISO/IEC IS 14882:2003(E)</p>
   <p>Also see:</p>
@@ -150,14 +150,15 @@ ownership of it.
 
 <h2>Revision History</h2>
 <ul>
-<li>D09: 2014-07-02 working version<ul>
+<li>R09: 2014-10-09 pre-Urbana mailing<ul>
 <li><b>Summary:</b><ul>
-<li>75 open issues, up by 1.</li>
+<li>79 open issues, up by 5.</li>
 <li>60 closed issues, up by 0.</li>
-<li>135 issues total, up by 1.</li>
+<li>139 issues total, up by 5.</li>
 </ul></li>
 <li><b>Details:</b><ul>
-<li>Added the following New issue: <a href="ewg-active.html#135">135</a>.</li>
+<li>Added the following 4 New issues: <a href="ewg-active.html#135">135</a>, <a href="ewg-active.html#137">137</a>, <a href="ewg-active.html#138">138</a>, <a href="ewg-active.html#139">139</a>.</li>
+<li>Added the following Open issue: <a href="ewg-active.html#136">136</a>.</li>
 </ul></li>
 </ul>
 </li>
@@ -774,7 +775,7 @@ proposal for C++17.
 [tiny] Efficient/Flexible Access to Argument Packs
 </h3>
 <p><b>Section:</b> 14.5.3 [temp.variadic] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
- <b>Submitter:</b> Dave Abrahams <b>Opened:</b> 2012-10-16 <b>Last modified:</b> 2014-07-03</p>
+ <b>Submitter:</b> Dave Abrahams <b>Opened:</b> 2012-10-16 <b>Last modified:</b> 2014-07-23</p>
 <p><b>View other</b> <a href="ewg-index-open.html#temp.variadic">active issues</a> in [temp.variadic].</p>
 <p><b>View all other</b> <a href="ewg-index.html#temp.variadic">issues</a> in [temp.variadic].</p>
 <p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
@@ -795,6 +796,7 @@ In Bristol 2013: N3493 may solve parts of the problem. The submitter is encourag
 <p>
 Discussed in Rapperswil 2014. Vandevoorde expressed desire to write a paper.
 </p>
+<p>The work done by George Makrydakis at <a href="https://github.com/irrequietus/atpp">https://github.com/irrequietus/atpp</a> is related.</p>
 
 
 
@@ -2011,13 +2013,19 @@ for EWG review, EWG expects to send it towards CWG without much ado.</p>
 
 <hr>
 <h3><a name="114"></a>114. 
-N4029 Let return Be Direct and explicit N3452 (unpublished) Let {x,y,z} => explicit
+N4074 Let return {expr} Be Explicit, Revision 2, N4094 Response To: Let return {expr} Be Explicit, N4029 Let return Be Direct and explicit, N3452 (unpublished) Let {x,y,z} => explicit
 </h3>
 <p><b>Section:</b> 6.6.3 [stmt.return] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
- <b>Submitter:</b> Herb Sutter <b>Opened:</b> 2014-04-09 <b>Last modified:</b> 2014-07-03</p>
+ <b>Submitter:</b> Herb Sutter <b>Opened:</b> 2014-04-09 <b>Last modified:</b> 2014-10-09</p>
 <p><b>View all other</b> <a href="ewg-index.html#stmt.return">issues</a> in [stmt.return].</p>
 <p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
 <p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4074.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4074.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4094.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4094.html</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4029.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4029.pdf</a>
 </p>
@@ -2099,6 +2107,9 @@ that wouldn't be the case.
 that kicks in when braces are used. The current expectation
 is that the discussion will continue in Urbana, and there
 will be more papers related to this area.</p>
+<p>
+N4094 contains a response to this proposal by Hinnant and Voutilainen.
+</p>
 
 
 
@@ -2120,15 +2131,18 @@ See <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3899.html">htt
 
 <hr>
 <h3><a name="116"></a>116. 
-N3950 Defaulted comparison operators
+N4114, N3950 Defaulted comparison operators
 </h3>
 <p><b>Section:</b> 8.4.2 [dcl.fct.def.default] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
- <b>Submitter:</b> Oleg Smolsky <b>Opened:</b> 2014-02-19 <b>Last modified:</b> 2014-07-03</p>
+ <b>Submitter:</b> Oleg Smolsky <b>Opened:</b> 2014-02-19 <b>Last modified:</b> 2014-10-09</p>
 <p><b>View all other</b> <a href="ewg-index.html#dcl.fct.def.default">issues</a> in [dcl.fct.def.default].</p>
 <p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
 <p><b>Discussion:</b></p>
 <p>
-See <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3950.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3950.html</a>.
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4114.htm">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4114.htm</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3950.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3950.html</a>
 </p>
 <p>Discussed in Rapperswil 2014.</p>
 <p>Straw polls:</p>
@@ -2279,14 +2293,17 @@ the specification of a range-for loop?</p>
 
 
 <hr>
-<h3><a name="121"></a>121. N3981 Removing trigraphs??!
+<h3><a name="121"></a>121. N4086, N3981 Removing trigraphs??!
 </h3>
 <p><b>Section:</b> 2.2 [lex.phases] <b>Status:</b> <a href="ewg-active.html#Ready">Ready</a>
- <b>Submitter:</b> Richard Smith <b>Opened:</b> 2014-05-06 <b>Last modified:</b> 2014-07-03</p>
+ <b>Submitter:</b> Richard Smith <b>Opened:</b> 2014-05-06 <b>Last modified:</b> 2014-10-09</p>
 <p><b>View other</b> <a href="ewg-index-open.html#lex.phases">active issues</a> in [lex.phases].</p>
 <p><b>View all other</b> <a href="ewg-index.html#lex.phases">issues</a> in [lex.phases].</p>
 <p><b>View all issues with</b> <a href="ewg-status.html#Ready">Ready</a> status.</p>
 <p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4086.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4086.html</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3981.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3981.html</a>
 </p>
@@ -2396,12 +2413,15 @@ Carruth pointed out that it doesn't seem we can agree on an evolution path to ta
 
 
 <hr>
-<h3><a name="126"></a>126. N4026 Nested namespace definition
+<h3><a name="126"></a>126. N4116 Nested Namespace Definition (rev 1), N4026 Nested namespace definition
 </h3>
 <p><b>Section:</b> 3.3.6 [basic.scope.namespace] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
- <b>Submitter:</b> Robert Kawulak <b>Opened:</b> 2014-05-23 <b>Last modified:</b> 2014-07-03</p>
+ <b>Submitter:</b> Robert Kawulak <b>Opened:</b> 2014-05-23 <b>Last modified:</b> 2014-10-09</p>
 <p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
 <p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4116.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4116.pdf</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4026.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4026.html</a>
 </p>
@@ -2461,6 +2481,8 @@ and Sutter expressed interest in continuing to work on the idea.</p>
 </h3>
 <p><b>Section:</b> 15 [except] <b>Status:</b> <a href="ewg-active.html#New">New</a>
  <b>Submitter:</b> D. Gutson, A. Bustamante, P. Oliva, M. Diaz <b>Opened:</b> 2014-05-27 <b>Last modified:</b> 2014-07-03</p>
+<p><b>View other</b> <a href="ewg-index-open.html#except">active issues</a> in [except].</p>
+<p><b>View all other</b> <a href="ewg-index.html#except">issues</a> in [except].</p>
 <p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
 <p><b>Discussion:</b></p>
 <p>
@@ -2549,6 +2571,76 @@ could be omitted for other cases besides mutable, such as</p>
 [] noexcept {foo();};
 </code>
 </pre>
+</p>
+
+
+
+
+<hr>
+<h3><a name="136"></a>136. 
+N4072 Fixed Size Parameter Packs
+</h3>
+<p><b>Section:</b> 14.3 [temp.arg] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
+ <b>Submitter:</b> Maurice Bos <b>Opened:</b> 2014-05-26 <b>Last modified:</b> 2014-10-09</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4072.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4072.html</a>
+</p>
+<p>
+Discussed in Rapperswil 2014.
+</p>
+<p>
+Vote: encourage the author to come back with a more complete proposal for ...[N]: SF 8 - WF 9 - N 5 - WA 1 - SA 0. 
+</p>
+
+
+
+
+<hr>
+<h3><a name="137"></a>137. 
+N4110 Exploring the design space of contract specifications for C++
+</h3>
+<p><b>Section:</b> 15 [except] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> J. Daniel Garcia <b>Opened:</b> 2014-07-06 <b>Last modified:</b> 2014-10-09</p>
+<p><b>View other</b> <a href="ewg-index-open.html#except">active issues</a> in [except].</p>
+<p><b>View all other</b> <a href="ewg-index.html#except">issues</a> in [except].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4110.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4110.pdf</a>
+</p>
+
+
+
+
+<hr>
+<h3><a name="138"></a>138. 
+N4120 Null Coalescing Conditional Operator
+</h3>
+<p><b>Section:</b> 5.16 [expr.cond] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Alexander Bock <b>Opened:</b> 2014-07-02 <b>Last modified:</b> 2014-10-09</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4120.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4120.pdf</a>
+</p>
+
+
+
+
+<hr>
+<h3><a name="139"></a>139. 
+N4121 Compile-Time String: std::string_literal&lt;n&gt;
+</h3>
+<p><b>Section:</b> 18.1 [support.general] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Andrew Tomazos <b>Opened:</b> 2014-07-04 <b>Last modified:</b> 2014-10-09</p>
+<p><b>View other</b> <a href="ewg-index-open.html#support.general">active issues</a> in [support.general].</p>
+<p><b>View all other</b> <a href="ewg-index.html#support.general">issues</a> in [support.general].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4121.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4121.pdf</a>
 </p>
 
 
