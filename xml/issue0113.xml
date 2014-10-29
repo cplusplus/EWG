@@ -5,13 +5,16 @@
 
 <issue num="113" status="Open">
 <title>
-[tiny] Core issue 1657, Attributes for namespaces and enumerators
+N4196 	Attributes for namespaces and enumerators, [tiny] Core issue 1657, Attributes for namespaces and enumerators
 </title>
 <section><sref ref="[namespace.def]"/></section>
 <submitter>Richard Smith</submitter>
 <date>26 Aug 2013</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4196.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4196.html</a>
+</p>
 <p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1657">Core issue 1657</a>.
 </p>

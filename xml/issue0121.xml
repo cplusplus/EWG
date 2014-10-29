@@ -4,7 +4,7 @@
 ] >
 
 <issue num="121" status="Ready">
-<title>N4086, N3981 Removing trigraphs??!
+<title>N4086, N3981 Removing trigraphs??!, N4210 IBM comment on preparing for a Trigraph-adverse future in C++17
 </title>
 <section><sref ref="[lex.phases]"/></section>
 <submitter>Richard Smith</submitter>
@@ -13,6 +13,9 @@
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4086.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4086.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4210.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4210.pdf</a>
 </p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3981.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3981.html</a>

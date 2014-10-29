@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="148" status="New">
+<title>
+N4165 Unified Call Syntax, N4174 Call syntax: x.f(y) vs. f(x,y)
+</title>
+<section><sref ref="[expr.call]"/></section>
+<submitter>Herb Sutter</submitter>
+<date>4 Oct 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4165.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4165.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4174.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4174.pdf</a>
+</p>
+</discussion>
+</issue>

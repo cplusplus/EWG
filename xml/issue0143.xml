@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="143" status="New">
+<title>
+N4148 Disallowing Inaccessible Operators From Trivially Copyable
+</title>
+<section><sref ref="[basic.types]"/></section>
+<submitter>Matheus Izvekov</submitter>
+<date>24 Sep 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4148.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4148.html</a>
+</p>
+</discussion>
+</issue>

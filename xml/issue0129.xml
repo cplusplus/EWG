@@ -4,13 +4,16 @@
 ] >
 
 <issue num="129" status="New">
-<title>N4049 0-overhead-principle violations in exception handling
+<title>N4234 0-overhead-principle violations in exception handling - part 2, N4049 0-overhead-principle violations in exception handling
 </title>
 <section><sref ref="[except]"/></section>
 <submitter>D. Gutson, A. Bustamante, P. Oliva, M. Diaz</submitter>
 <date>27 May 2014</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4234.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4234.pdf</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4049.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4049.pdf</a>
 </p>

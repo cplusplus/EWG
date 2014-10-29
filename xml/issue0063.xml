@@ -5,13 +5,16 @@
 
 <issue num="63" status="Open">
 <title>
-N3614 unwinding_exception
+N4152 uncaught_exceptions, N3614 unwinding_exception
 </title>
 <section><sref ref="[except.special]"/></section>
 <submitter>Herb Sutter</submitter>
 <date>11 Mar 2013</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4152.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4152.pdf</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3614.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3614.pdf</a>
 </p>

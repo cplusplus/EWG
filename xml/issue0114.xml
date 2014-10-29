@@ -5,7 +5,7 @@
 
 <issue num="114" status="Open">
 <title>
-N4074 Let return {expr} Be Explicit, Revision 2, N4094 Response To: Let return {expr} Be Explicit, N4029 Let return Be Direct and explicit, N3452 (unpublished) Let {x,y,z} => explicit
+N4074 Let return {expr} Be Explicit, Revision 2, N4131 explicit should never be implicit, N4094 Response To: Let return {expr} Be Explicit, N4029 Let return Be Direct and explicit, N3452 (unpublished) Let {x,y,z} => explicit
 </title>
 <section><sref ref="[stmt.return]"/></section>
 <submitter>Herb Sutter</submitter>
@@ -14,6 +14,9 @@ N4074 Let return {expr} Be Explicit, Revision 2, N4094 Response To: Let return {
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4074.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4074.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4131.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4131.html</a>
 </p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4094.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4094.html</a>

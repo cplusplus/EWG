@@ -4,13 +4,16 @@
 ] >
 
 <issue num="119" status="Ready">
-<title>[tiny] Why no u8 character literals?
+<title>N4197 Adding u8 character literals, [tiny] Why no u8 character literals?
 </title>
 <section><sref ref="[lex.ccon]"/></section>
 <submitter>Richard Smith</submitter>
 <date>14 Apr 2014</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4197.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4197.html</a>
+</p>
 <p>
 The discussion thread started at [c++std-ext-14798].
 </p>

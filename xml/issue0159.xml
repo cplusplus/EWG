@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="159" status="New">
+<title>
+N4248 Library Preconditions are a Language Feature
+</title>
+<section><sref ref="[dcl.fct]"/></section>
+<submitter>Alisdair Meredith</submitter>
+<date>12 Oct 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4248.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4248.html</a>
+</p>
+</discussion>
+</issue>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="154" status="New">
+<title>
+N4191 Folding expressions
+</title>
+<section><sref ref="[expr.prim]"/></section>
+<submitter>A. Sutton, R. Smith</submitter>
+<date>7 Oct 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4191.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4191.html</a>
+</p>
+</discussion>
+</issue>

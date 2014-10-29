@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="152" status="New">
+<title>
+N4186 	Supporting Custom Diagnostics and SFINAE
+</title>
+<section><sref ref="[dcl.fct.def.delete]"/></section>
+<submitter>Matthias Kretz</submitter>
+<date>10 Oct 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4186.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4186.pdf</a>
+</p>
+</discussion>
+</issue>

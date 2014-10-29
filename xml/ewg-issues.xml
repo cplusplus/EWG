@@ -1,9 +1,9 @@
-<issueslist revision="R09"
+<issueslist revision="D10"
             maintainer="Ville Voutilainen &lt;ville.voutilainen@gmail.com&gt;"
-            active_docno="N4206"
-            defect_docno="N4207"
-            closed_docno="N4208"
-            date="2014-10-09"
+            active_docno="N????"
+            defect_docno="N????"
+            closed_docno="N????"
+            date="2014-10-29"
 >
 
 <intros>
@@ -200,6 +200,18 @@ ownership of it.
 </intros>
 
 <revision_history>
+<revision tag="R09">
+2014-10-09 pre-Urbana mailing
+<ul><li><b>Summary:</b><ul>
+<li>79 open issues, up by 5.</li>
+<li>60 closed issues, up by 0.</li>
+<li>139 issues total, up by 5.</li>
+</ul></li>
+<li><b>Details:</b><ul>
+<li>Added the following 4 New issues: <a href="ewg-active.html#135">135</a>, <a href="ewg-active.html#137">137</a>, <a href="ewg-active.html#138">138</a>, <a href="ewg-active.html#139">139</a>.</li>
+<li>Added the following Open issue: <a href="ewg-active.html#136">136</a>.</li>
+</ul></li>
+</ul>
 <revision tag="R08">
 2014-07-02 post-Rapperswil mailing
 <ul><li><b>Summary:</b><ul>

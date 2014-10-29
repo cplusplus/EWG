@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="158" status="New">
+<title>
+N4228 	Refining Expression Evaluation Order for Idiomatic C++
+</title>
+<section><sref ref="[expr]"/></section>
+<submitter>G. Dos Reis, H. Sutter, J. Caves</submitter>
+<date>13 Oct 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4228.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4228.pdf</a>
+</p>
+</discussion>
+</issue>

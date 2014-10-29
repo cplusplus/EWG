@@ -5,13 +5,16 @@
 
 <issue num="30" status="Open">
 <title>
-[tiny] Efficient/Flexible Access to Argument Packs
+N4235 Selecting from Parameter Packs, [tiny] Efficient/Flexible Access to Argument Packs
 </title>
 <section><sref ref="[temp.variadic]"/></section>
 <submitter>Dave Abrahams</submitter>
 <date>16 Oct 2012</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4235.htm">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4235.htm</a>
+</p>
 <p>
 There are lots of very basic manipulations that are either really hard
 or impossible to do with argument packs unless you use something that

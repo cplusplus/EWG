@@ -4,13 +4,16 @@
 ] >
 
 <issue num="126" status="Open">
-<title>N4116 Nested Namespace Definition (rev 1), N4026 Nested namespace definition
+<title>N4230 	Nested namespace definition (revision 2), N4116 Nested Namespace Definition (rev 1), N4026 Nested namespace definition
 </title>
 <section><sref ref="[basic.scope.namespace]"/></section>
 <submitter>Robert Kawulak</submitter>
 <date>23 May 2014</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4230.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4230.html</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4116.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4116.pdf</a>
 </p>
