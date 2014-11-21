@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="81" status="Ready">
+<issue num="81" status="Open">
 <title>
 N3994, N3853 Range-Based For-Loops: The Next Generation
 </title>
@@ -22,6 +22,9 @@ N3994, N3853 Range-Based For-Loops: The Next Generation
 <p>
 Issaquah 2014: EWG discussed the paper, and found consensus
 to move the proposal forward to Core, and it has wording already.
+</p>
+<p>
+Rejected by the full committee in Urbana. Author is going to revise.
 </p>
 </discussion>
 <resolution>

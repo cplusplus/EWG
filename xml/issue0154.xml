@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="154" status="New">
+<issue num="154" status="WP">
 <title>
 N4191 Folding expressions
 </title>
@@ -14,6 +14,9 @@ N4191 Folding expressions
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4191.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4191.html</a>
+</p>
+<p>
+Adopted into the working draft in Urbana, as N4295.
 </p>
 </discussion>
 </issue>

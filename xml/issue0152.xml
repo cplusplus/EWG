@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="152" status="New">
+<issue num="152" status="Open">
 <title>
 N4186 	Supporting Custom Diagnostics and SFINAE
 </title>
@@ -14,6 +14,9 @@ N4186 	Supporting Custom Diagnostics and SFINAE
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4186.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4186.pdf</a>
+</p>
+<p>
+Discussed in Urbana. EWG thought the problem is worth solving, and the author is encouraged to follow up.
 </p>
 </discussion>
 </issue>

@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="80" status="Ready">
+<issue num="80" status="WP">
 <title>
 N3846 Extending static_assert
 </title>
@@ -21,6 +21,9 @@ option 3, which allows implementations to use useful messages, but
 doesn't force them to document what they provide, so it was
 seen superior to the other alternatives. The proposal is expected
 to go forward to Core, and it has wording already.
+</p>
+<p>
+Adopted into the working draft in Urbana,as N3928.
 </p>
 </discussion>
 <resolution>

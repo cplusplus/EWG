@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="114" status="Open">
+<issue num="114" status="NAD">
 <title>
 N4074 Let return {expr} Be Explicit, Revision 2, N4131 explicit should never be implicit, N4094 Response To: Let return {expr} Be Explicit, N4029 Let return Be Direct and explicit, N3452 (unpublished) Let {x,y,z} => explicit
 </title>
@@ -104,6 +104,11 @@ is that the discussion will continue in Urbana, and there
 will be more papers related to this area.</p>
 <p>
 N4094 contains a response to this proposal by Hinnant and Voutilainen.
+</p>
+<p>
+Discussed in Urbana. EWG decided to reject the proposal due to problems
+it causes for the technique for transparently-explicit constructors
+and the problems pointed out in the response papers.
 </p>
 </discussion>
 </issue>

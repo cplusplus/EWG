@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="153" status="New">
+<issue num="153" status="Open">
 <title>
 N4188 	Proposal for classes with runtime size
 </title>
@@ -14,6 +14,11 @@ N4188 	Proposal for classes with runtime size
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4188.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4188.pdf</a>
+</p>
+<p>
+Discussed in Urbana. The proposed approach was found to have
+some issues, authors are encouraged to continue to try and
+find a solution for runtime-sized types.
 </p>
 </discussion>
 </issue>

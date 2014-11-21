@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="129" status="New">
+<issue num="129" status="Open">
 <title>N4234 0-overhead-principle violations in exception handling - part 2, N4049 0-overhead-principle violations in exception handling
 </title>
 <section><sref ref="[except]"/></section>
@@ -16,6 +16,9 @@
 </p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4049.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4049.pdf</a>
+</p>
+<p>
+Discussed in Urbana. The author is encouraged to work on it further.
 </p>
 </discussion>
 </issue>

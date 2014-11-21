@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="137" status="New">
+<issue num="137" status="Open">
 <title>
 N4110 Exploring the design space of contract specifications for C++
 </title>
@@ -15,5 +15,11 @@ N4110 Exploring the design space of contract specifications for C++
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4110.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4110.pdf</a>
 </p>
+<p>
+Discussed at length in Urbana. In general, various paper authors are
+encourage to do further work together on contract programming.
+See also issue <iref ref="141"/> and <iref ref="159"/>.
+</p>
+
 </discussion>
 </issue>

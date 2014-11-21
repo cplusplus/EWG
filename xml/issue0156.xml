@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="156" status="New">
+<issue num="156" status="NAD">
 <title>
 N4221 Generalized lifetime extension
 </title>
@@ -14,6 +14,10 @@ N4221 Generalized lifetime extension
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4221.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4221.pdf</a>
+</p>
+<p>
+Discussed in Urbana. EWG thought the problem is worth solving, but
+thought that the approach in the paper is not the right solution.
 </p>
 </discussion>
 </issue>

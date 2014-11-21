@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="144" status="New">
+<issue num="144" status="NAD">
 <title>
 N4149 Categorically qualified classes
 </title>
@@ -14,6 +14,10 @@ N4149 Categorically qualified classes
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4149.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4149.pdf</a>
+</p>
+<p>
+Discussed in Urbana. EWG didn't agree on the problem being worth
+solving, and thought that the paper's solution is infeasible.
 </p>
 </discussion>
 </issue>

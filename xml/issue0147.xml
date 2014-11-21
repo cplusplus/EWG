@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="147" status="New">
+<issue num="147" status="WP">
 <title>
 N4164 Forwarding References
 </title>
@@ -14,6 +14,9 @@ N4164 Forwarding References
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4164.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4164.pdf</a>
+</p>
+<p>
+Adopted into the working draft in Urbana, as N4262.
 </p>
 </discussion>
 </issue>

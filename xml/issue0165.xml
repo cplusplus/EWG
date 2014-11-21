@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="165" status="Ready">
+<title>
+N4229 Pointer Ordering
+</title>
+<section><sref ref="[comparisons]"/></section>
+<submitter>Gabriel Dos Reis</submitter>
+<date>13 Oct 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4229.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4229.pdf</a>
+</p>
+<p>
+Discussed in Urbana. EWG voted to forward the proposal to LWG.
+</p>
+</discussion>
+</issue>

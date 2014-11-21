@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="140" status="New">
+<issue num="140" status="NAD">
 <title>
 N4127 Checked-dereference conditions
 </title>
@@ -14,6 +14,9 @@ N4127 Checked-dereference conditions
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4127.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4127.html</a>
+</p>
+<p>
+Discussed in Urbana. EWG found the motivation for the proposal insufficient.
 </p>
 </discussion>
 </issue>

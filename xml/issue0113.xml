@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="113" status="Open">
+<issue num="113" status="WP">
 <title>
 N4196 	Attributes for namespaces and enumerators, [tiny] Core issue 1657, Attributes for namespaces and enumerators
 </title>
@@ -24,5 +24,8 @@ and anonymous namespaces, and that the rationale for both namespaces and enumera
 </p>
 <p>Discussed in Rapperswil 2014. Smith is encouraged to write a proposal
 for EWG review, EWG expects to send it towards CWG without much ado.</p>
+<p>
+Adopted into the working draft in Urbana, as N4266.
+</p>
 </discussion>
 </issue>

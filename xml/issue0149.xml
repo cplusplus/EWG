@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="149" status="New">
+<issue num="149" status="Open">
 <title>
 N4166 Movable initializer lists
 </title>
@@ -14,6 +14,11 @@ N4166 Movable initializer lists
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4166.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4166.pdf</a>
+</p>
+<p>
+Discussed in Urbana. EWG thought the problem is worth solving, but
+expressed doubt about this proposal being the right approach. Further
+work is encouraged.
 </p>
 </discussion>
 </issue>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="164" status="Ready">
+<title>
+N4129 Source-Code Information Capture
+</title>
+<section><sref ref="[support.general]"/></section>
+<submitter>Robert Douglas</submitter>
+<date>10 Oct 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4129.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4129.pdf</a>
+</p>
+<p>
+Discussed in Urbana. EWG voted to forward the proposal to LEWG and CWG.
+</p>
+</discussion>
+</issue>

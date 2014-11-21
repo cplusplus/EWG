@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="63" status="Open">
+<issue num="63" status="WP">
 <title>
 N4152 uncaught_exceptions, N3614 unwinding_exception
 </title>
@@ -27,6 +27,9 @@ Author is encouraged to revise.
 <p>
 In Chicago 2013, Voutilainen said he plans to work on this issue and create
 a follow-up paper for C++17.
+</p>
+<p>
+Adopted into the working draft in Urbana, as N4259.
 </p>
 </discussion>
 </issue>

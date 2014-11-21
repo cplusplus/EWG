@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="119" status="Ready">
+<issue num="119" status="WP">
 <title>N4197 Adding u8 character literals, [tiny] Why no u8 character literals?
 </title>
 <section><sref ref="[lex.ccon]"/></section>
@@ -31,5 +31,8 @@ This matters for implementations where the narrow execution character set is not
 Is there a good reason for omitting this (useful and natural) functionality?
 </p>
 <p>Discussed in Rapperswil 2014. EWG considers this to be an improvement, and encourages the author to take a proposal with wording to CWG. It's expected that Smith can do so without a separate EWG review.</p>
+<p>
+Voted into the working draft in Urbana, as N4267.
+</p>
 </discussion>
 </issue>

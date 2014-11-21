@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="121" status="Ready">
+<issue num="121" status="WP">
 <title>N4086, N3981 Removing trigraphs??!, N4210 IBM comment on preparing for a Trigraph-adverse future in C++17
 </title>
 <section><sref ref="[lex.phases]"/></section>
@@ -24,6 +24,7 @@
 <p>
 The paper contains the proposed wording.
 </p>
+</resolution>
 <p>
 Discussed in Rapperswil 2014. IBM continues to oppose.
 </p>
@@ -34,6 +35,8 @@ Discussed in Rapperswil 2014. IBM continues to oppose.
 <p>Deprecate/Remove/Status Quo, three-way poll:</p>
 <p>5/16/6. Removal is still by far the strongest. </p>
 <p>The proposal goes forward to CWG. CWG has already reviewed it and designated it ready for voting in Urbana.</p>
-</resolution>
+<p>
+Adopted into the working draft in Urbana, as N4086.
+</p>
 </discussion>
 </issue>

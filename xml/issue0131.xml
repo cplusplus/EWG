@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="131" status="Ready">
+<issue num="131" status="WP">
 <title>N4051 Allow typename in a template template parameter
 </title>
 <section><sref ref="[temp.param]"/></section>
@@ -16,6 +16,9 @@
 </p>
 <p>
 Discussed in Rapperswil 2014, approved by acclamation, ready to go to CWG. CWG already reviewed it and designated it ready for voting in Urbana.
+</p>
+<p>
+Adopted into the working draft in Urbana, as N4051.
 </p>
 </discussion>
 </issue>

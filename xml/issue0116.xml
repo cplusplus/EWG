@@ -5,13 +5,16 @@
 
 <issue num="116" status="Open">
 <title>
-N4126, N4114, N3950 Defaulted comparison operators, N4175 Default comparisons, N4176 Thoughts about Comparisons
+N4126, N4114, N3950 Defaulted comparison operators, N4175 Default comparisons, N4176 Thoughts about Comparisons, N4239 Defaulted Comparison Using Reflection
 </title>
 <section><sref ref="[dcl.fct.def.default]"/></section>
-<submitter>Oleg Smolsky, Bjarne Stroustrup</submitter>
+<submitter>Oleg Smolsky, Bjarne Stroustrup, Andrew Tomazos, Mike Spertus</submitter>
 <date>19 Feb 2014</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4239.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4239.pdf</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4126.htm">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4126.htm</a>
 </p>
@@ -51,6 +54,9 @@ N4126, N4114, N3950 Defaulted comparison operators, N4175 Default comparisons, N
 The guidance of the vote is not very clear, but what seems clear is that
 EWG more or less encouraged the paper author to come up with a revised
 proposal.
+</p>
+<p>
+Discussed in Urbana. EWG voiced preference towards an opt-in approach.
 </p>
 </discussion>
 <resolution>

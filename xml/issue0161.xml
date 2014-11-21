@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="161" status="WP">
+<title>
+N3922 New Rules for auto deduction from braced-init-list, N3912 Auto and braced-init-lists, continued, N3681 Auto and braced-init lists
+</title>
+<section><sref ref="[basic.life]"/></section>
+<submitter>Ville Voutilainen, James Dennett</submitter>
+<date>02 May 2013</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3922.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3922.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3912.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n3912.html</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3681.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3681.html</a>
+</p>
+<p>
+Adopted into the working draft in Urbana, as N3922.
+</p>
+</discussion>
+</issue>

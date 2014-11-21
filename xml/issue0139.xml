@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="139" status="New">
+<issue num="139" status="Ready">
 <title>
 N4121 Compile-Time String: std::string_literal&lt;n&gt;
 </title>
@@ -14,6 +14,10 @@ N4121 Compile-Time String: std::string_literal&lt;n&gt;
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4121.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4121.pdf</a>
+</p>
+<p>
+Discussed in Urbana. The design was approved by EWG, and the author
+was encouraged to proceed to LEWG and CWG.
 </p>
 </discussion>
 </issue>

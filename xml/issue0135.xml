@@ -49,4 +49,32 @@ could be omitted for other cases besides mutable, such as</p>
 </pre>
 </p>
 </discussion>
+<resolution>
+<strong> Change the grammar in 5.1.2 [expr.prim.lambda] paragraph 1</strong>
+
+<blockquote>
+<pre><em>
+lambda-expression:
+      lambda-introducer lambda-declarator<del><sub>opt</sub></del> compound-statement
+...
+
+lambda-declarator:
+      ( parameter-declaration-clause ) mutable<sub>opt</sub>
+            exception-specification<sub>opt</sub> attribute-specifier-seq<sub>opt</sub> trailing-return-type<sub>opt</sub>
+      <ins>mutable<sub>opt</sub> exception-specification<sub>opt</sub> attribute-specifier-seq<sub>opt</sub> trailing-return-type<sub>opt</sub></ins>
+</em>
+</pre>
+</blockquote>
+
+
+<strong> Remove from 5.1.2 [expr.prim.lambda] paragraph 4</strong>
+<blockquote>
+<del>If a <em>lambda-expression</em> does not include a <em>lambda-declarator</em>, it is as if the <em>lambda-declarator</em> were (). </del>
+</blockquote>
+
+<strong> Modify in 5.1.2 [expr.prim.lambda] paragraph 5</strong>
+<blockquote>This function call operator or operator template is declared <code>const</code> (9.3.1) if and only if
+the <del><em>lambda-expression</em>'s <em>parameter-declaration-clause</em> is not followed by</del><ins> <em>lambda-declarator</em> does not contain the keyword</ins> <code>mutable</code>. 
+</blockquote>
+</resolution>
 </issue>

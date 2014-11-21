@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="126" status="Open">
+<issue num="126" status="WP">
 <title>N4230 	Nested namespace definition (revision 2), N4116 Nested Namespace Definition (rev 1), N4026 Nested namespace definition
 </title>
 <section><sref ref="[basic.scope.namespace]"/></section>
@@ -26,5 +26,8 @@
 SF: 11 F: 5 N: 3 A: 0 SA: 0 
 </p>
 <p>The guidance is to provide only the basic syntactic sugar, no attributes, no aliases. Initial wording is necessary before this can proceed to Core. It is expected that EWG will review a revised paper before CWG will review the wording.</p>
+<p>
+Adopted into the working draft in Urbana, as N4266.
+</p>
 </discussion>
 </issue>

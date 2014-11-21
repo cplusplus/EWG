@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="138" status="New">
+<issue num="138" status="NAD">
 <title>
 N4120 Null Coalescing Conditional Operator
 </title>
@@ -14,6 +14,11 @@ N4120 Null Coalescing Conditional Operator
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4120.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4120.pdf</a>
+</p>
+<p>
+Discussed in Urbana. EWG discouraged the proposal as having insufficient
+motivation for such a language change, and didn't like the direction
+of adding yet another operator.
 </p>
 </discussion>
 </issue>

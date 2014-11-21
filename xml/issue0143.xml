@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="143" status="New">
+<issue num="143" status="Open">
 <title>
 N4148 Disallowing Inaccessible Operators From Trivially Copyable
 </title>
@@ -14,6 +14,13 @@ N4148 Disallowing Inaccessible Operators From Trivially Copyable
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4148.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4148.html</a>
+</p>
+<p>
+Discussed in Urbana. The author is encouraged to revise the paper.
+EWG suggested splitting the core language concept of trivially copyable
+into trivially copyable and trivially movable, and gave guidance against
+adding new library traits for the latter, since such a trait would not
+have use cases.
 </p>
 </discussion>
 </issue>

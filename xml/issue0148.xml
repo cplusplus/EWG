@@ -3,12 +3,12 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="148" status="New">
+<issue num="148" status="Open">
 <title>
 N4165 Unified Call Syntax, N4174 Call syntax: x.f(y) vs. f(x,y)
 </title>
 <section><sref ref="[expr.call]"/></section>
-<submitter>Herb Sutter</submitter>
+<submitter>Herb Sutter, Bjarne Stroustrup</submitter>
 <date>4 Oct 2014</date>
 
 <discussion>
@@ -17,6 +17,11 @@ N4165 Unified Call Syntax, N4174 Call syntax: x.f(y) vs. f(x,y)
 </p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4174.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4174.pdf</a>
+</p>
+<p>
+Discussed in Urbana. EWG favored being able to invoke non-members with
+the member call syntax, and was undecided on the other aspects. Authors
+are encouraged to follow up.
 </p>
 </discussion>
 </issue>

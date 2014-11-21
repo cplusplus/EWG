@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="82" status="Open">
+<issue num="82" status="WP">
 <title>
 N4180 	SG5 Transactional Memory Support for C++ Update, N3919, N3859, N3718 Transactional Memory Support for C++
 </title>
@@ -27,6 +27,9 @@ N4180 	SG5 Transactional Memory Support for C++ Update, N3919, N3859, N3718 Tran
 <p>
 Issaquah 2014: EWG discussed the paper, and found consensus
 to move the proposal forward to a Technical Specification.
+</p>
+<p>
+Accepted for creation of a Technical Specification in Urbana, as N4272 and N4265.
 </p>
 </discussion>
 </issue>

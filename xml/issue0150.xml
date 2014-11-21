@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="150" status="New">
+<issue num="150" status="NAD">
 <title>
 N4172 Named arguments
 </title>
@@ -14,6 +14,11 @@ N4172 Named arguments
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4172.htm">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4172.htm</a>
+</p>
+<p>
+Discussed in Urbana. EWG found various problems with the proposed
+approach, and didn't think it's feasible to try solving the problem,
+as it has been tried many times and every time it has failed.
 </p>
 </discussion>
 </issue>
