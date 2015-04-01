@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="169" status="New">
+<title>
+N4320 Make exception specifications be part of the type system 
+</title>
+<section><sref ref="[conv]"/></section>
+<submitter>Jens Maurer</submitter>
+<date>20 Nov 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4320.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4320.html</a>
+</p>
+</discussion>
+</issue>

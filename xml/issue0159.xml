@@ -7,7 +7,7 @@
 <title>
 N4248 Library Preconditions are a Language Feature
 </title>
-<section><sref ref="[dcl.fct]"/></section>
+<section><sref ref="[contract]"/></section>
 <submitter>Alisdair Meredith</submitter>
 <date>12 Oct 2014</date>
 
@@ -18,7 +18,7 @@ N4248 Library Preconditions are a Language Feature
 <p>
 Discussed at length in Urbana. In general, various paper authors are
 encourage to do further work together on contract programming.
-See also issue <iref ref="137"/> and <iref ref="141"/>.
+See also issue <iref ref="137"/>, <iref ref="141"/> and <iref ref="168"/>.
 </p>
 </discussion>
 </issue>

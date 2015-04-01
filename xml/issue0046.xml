@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="46" status="WP">
+<issue num="46" status="C++14">
 <title>
 [tiny] Type Trait is_final&lt;T&gt;
 </title>

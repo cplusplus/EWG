@@ -13,6 +13,15 @@
 
 <discussion>
 <p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#92">92 	Should exception-specifications be part of the type system?</a> -> (SUPERSEDED) Instruct Core to close 92 as NAD. Maurer points out that he's
+going to be dealing with the area with TM. The rationale for
+closing is that EWG doesn't agree that being able to overload
+on noexcept is worth the trouble, nor does EWG think being
+able to have pointers-to-functions being different parameter
+types if they have different noexcept-specifications.
+-> New paper and a new EWG issue, <iref ref="169"/>.
+</p>
+<p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#203">203 	Type of address-of-member expression</a> -> new EWG issue, <iref ref="89"/>. The EWG issue is NAD, too late for a breaking change, instruct CWG to also close as NAD.
 </p>
 <p>

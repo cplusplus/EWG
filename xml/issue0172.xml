@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="172" status="New">
+<title>
+N4358 Unary Folds and Empty Parameter Packs 
+</title>
+<section><sref ref="[expr.prim.fold]"/></section>
+<submitter>Thibaut Le Jehan</submitter>
+<date>20 Jan 2015</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4358.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4358.pdf</a>
+</p>
+</discussion>
+</issue>

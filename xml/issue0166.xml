@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="166" status="New">
+<title>
+N4286 Resumable Functions, N4287 Threads, Fibers and Couroutines (slides deck) 
+</title>
+<section><sref ref="[coroutine]"/></section>
+<submitter>Gor Nishanov, Jim Radigan</submitter>
+<date>11 Nov 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4286.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4286.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4287.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4287.pdf</a>
+</p>
+<p>
+Discussed in Urbana. Further proposals expected.
+</p>
+</discussion>
+</issue>

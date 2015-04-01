@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="3" status="WP">
+<issue num="3" status="C++14">
 <title>N3760, N3394 [[deprecated]] attribute</title>
 <section><sref ref="[dcl.attr]"/></section>
 <submitter>Alberto Ganesh Barbati</submitter>

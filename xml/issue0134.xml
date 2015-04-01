@@ -16,14 +16,6 @@
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#13">13 extern "C" for Parameters of Function Templates</a> -> request Core to close as NAD, Daveed says aliases with linkage are the solution. 1463 will be opened as an EWG issue to solve this.
 </p> 	
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#92">92 	Should exception-specifications be part of the type system?</a> -> Instruct Core to close 92 as NAD. Maurer points out that he's
-going to be dealing with the area with TM. The rationale for
-closing is that EWG doesn't agree that being able to overload
-on noexcept is worth the trouble, nor does EWG think being
-able to have pointers-to-functions being different parameter
-types if they have different noexcept-specifications.
-</p>
-<p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#230">230 	Calls to pure virtual functions</a> -> Instruct Core to close 230 as NAD. Pure virtual functions can be called by non-virtual calls only, and it is by design that virtual calls should never
 resolve to the definition of a pure virtual function. The behaviour is undefined because implementations aren't required to prevent ending up in the pure virtual function definition. That is also by design.
 </p>

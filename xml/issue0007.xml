@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="7" status="WP">
+<issue num="7" status="C++14">
 <title>
 N3642, N3468, N3402 User-defined Literals for Standard Library Types, N3472 Binary Literals in the C++ Core Language
 </title>

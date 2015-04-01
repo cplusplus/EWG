@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="27" status="WP">
+<issue num="27" status="C++14">
 <title>
 N3781 Single-Quotation-Mark as a Digit Separator, N3661, N3499 Digit Separators, N3448 Painless Digit Separation
 </title>

@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="6" status="WP">
+<issue num="6" status="C++14">
 <title>
 N3667, N3401 Generating move operations (elaborating on Core 1402)
 </title>

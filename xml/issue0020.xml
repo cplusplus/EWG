@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="20" status="WP">
+<issue num="20" status="C++14">
 <title>
 N3778, N3663, N3536, N3432 C++ Sized Deallocation
 </title>

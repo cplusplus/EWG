@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="62" status="WP">
+<issue num="62" status="C++14">
 <title>
 N3648, N3610 Generic lambda-capture initializers, supporting capture-by-move
 </title>

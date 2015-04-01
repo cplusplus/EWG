@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="171" status="New">
+<title>
+N4356 Relaxed Array Type Declarator 
+</title>
+<section><sref ref="[dcl.array]"/></section>
+<submitter>Carter Edwards</submitter>
+<date>04 Feb 2015</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4356.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4356.pdf</a>
+</p>
+</discussion>
+</issue>

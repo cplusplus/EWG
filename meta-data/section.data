@@ -95,6 +95,7 @@
     5.1 [expr.prim]
         5.1.1 [expr.prim.general]
         5.1.2 [expr.prim.lambda]
+        5.1.3 [expr.prim.fold]
     5.2 [expr.post]
         5.2.1 [expr.sub]
         5.2.2 [expr.call]

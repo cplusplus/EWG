@@ -210,6 +210,7 @@ auto filename_for_status(std::string stat) -> std::string {
    return (stat == "TC1")           ? EWG_DEFECTS
         : (stat == "CD1")           ? EWG_DEFECTS
         : (stat == "C++11")         ? EWG_DEFECTS
+        : (stat == "C++14")         ? EWG_DEFECTS
         : (stat == "WP")            ? EWG_DEFECTS
         : (stat == "Resolved")      ? EWG_DEFECTS
         : (stat == "DR")            ? EWG_DEFECTS
@@ -440,6 +441,7 @@ struct sort_by_status {
             "WP",
             "CD1",
             "C++11",
+            "C++14",
             "TC1",
             "Resolved",
             "TRDec",
@@ -991,7 +993,8 @@ auto EwgIssuesXml::get_revisions(std::vector<issue> const & issues, std::string 
 //       r += "R08: 2014-07-02 post-Rapperswil mailing";
 //   r += "D09: 2014-07-02 working version";
 //   r += "R09: 2014-10-09 pre-Urbana mailing";
-   r += "R10: 2014-10-29 post-Urbana mailing";
+//   r += "R10: 2014-10-29 post-Urbana mailing";
+   r += "D11: 2015-03-30 pre-Lenexa working version";
 //   r += "Madrid meeting resolutions";   // We should date and *timestamp* this reference, as we expect to generate several documents per day
    r += diff_report;
    r += "</li>\n";

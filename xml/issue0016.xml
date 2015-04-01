@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="16" status="WP">
+<issue num="16" status="C++14">
 <title>
 N3649, N3560, N3559, N3418 Proposal for Generic (Polymorphic) Lambda Expressions  
 </title>

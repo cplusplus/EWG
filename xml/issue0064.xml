@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="64" status="WP">
+<issue num="64" status="C++14">
 <title>
 N3651, N3615 Constexpr Variable Templates, N3552 Introducing Object Aliases
 </title>

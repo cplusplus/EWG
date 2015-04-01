@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="168" status="New">
+<title>
+N4319 Contracts for C++: What are the Choices 
+</title>
+<section><sref ref="[contract]"/></section>
+<submitter>Gabriel Dos Reis, Shuvendu Lahiri, Francesco Logozzo, Thomas Ball, Jared Parsons</submitter>
+<date>23 Nov 2014</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4319.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4319.pdf</a>
+</p>
+<p>
+See also issue <iref ref="137"/>, <iref ref="141"/> and <iref ref="159"/>.
+</p>
+</discussion>
+</issue>

@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="25" status="WP">
+<issue num="25" status="C++14">
 <title>
 N3652, N3597, N3598, N3444 Relaxing syntactic constraints on constexpr function definitions
 </title>

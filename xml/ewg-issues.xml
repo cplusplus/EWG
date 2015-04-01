@@ -1,9 +1,9 @@
-<issueslist revision="R10"
+<issueslist revision="D11"
             maintainer="Ville Voutilainen &lt;ville.voutilainen@gmail.com&gt;"
-            active_docno="N4325"
-            defect_docno="N4326"
-            closed_docno="N4327"
-            date="2014-11-21"
+            active_docno="N????"
+            defect_docno="N????"
+            closed_docno="N????"
+            date="2015-03-30"
 >
 
 <intros>
@@ -200,6 +200,31 @@ ownership of it.
 </intros>
 
 <revision_history>
+<revision tag="R10">
+2014-10-29 post-Urbana mailing
+<ul><li><b>Summary:</b><ul>
+<li>85 open issues, up by 6.</li>
+<li>80 closed issues, up by 20.</li>
+<li>165 issues total, up by 26.</li>
+</ul></li>
+<li><b>Details:</b><ul>
+<li>Added the following 6 NAD issues: <a href="ewg-closed.html#140">140</a>, <a href="ewg-closed.html#144">144</a>, <a href="ewg-closed.html#145">145</a>, <a href="ewg-closed.html#150">150</a>, <a href="ewg-closed.html#156">156</a>, <a href="ewg-closed.html#157">157</a>.</li>
+<li>Added the following New issue: <a href="ewg-active.html#146">146</a>.</li>
+<li>Added the following 13 Open issues: <a href="ewg-active.html#141">141</a>, <a href="ewg-active.html#142">142</a>, <a href="ewg-active.html#143">143</a>, <a href="ewg-active.html#148">148</a>, <a href="ewg-active.html#149">149</a>, <a href="ewg-active.html#151">151</a>, <a href="ewg-active.html#152">152</a>, <a href="ewg-active.html#153">153</a>, <a href="ewg-active.html#158">158</a>, <a href="ewg-active.html#159">159</a>, <a href="ewg-active.html#160">160</a>, <a href="ewg-active.html#162">162</a>, <a href="ewg-active.html#163">163</a>.</li>
+<li>Added the following 2 Ready issues: <a href="ewg-active.html#164">164</a>, <a href="ewg-active.html#165">165</a>.</li>
+<li>Added the following 4 WP issues: <a href="ewg-complete.html#147">147</a>, <a href="ewg-complete.html#154">154</a>, <a href="ewg-complete.html#155">155</a>, <a href="ewg-complete.html#161">161</a>.</li>
+<li>Changed the following issue from New to NAD: <a href="ewg-closed.html#138">138</a>.</li>
+<li>Changed the following issue from Open to NAD: <a href="ewg-closed.html#114">114</a>.</li>
+<li>Changed the following 2 issues from New to Open: <a href="ewg-active.html#129">129</a>, <a href="ewg-active.html#137">137</a>.</li>
+<li>Changed the following issue from Ready to Open: <a href="ewg-active.html#81">81</a>.</li>
+<li>Changed the following issue from New to Ready: <a href="ewg-active.html#139">139</a>.</li>
+<li>Changed the following issue from Open to Ready: <a href="ewg-active.html#72">72</a>.</li>
+<li>Changed the following 4 issues from Open to WP: <a href="ewg-complete.html#63">63</a>, <a href="ewg-complete.html#82">82</a>, <a href="ewg-complete.html#113">113</a>, <a href="ewg-complete.html#126">126</a>.</li>
+<li>Changed the following 4 issues from Ready to WP: <a href="ewg-complete.html#80">80</a>, <a href="ewg-complete.html#119">119</a>, <a href="ewg-complete.html#121">121</a>, <a href="ewg-complete.html#131">131</a>.</li>
+</ul></li>
+</ul>
+</li>
+</revision>
 <revision tag="R09">
 2014-10-09 pre-Urbana mailing
 <ul><li><b>Summary:</b><ul>
@@ -212,6 +237,7 @@ ownership of it.
 <li>Added the following Open issue: <a href="ewg-active.html#136">136</a>.</li>
 </ul></li>
 </ul>
+</revision>
 <revision tag="R08">
 2014-07-02 post-Rapperswil mailing
 <ul><li><b>Summary:</b><ul>
