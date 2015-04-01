@@ -19,7 +19,7 @@
 </style>
 </head>
 <body>
-<p>Revised 2015-04-01 at 22:04:14 UTC</p>
+<p>Revised 2015-04-01 at 23:04:45 UTC</p>
 <h2>Unresolved Issues</h2>
 <hr>
 <h3><a name="2"></a>2. N3387 Overload resolution tiebreakers for integer types</h3>
@@ -1888,6 +1888,7 @@ Discussed in Urbana. The author is encouraged to work on it further.
 </h3>
 <p><b>Section:</b> 5.1.2 [expr.prim.lambda] <b>Status:</b> <a href="ewg-active.html#New">New</a>
  <b>Submitter:</b> Herb Sutter <b>Opened:</b> 2014-07-02 <b>Last modified:</b> 2014-11-24</p>
+<p><b>View other</b> <a href="ewg-index-open.html#expr.prim.lambda">active issues</a> in [expr.prim.lambda].</p>
 <p><b>View all other</b> <a href="ewg-index.html#expr.prim.lambda">issues</a> in [expr.prim.lambda].</p>
 <p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
 <p><b>Discussion:</b></p>
@@ -2128,6 +2129,8 @@ N4166 Movable initializer lists
 </h3>
 <p><b>Section:</b> 18.9 [support.initlist] <b>Status:</b> <a href="ewg-active.html#Open">Open</a>
  <b>Submitter:</b> David Krauss <b>Opened:</b> 2014-10-06 <b>Last modified:</b> 2014-11-24</p>
+<p><b>View other</b> <a href="ewg-index-open.html#support.initlist">active issues</a> in [support.initlist].</p>
+<p><b>View all other</b> <a href="ewg-index.html#support.initlist">issues</a> in [support.initlist].</p>
 <p><b>View all issues with</b> <a href="ewg-status.html#Open">Open</a> status.</p>
 <p><b>Discussion:</b></p>
 <p>
@@ -2461,6 +2464,133 @@ N4367 Comparison in C++
 <p><b>Discussion:</b></p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4367.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4367.html</a>
+</p>
+
+
+
+
+<hr>
+<h3><a name="175"></a>175. 
+[tiny] pointer to void as template non-type parameter
+</h3>
+<p><b>Section:</b> 14.1 [temp.param] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> RS <b>Opened:</b> 2014-10-11 <b>Last modified:</b> 2015-04-02</p>
+<p><b>View other</b> <a href="ewg-index-open.html#temp.param">active issues</a> in [temp.param].</p>
+<p><b>View all other</b> <a href="ewg-index.html#temp.param">issues</a> in [temp.param].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+According to 14.1 [temp.param] paragraph 4,
+</p>
+<p>
+<blockquote>
+<pre>
+A non-type template-parameter shall have one of the following (optionally
+cv-qualified) types:
+- integral or enumeration type,
+- pointer to object or pointer to function,
+- lvalue reference to object or lvalue reference to function,
+- pointer to member,
+- std::nullptr_t.
+</pre>
+</blockquote>
+</p>
+<p>
+Since void* isn't a pointer-to-object type, this prohibits using them as
+template non-type parameters, which disallows constructs like
+</p>
+<code>
+<blockquote>
+     template&lt;typename T, std::enable_if_t&lt;std::is_array&lt;T&gt;::value&gt;* =
+nullptr>
+     void foo(T&amp;) {}
+</blockquote>
+</code>
+<p>
+(Though the above does compile in Clang, GCC, and MSVC with no warnings.)
+</p>
+<p>
+There doesn't seem to be a good reason for this prohibition. While a void*
+template parameter can only have a single value (the null pointer),
+the same is true for a non-type parameter of type std::nullptr_t, which is
+allowed.
+</p>
+
+<p><b>Wording available:</b></p>
+<p>
+Change the second bullet point of 14.1 [temp.param] paragraph 4 as
+indicated:
+</p>
+<p>
+<blockquote>
+- <del>pointer to object or pointer to function</del><ins>object pointer or
+function pointer</ins>,
+</blockquote>
+</p>
+<p>
+Change the second bullet point of 14.3.2 [temp.arg.nontype] paragraph 5 as
+indicated:
+</p>
+<p>
+<blockquote>
+- for a non-type template-parameter of <del>type pointer to
+object</del><ins>object pointer type</ins>, qualification conversions...
+</blockquote>
+</p>
+
+
+
+
+<hr>
+<h3><a name="176"></a>176. 
+[tiny] Explicit capture-by-value syntax for lambdas
+</h3>
+<p><b>Section:</b> 5.1.2 [expr.prim.lambda] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> Bjarne Stroustrup <b>Opened:</b> 2014-12-07 <b>Last modified:</b> 2015-04-02</p>
+<p><b>View other</b> <a href="ewg-index-open.html#expr.prim.lambda">active issues</a> in [expr.prim.lambda].</p>
+<p><b>View all other</b> <a href="ewg-index.html#expr.prim.lambda">issues</a> in [expr.prim.lambda].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+Consider
+</p>
+<p>
+<blockquote>
+<code>
+<pre>
+void tt()
+{
+    int v;
+    auto f1 = [v](int i) { return v + i; };
+    auto f2 = [&amp;v](int i) { return v + i; };
+    auto f3 = [=v](int i) { return v + i; };
+}
+</pre>
+</code>
+</blockquote>
+</p>
+<p>
+I keep making the mistake, and I'm not the only one. Could [=v] be allowed?
+</p>
+<p>
+The discussion is between messages c++std-ext-16174 and c++std-ext-16191, inclusively.
+</p>
+
+
+
+
+<hr>
+<h3><a name="177"></a>177. 
+[tiny] LWG 2432
+</h3>
+<p><b>Section:</b> 18.9 [support.initlist] <b>Status:</b> <a href="ewg-active.html#New">New</a>
+ <b>Submitter:</b> David Krauss <b>Opened:</b> 2014-09-30 <b>Last modified:</b> 2015-04-02</p>
+<p><b>View other</b> <a href="ewg-index-open.html#support.initlist">active issues</a> in [support.initlist].</p>
+<p><b>View all other</b> <a href="ewg-index.html#support.initlist">issues</a> in [support.initlist].</p>
+<p><b>View all issues with</b> <a href="ewg-status.html#New">New</a> status.</p>
+<p><b>Discussion:</b></p>
+<p>
+See <a href="http://cplusplus.github.io/LWG/lwg-toc.html#2432">LWG 2432</a>.
 </p>
 
 
