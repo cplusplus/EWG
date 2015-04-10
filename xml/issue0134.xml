@@ -16,8 +16,14 @@
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#13">13 extern "C" for Parameters of Function Templates</a> -> request Core to close as NAD, Daveed says aliases with linkage are the solution. 1463 will be opened as an EWG issue to solve this.
 </p> 	
 <p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#203">203 	Type of address-of-member expression</a> -> new EWG issue, <iref ref="89"/>. The EWG issue is NAD, too late for a breaking change, instruct CWG to also close as NAD.
+</p>
+<p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#230">230 	Calls to pure virtual functions</a> -> Instruct Core to close 230 as NAD. Pure virtual functions can be called by non-virtual calls only, and it is by design that virtual calls should never
 resolve to the definition of a pure virtual function. The behaviour is undefined because implementations aren't required to prevent ending up in the pure virtual function definition. That is also by design.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#622">622 	Relational comparisons of arbitrary pointers</a> -> new EWG issue, <iref ref="91"/>. The issue is NAD -> instruct CWG to do the same.
 </p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#623">623 	Use of pointers to deallocated storage</a> -> Instruct Core to close 623 as WP. The behavior is implementation-defined rather than undefined in the current working draft, and thus the requirements are no longer draconian. 312, which was resolved as DRWP points to 623, so also close 623 as DRWP.
@@ -27,9 +33,18 @@ resolve to the definition of a pure virtual function. The behaviour is undefined
 in C++14.
 </p>
 <p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#822">822 	Additional contexts for template aliases</a> -> new EWG issue, <iref ref="95"/>. -> issue is NAD, suggest CWG also closes as NAD.
+</p>
+<p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#947">947 	Deducing type template arguments from default function arguments</a> -> Open an EWG issue, <iref ref="97"/>, for 947, immediately close as NAD, explaining that
 the group doesn't think it's generally implementable. Leave the door
 open (but not the issue :)) for a restricted implementation.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1259">1259 	Deleting a POD via a pointer to base</a> -> new EWG issue, <iref ref="99"/>. -> issue is NAD, suggest CWG closes as NAD.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1272">1272 	Implicit definition of static data member of const literal type</a> -> new EWG issue, <iref ref="100"/>. -> issue is NAD, suggest CWG closes as NAD.
 </p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1461">1461 	Narrowing conversions to bit-fields</a> -> Instruct Core to close 1461 as NAD. It would break existing code and
@@ -44,6 +59,31 @@ UDLs.
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1519">1519 	Conflicting default and variadic constructors</a> -> Open an EWG issue for 1519, <iref ref="107"/>. Mark as NAD, there is a work-around
 and Concepts Lite will make the work-around much easier.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1564">1564 	Template argument deduction from an initializer list</a> -> new EWG issue, <iref ref="109"/>. -> issue is NAD, suggest CWG closes as NAD as well.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1586">1586 Naming a destructor via decltype</a> -> new EWG issue, <iref ref="112"/>. -> issue is NAD, suggest CWG closes as NAD as well.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1657">1657 	Attributes for namespaces and enumerators </a> -> Open an EWG issue for 1657, <iref ref="113"/>. Remember to consider inline namespaces
+and anon namespaces. Rationale for both namespaces and enumerators
+is [[deprecated]].
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1754">1754 Declaration of partial specialization of static data member template</a> -> new EWG issue, <iref ref="132"/> (NAD, lack of motivation for the change)
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1798">1798 exception-specifications of template arguments</a> -> new EWG issue, <iref ref="133"/> (NAD, insufficient motivation for a change, no desire to have exception specifications in the type system, paper requested if there's desire to reopen)
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1833">1833 friend declarations naming implicitly-declared member functions</a>
+</p>
+<p>Straw poll, Rapperswil 2014, NAD?</p>
+<p>SF 3 - WF 7 - N 7 - WA 2 - SA 0</p>
+<p>-> instruct CWG to close as NAD, EWG didn't find sufficient motivation
+for the extension suggested.
 </p>
 </discussion>
 </issue>

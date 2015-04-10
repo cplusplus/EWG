@@ -22,13 +22,7 @@ types if they have different noexcept-specifications.
 -> New paper and a new EWG issue, <iref ref="169"/>.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#203">203 	Type of address-of-member expression</a> -> new EWG issue, <iref ref="89"/>. The EWG issue is NAD, too late for a breaking change, instruct CWG to also close as NAD.
-</p>
-<p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#476">476 	Determining the buffer size for placement new</a> -> new EWG issue, <iref ref="90"/>. The EWG issue is NAD -> clarification from CWG requested.
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#622">622 	Relational comparisons of arbitrary pointers</a> -> new EWG issue, <iref ref="91"/>. The issue is NAD -> instruct CWG to do the same.
 </p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#687">687 	template keyword with unqualified-ids</a> -> new EWG issue, <iref ref="92"/>. -> instruct CWG to reopen, Vandevoorde working on wording.
@@ -39,9 +33,6 @@ types if they have different noexcept-specifications.
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#794">794 	Base-derived conversion in member type of pointer-to-member conversion</a> -> Open an EWG issue for 794, <iref ref="94"/>. Snyder reports he is interested in authoring
 a paper.
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#822">822 	Additional contexts for template aliases</a> -> new EWG issue, <iref ref="95"/>. -> issue is NAD, suggest CWG also closes as NAD.
 </p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#914">914 	Value-initialization of array types</a> -> Open an EWG issue for 914 and 1300, <iref ref="96"/>. Instruct Core to close either
@@ -62,12 +53,6 @@ const A.
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1077">1077 	Explicit specializations in non-containing namespaces</a> -> EWG has an issue for 1077. Link to the core issue from that (done), and
 vice versa if CWG chair so chooses.
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1259">1259 	Deleting a POD via a pointer to base</a> -> new EWG issue, <iref ref="99"/>. -> issue is NAD, suggest CWG closes as NAD.
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1272">1272 	Implicit definition of static data member of const literal type</a> -> new EWG issue, <iref ref="100"/>. -> issue is NAD, suggest CWG closes as NAD.
 </p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1300">1300 	T() for array types</a> -> Open an EWG issue for 914 and 1300, <iref ref="96"/>. Instruct Core to close either
@@ -109,30 +94,13 @@ case in point.
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1561">1561 	Aggregates with empty base classes</a> -> new EWG issue, <iref ref="108"/>.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1564">1564 	Template argument deduction from an initializer list</a> -> new EWG issue, <iref ref="109"/>. -> issue is NAD, suggest CWG closes as NAD as well.
-</p>
-<p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1577">1577 	Unnecessary restrictions on partial specializations</a> -> new EWG issue, <iref ref="110"/>. -> issue is NAD, suggest CWG closes as NAD as well.
 </p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1582">1582 Template default arguments and deduction failure</a> -> new EWG issue, <iref ref="111"/>. -> EWG wishes to send this back to CWG for drafting Spicer's suggestion.
 </p>
 <p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1586">1586 Naming a destructor via decltype</a> -> new EWG issue, <iref ref="112"/>. -> issue is NAD, suggest CWG closes as NAD as well.
-</p>
-<p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1643">1643 	Default arguments for template parameter packs</a> -> Link 1643 to EWG issue 15 (done) and vice versa.
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1657">1657 	Attributes for namespaces and enumerators </a> -> Open an EWG issue for 1657, <iref ref="113"/>. Remember to consider inline namespaces
-and anon namespaces. Rationale for both namespaces and enumerators
-is [[deprecated]].
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1754">1754 Declaration of partial specialization of static data member template</a> -> new EWG issue, <iref ref="132"/> (NAD, lack of motivation for the change)
-</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1798">1798 exception-specifications of template arguments</a> -> new EWG issue, <iref ref="133"/> (NAD, insufficient motivation for a change, no desire to have exception specifications in the type system, paper requested if there's desire to reopen)
 </p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1826">1826 const floating-point in constant expressions</a>
@@ -142,13 +110,6 @@ is [[deprecated]].
 <p>SF 4 - WF 12 - N 1 - WA 0 - SA 0</p>
 <p>-> instruct CWG to reopen and resolve so that const floating point
 is allowed in constant expressions.</p>
-<p>
-<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1833">1833 friend declarations naming implicitly-declared member functions</a>
-</p>
-<p>Straw poll, Rapperswil 2014, NAD?</p>
-<p>SF 3 - WF 7 - N 7 - WA 2 - SA 0</p>
-<p>-> instruct CWG to close as NAD, EWG didn't find sufficient motivation
-for the extension suggested.</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1790">1790 Ellipsis following function parameter pack</a>
 </p>
@@ -176,6 +137,9 @@ for the extension suggested.</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1931">1931 Default-constructible and copy-assignable closure types</a>
 </p>
-<p>1934 Relaxing exception-specification compatibility requirements (no link yet)</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1934">1934 Relaxing exception-specification compatibility requirements</a></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1957">1957 decltype(auto) with direct-list-initialization</a></p>
 </discussion>
 </issue>
