@@ -7,7 +7,7 @@
 <title>
 N4472 constexpr goto 
 </title>
-<section><sref ref="[atomics.types.generic]"/></section>
+<section><sref ref="[expr.const]"/></section>
 <submitter>Ville Voutilainen</submitter>
 <date>10 Apr 2015</date>
 
