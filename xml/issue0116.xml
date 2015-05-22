@@ -5,13 +5,19 @@
 
 <issue num="116" status="Open">
 <title>
-N4126, N4114, N3950 Defaulted comparison operators, N4175 Default comparisons, N4176 Thoughts about Comparisons, N4239 Defaulted Comparison Using Reflection
+N4475 Default comparisons (R2), N4476 Thoughts about Comparisons (R2), N4126, N4114, N3950 Defaulted comparison operators, N4175 Default comparisons, N4176 Thoughts about Comparisons, N4239 Defaulted Comparison Using Reflection
 </title>
 <section><sref ref="[dcl.fct.def.default]"/></section>
 <submitter>Oleg Smolsky, Bjarne Stroustrup, Andrew Tomazos, Mike Spertus</submitter>
 <date>19 Feb 2014</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4476.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4476.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4475.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4475.pdf</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4239.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4239.pdf</a>
 </p>
@@ -57,6 +63,12 @@ proposal.
 </p>
 <p>
 Discussed in Urbana. EWG voiced preference towards an opt-in approach.
+</p>
+<p>
+Discussed in Lenexa. The design changes that alleviate compatibility
+concerns gained EWG support. There is ongoing work to produce Core
+wording, but that work raised further design questions. The design
+paper needs an update for Kona.
 </p>
 </discussion>
 <resolution>

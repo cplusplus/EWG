@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="177" status="New">
+<title>
+[tiny] LWG 2432
+</title>
+<section><sref ref="[support.initlist]"/></section>
+<submitter>David Krauss</submitter>
+<date>30 Sep 2014</date>
+
+<discussion>
+<p>
+See <a href="http://cplusplus.github.io/LWG/lwg-toc.html#2432">LWG 2432</a>.
+</p>
+</discussion>
+</issue>

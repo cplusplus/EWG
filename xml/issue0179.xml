@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="179" status="NAD">
+<title>
+N4425 	Generalized Dynamic Assumptions 
+</title>
+<section><sref ref="[expr.unary.op]"/></section>
+<submitter>Hal Finkel</submitter>
+<date>07 Apr 2015</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4425.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4425.pdf</a>
+</p>
+<p>
+Discussed in Lenexa. The paper was rejected, EWG's guidance was to provide
+the functionality within the proposed contract facilities (see <iref ref="141"/>).
+</p>
+</discussion>
+</issue>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="180" status="Ready">
+<title>
+N4429 Core issue 1941 - rewording inherited constructors 
+</title>
+<section><sref ref="[namespace.udecl]"/></section>
+<submitter>Richard Smith</submitter>
+<date>10 Apr 2015</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4429.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4429.html</a>
+</p>
+<p>
+Discussed in Lenexa. The paper was accepted, the author is to take the wording
+to CWG.
+</p>
+</discussion>
+</issue>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="176" status="NAD">
+<title>
+[tiny] Explicit capture-by-value syntax for lambdas
+</title>
+<section><sref ref="[expr.prim.lambda]"/></section>
+<submitter>Bjarne Stroustrup</submitter>
+<date>07 Dec 2014</date>
+
+<discussion>
+<p>
+Consider
+</p>
+<p>
+<blockquote>
+<code>
+<pre>
+void tt()
+{
+    int v;
+    auto f1 = [v](int i) { return v + i; };
+    auto f2 = [&amp;v](int i) { return v + i; };
+    auto f3 = [=v](int i) { return v + i; };
+}
+</pre>
+</code>
+</blockquote>
+</p>
+<p>
+I keep making the mistake, and I'm not the only one. Could [=v] be allowed?
+</p>
+<p>
+The discussion is between messages c++std-ext-16174 and c++std-ext-16191, inclusively.
+</p>
+<p>
+Discussed in Lenexa. EWG voted 8-7 on a yes/no vote, no consensus for
+the change.
+</p>
+</discussion>
+</issue>

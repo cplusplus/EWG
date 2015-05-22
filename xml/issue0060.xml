@@ -5,7 +5,7 @@
 
 <issue num="60" status="Open">
 <title>
-N3602 Template parameter deduction for constructors
+N4471 Template parameter deduction for constructors (Rev 2), N3602 Template parameter deduction for constructors
 </title>
 <section><sref ref="[temp.deduct]"/></section>
 <submitter>Mike Spertus</submitter>
@@ -14,6 +14,9 @@ N3602 Template parameter deduction for constructors
 <discussion>
 <p>
 This issue is split from EWG Issue <iref ref="9"/>.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4471.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4471.html</a>
 </p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3602.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2013/n3602.html</a>
@@ -29,6 +32,10 @@ Stroustrup thought that there's only two ways: all specializations have to be
 in scope, and you look at all of those, or look only at the primary and give 
 an error if that doesn't work.  Spertus is encouraged to write a follow-up 
 paper.
+</p>
+<p>
+Discussed in Lenexa. EWG gave guidance on the "typed constructors" technique,
+and encouraged the author to revise and come back.
 </p>
 </discussion>
 </issue>

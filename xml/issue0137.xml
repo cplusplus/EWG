@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="137" status="Open">
+<issue num="137" status="Dup">
 <title>
 N4293 C++ language support for contract programming, N4110 Exploring the design space of contract specifications for C++
 </title>
@@ -22,6 +22,7 @@ N4293 C++ language support for contract programming, N4110 Exploring the design 
 Discussed at length in Urbana. In general, various paper authors are
 encouraged to do further work together on contract programming.
 See also issue <iref ref="141"/>, <iref ref="159"/> and <iref ref="168"/>.
+Further processing of this will happen under 141.
 </p>
 
 </discussion>

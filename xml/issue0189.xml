@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="189" status="New">
+<title>
+Unions with differing access control are not standard layout
+</title>
+<section><sref ref="[class]"/></section>
+<submitter>Michael Reilly</submitter>
+<date>21 May 2015</date>
+
+<discussion>
+<p>
+Proposes to allow unions with non-static data members of differing
+access control to be considered a standard-layout union, provided they
+meet the other criteria of such.
+</p>
+<p>
+The project that motivated this defect report is located here:
+</p>
+<p>
+<a href="http://preshing.com/20150324/safe-bitfields-in-cpp/">http://preshing.com/20150324/safe-bitfields-in-cpp/</a>
+</p>
+<p>
+<a href="https://github.com/preshing/cpp11-on-multicore/blob/master/common/bitfield.h">https://github.com/preshing/cpp11-on-multicore/blob/master/common/bitfield.h</a>
+</p>
+<p>
+Originally, the union had both public and private members. This caused
+the union to be not standard-layout, which in turn caused the program
+to technically have undefined behavior.
+</p>
+<p>
+I argue that this defect is important to address because there seems
+to be only one guarantee about the behavior of unions when accessing
+the "wrong" member, and this guarantee only applies to standard-layout
+unions.  So if the definition of a standard-layout union is too strict
+then it can cause undefined behavior in places where it strictly does
+not need to be.
+</p>
+</discussion>
+</issue>

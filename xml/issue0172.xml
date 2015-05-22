@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="172" status="New">
+<issue num="172" status="Open">
 <title>
 N4358 Unary Folds and Empty Parameter Packs 
 </title>
@@ -14,6 +14,12 @@ N4358 Unary Folds and Empty Parameter Packs
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4358.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4358.pdf</a>
+</p>
+<p>
+Discussed in Lenexa. EWG was interested in fixing some parts of the problem,
+but didn't agree to the paper as presented. The author is encouraged to
+talk to the authors of the fold expression design (Sutton, Smith) and
+revise.
 </p>
 </discussion>
 </issue>

@@ -5,14 +5,19 @@
 
 <issue num="29" status="Open">
 <title>
-N3329 Proposal: static if declaration
+N4461 Static if resurrected, N3329 Proposal: static if declaration
 </title>
 <section><sref ref="[meta]"/></section>
-<submitter>Herb Sutter</submitter>
+<submitter>Herb Sutter, Ville Voutilainen</submitter>
 <date>10 Jan 2012</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4461.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4461.html</a>
+</p>
+<p>
 <a href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3329.pdf">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3329.pdf</a>
+</p>
 <p>
 Reviewed by EWG in Portland 2012, deemed to be handled by the Concepts Study Group (SG8).
 </p>
@@ -20,6 +25,10 @@ Reviewed by EWG in Portland 2012, deemed to be handled by the Concepts Study Gro
 Deemed post-C++14 material in Chicago 2013. SG8 isn't including it in their
 scope for the near future. Voutilainen is planning to write a simplified
 proposal for C++17.
+</p>
+<p>
+Discussed in Lenexa. EWG encouraged the author to come back in Kona
+with a more detailed proposal.
 </p>
 </discussion>
 

@@ -5,13 +5,19 @@
 
 <issue num="141" status="Open">
 <title>
-N4378 Language Support for Contract Assertions, N4379 FAQ about N4378, Language Support for Contract Assertions, N4253, N4135 Language Support for Runtime Contract Validation 
+N4415 Simple Contracts for C++, N4435 Proposing Contract Attributes, N4378 Language Support for Contract Assertions, N4379 FAQ about N4378, Language Support for Contract Assertions, N4253, N4135 Language Support for Runtime Contract Validation 
 </title>
 <section><sref ref="[contract]"/></section>
 <submitter>J. Lakos, A. Zakharov, A. Beels, N. Myers</submitter>
 <date>09 Oct 2014</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4415.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4415.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4435.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4435.pdf</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4378.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4378.pdf</a>
 </p>
@@ -29,6 +35,9 @@ Discussed at length in Urbana. In general, various paper authors are
 encourage to do further work together on contract programming. See also
 issue <iref ref="137"/>, <iref ref="159"/> and <iref ref="168"/>.
 </p>
-
+<p>
+Discussed in Lenexa. EWG's guidance was to allow contracts on both
+declarations and definitions, and to unify the proposals.
+</p>
 </discussion>
 </issue>

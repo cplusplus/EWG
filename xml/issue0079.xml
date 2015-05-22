@@ -41,6 +41,9 @@ because EWG hasn't. Include 1326 in the EWG issue, leave that open in
 Core as well.
 </p>
 <p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#944">944 reinterpret_cast for all types with the same size and alignment</a>
+</p>
+<p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1008">1008 	Querying the alignment of an object</a> -> new EWG issue, <iref ref="98"/>.
 </p>
 <p>
@@ -141,5 +144,9 @@ is allowed in constant expressions.</p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1934">1934 Relaxing exception-specification compatibility requirements</a></p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1957">1957 decltype(auto) with direct-list-initialization</a></p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#2097">2097  Lambdas and noreturn attribute</a>
+</p>
+
 </discussion>
 </issue>

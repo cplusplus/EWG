@@ -5,16 +5,23 @@
 
 <issue num="108" status="Open">
 <title>
-[tiny] Core issue 1561, Aggregates with empty base classes
+N4404 Extension to aggregate initialization, was [tiny] Core issue 1561, Aggregates with empty base classes
 </title>
 <section><sref ref="[dcl.init.aggr]"/></section>
-<submitter>Gabriel Dos Reis</submitter>
+<submitter>Gabriel Dos Reis, Oleg Smolsky</submitter>
 <date>29 Sep 2012</date>
 
 <discussion>
 <p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4404.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4404.html</a>
+</p>
+<p>
 See <a href="http://open-std.org/JTC1/SC22/WG21/docs/cwg_toc.html#1561">Core issue 1561</a>.
 </p>
 <p>Discussed in Rapperswil 2014. Daryle Walker has an unpublished paper aiming to solve this <a href="http://htmlpreview.github.io/?https://raw.github.com/CTMacUser/multiarray-iso-proposal/master/expanded-aggregate-proposal.html">here</a>. EWG suggests that Dos Reis works with Walker to get the paper on EWG's plate.</p>
+<p>
+N4404 was discussed in Lenexa, EWG rejected the paper as such and 
+recommended looking at a more comprehensive approach.
+</p>
 </discussion>
 </issue>

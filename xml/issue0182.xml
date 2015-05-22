@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="182" status="Open">
+<title>
+N4434 Tweaks to Streamline Concepts Lite Syntax, other Concepts TS issues
+</title>
+<section><sref ref="[concepts]"/></section>
+<submitter>Walter Brown</submitter>
+<date>10 Apr 2015</date>
+
+<discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4434.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4434.pdf</a>
+</p>
+<p>
+FI 14: 
+</p>
+<p>
+It seems unfortunate that concepts cannot be declared as members of class 
+templates. This seemingly makes it impossible to define concepts for 
+constraining multiple template parameter packs (if concepts as static member 
+functions were possible, one could provide e.g. two packs so that the class 
+template gets the first pack and the member function template gets the second. 
+That can't be done with a namespace-scope concept because multiple packs in 
+function templates require deduction, and concepts don't take arguments that 
+could be deduced.). As an example, practical needs for such constraining arise 
+in standard library implementations, when constraining the variadic converting 
+constructors of std::tuple.
+</p>
+<p>
+US 13:
+</p>
+<p>
+The following requirement seems overly restrictive, as it can be fairly 
+easily (but tediously) be worked around:  
+<blockquote>
+A requires-expression shall appear only within a concept definition (7.1.7), 
+or within the requires-clause of a template-declaration (Clause 14) or 
+function declaration (8.3.5).
+</blockquote> 
+(The tedious workaround for each concept C is to define an overload set 
+consisting of two function templates, one unconstrained and returning 
+false, the other constrained by C and returning true.
+</p>
+<p>
+US 15/16:
+</p>
+<p>
+We believe that (generally speaking) the non-throwing of 
+exceptions is a part of the runtime 
+contract of a function, not
+something that should 
+be advertised in the type system outside a few 
+very specific cases related to move operations.  
+As a 'requires' expression is always free to invoke 
+the 'noexcept' operator to
+produce a predicate, 
+we believe that is sufficient support for exception 
+constraints in the language, and directly 
+supporting this additional term in the grammar 
+would be harmful, encouraging compile-time 
+contracts taking away an important library 
+implementer freedom.  As the TS is intended to 
+provide feedback, we believe it would be better to
+proceed without this, and see how much demand 
+arises from using the alternate form, and whether 
+that alternate form alone is too cumbersome for 
+real world use.
+</p>
+<p>
+If we retain exception constraints, the optional 
+noexcept specifier should support the full range of 
+the noexcept grammar.
+</p>
+<p>
+US 24:
+</p>
+<p>
+The syntactic 
+distinction between a function 
+concept and a variable concept seems to serve 
+no useful purpose.  A single concept syntax 
+seems sufficient, and especially so once 
+redundant elements are removed.
+</p>
+<p>
+US 36:
+</p>
+<p>
+This paragraph introduces implicit conversion constraints to specify (via the 
+trailing-return-type notation -> )
+that a constraint is satisfied iff an expression E
+is convertible to a type T.  It would 
+be very useful to have similar constraints that are 
+satisfied iff decltype(E) is exactly the type T. 
+</p>
+<p>
+Discussed in Lenexa. There was interest in going forward with
+the design of Concepts as-is, and open EWG issues for various comments
+for future discussion. This issue tracks those comments/issues.
+</p>
+</discussion>
+</issue>

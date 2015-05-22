@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="168" status="New">
+<issue num="168" status="Dup">
 <title>
 N4319 Contracts for C++: What are the Choices 
 </title>
@@ -17,6 +17,7 @@ N4319 Contracts for C++: What are the Choices
 </p>
 <p>
 See also issue <iref ref="137"/>, <iref ref="141"/> and <iref ref="159"/>.
+Further processing of this will happen under 141.
 </p>
 </discussion>
 </issue>

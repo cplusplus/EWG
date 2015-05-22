@@ -5,7 +5,7 @@
 
 <issue num="166" status="New">
 <title>
-N4286 Resumable Functions, N4287 Threads, Fibers and Couroutines (slides deck) 
+N4402 Resumable Functions (revision 4), N4403 Draft Wording for Resumable Functions, N4286 Resumable Functions, N4287 Threads, Fibers and Couroutines (slides deck) 
 </title>
 <section><sref ref="[coroutine]"/></section>
 <submitter>Gor Nishanov, Jim Radigan</submitter>
@@ -20,6 +20,12 @@ N4286 Resumable Functions, N4287 Threads, Fibers and Couroutines (slides deck)
 </p>
 <p>
 Discussed in Urbana. Further proposals expected.
+</p>
+<p>
+Discussed in Lenexa, EWG gave guidance related to what sort of keywords
+to use, and recommended continuing the work on the wording. The design
+is accepted, but the library-magic parts have been requested to be
+taken through LEWG.
 </p>
 </discussion>
 </issue>

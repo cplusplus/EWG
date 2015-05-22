@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="173" status="New">
+<issue num="173" status="Open">
 <title>
 N4360 Delayed Evaluation Parameters
 </title>
@@ -14,6 +14,33 @@ N4360 Delayed Evaluation Parameters
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4360.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4360.pdf</a>
+</p>
+<p>
+Discussed in Lenexa. Summary of straw polls:
+</p>
+<p>
+Straw poll: Are you intrigued by a notion of delayed parameter evaluation?
+</p>
+<p>
+SF: 6 F: 7 N: 2 A: 3 SA: 1
+</p>
+<p>
+Straw poll: Annotation at the call site?
+</p>
+<p>
+SF: 1 F: 0 N: 9 A: 0 SA: 7
+</p>
+<p>
+Straw poll: Pass by lambda rather than evaluate on first use?
+</p>
+<p>
+SF: 5 F: 4 N: 5 A: 0 SA: 3 
+</p>
+<p>
+EWG expressed interest in the idea, but various people were very concerned
+about the impact of such a facility, voicing caution that it is not just
+syntactic sugar but rather something much more significant, and suggested
+that a much more comprehensive analysis paper should be produced.
 </p>
 </discussion>
 </issue>

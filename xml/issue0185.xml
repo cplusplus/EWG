@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="185" status="Ready">
+<title>
+N4462 	LWG 2089, Towards more perfect forwarding
+</title>
+<section><sref ref="[atomics.types.generic]"/></section>
+<submitter>Ville Voutilainen</submitter>
+<date>07 Apr 2015</date>
+
+<discussion>
+<p>
+See <a href="http://cplusplus.github.io/LWG/lwg-toc.html#2089">LWG 2089</a>.
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4462.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4462.html</a>
+</p>
+<p>
+Discussed in Lenexa. EWG didn't see any need for a language change, and
+considered the library approach to be ok. Jonathan Wakely is writing an LWG
+proposal to resolve the library issue.
+</p>
+</discussion>
+</issue>

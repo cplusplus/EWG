@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="188" status="New">
+<title>
+LEWG Bug 95 - std::decay_copy(), suggestion to support an "auto cast".
+</title>
+<section><sref ref="[conv]"/></section>
+<submitter>Zhihao Yuan</submitter>
+<date>30 Apr 2015</date>
+
+<discussion>
+<p>
+See <a href="https://issues.isocpp.org/show_bug.cgi?id=95#c1">LEWG bug 95</a>.
+</p>
+<p>
+<blockquote>
+Or consider a language feature for that?
+<pre>
+    <code>  auto(y)  // cast to itself</code>
+</pre>
+</blockquote>
+</p>
+</discussion>
+</issue>

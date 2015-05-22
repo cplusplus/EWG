@@ -5,13 +5,16 @@
 
 <issue num="160" status="Open">
 <title>
-N4158 Destructive Move (Rev 1), N4034 Destructive Move
+N4393 Noop Constructors and Destructors, N4158 Destructive Move (Rev 1), N4034 Destructive Move
 </title>
 <section><sref ref="[basic.life]"/></section>
 <submitter>Pablo Halpern</submitter>
 <date>12 Oct 2014</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4393.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4393.pdf</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4158.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4158.pdf</a>
 </p>
@@ -20,6 +23,11 @@ N4158 Destructive Move (Rev 1), N4034 Destructive Move
 </p>
 <p>
 Discussed in Urbana. The author is encouraged to revise.
+</p>
+<p>
+Discussed again in Lenexa. Great concerns about the impact on lifetime,
+progress postponed until the paper author and some experts review whether
+there are solutions that do not require language changes.
 </p>
 </discussion>
 </issue>

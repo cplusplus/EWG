@@ -3,15 +3,18 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="142" status="Open">
+<issue num="142" status="Ready">
 <title>
-N4147 Inline variables, or encapsulated expressions
+N4424 Inline Variables, N4147 Inline variables, or encapsulated expressions
 </title>
 <section><sref ref="[dcl.fct.spec]"/></section>
-<submitter>David Krauss</submitter>
+<submitter>Hal Finkel, Richard Smith, David Krauss</submitter>
 <date>15 Sep 2014</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4424.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4424.pdf</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4147.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4147.pdf</a>
 </p>
@@ -19,6 +22,10 @@ N4147 Inline variables, or encapsulated expressions
 Discussed in Urbana. EWG encouraged solving the problem, and wanted
 the shared constants to be separated from expression aliases, so that
 the former can be solved sooner than the latter.
+</p>
+<p>
+N4424 was discussed in Lenexa and accepted by EWG. The authors are encouraged
+to take a wording paper to CWG.
 </p>
 </discussion>
 </issue>

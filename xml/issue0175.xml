@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='iso-8859-1' standalone='no'?>
+<!DOCTYPE issue SYSTEM "lwg-issue.dtd" [ 
+  <!ENTITY nbsp "&#160;">
+] >
+
+<issue num="175" status="New">
+<title>
+[tiny] pointer to void as template non-type parameter
+</title>
+<section><sref ref="[temp.param]"/></section>
+<submitter>RS</submitter>
+<date>11 Oct 2014</date>
+
+<discussion>
+<p>
+According to 14.1 [temp.param] paragraph 4,
+</p>
+<p>
+<blockquote>
+<pre>
+A non-type template-parameter shall have one of the following (optionally
+cv-qualified) types:
+- integral or enumeration type,
+- pointer to object or pointer to function,
+- lvalue reference to object or lvalue reference to function,
+- pointer to member,
+- std::nullptr_t.
+</pre>
+</blockquote>
+</p>
+<p>
+Since void* isn't a pointer-to-object type, this prohibits using them as
+template non-type parameters, which disallows constructs like
+</p>
+<code>
+<blockquote>
+     template&lt;typename T, std::enable_if_t&lt;std::is_array&lt;T&gt;::value&gt;* =
+nullptr>
+     void foo(T&amp;) {}
+</blockquote>
+</code>
+<p>
+(Though the above does compile in Clang, GCC, and MSVC with no warnings.)
+</p>
+<p>
+There doesn't seem to be a good reason for this prohibition. While a void*
+template parameter can only have a single value (the null pointer),
+the same is true for a non-type parameter of type std::nullptr_t, which is
+allowed.
+</p>
+</discussion>
+<resolution>
+<p>
+Change the second bullet point of 14.1 [temp.param] paragraph 4 as
+indicated:
+</p>
+<p>
+<blockquote>
+- <del>pointer to object or pointer to function</del><ins>object pointer or
+function pointer</ins>,
+</blockquote>
+</p>
+<p>
+Change the second bullet point of 14.3.2 [temp.arg.nontype] paragraph 5 as
+indicated:
+</p>
+<p>
+<blockquote>
+- for a non-type template-parameter of <del>type pointer to
+object</del><ins>object pointer type</ins>, qualification conversions...
+</blockquote>
+</p>
+</resolution>
+</issue>

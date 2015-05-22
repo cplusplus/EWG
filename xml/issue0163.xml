@@ -5,13 +5,19 @@
 
 <issue num="163" status="Open">
 <title>
-N4214 A Module System for C++ (Revision 2), N4047 A Module System for C++
+N4465 A Module System for C++ (Revision 3), N4466 Wording for Modules, N4214 A Module System for C++ (Revision 2), N4047 A Module System for C++
 </title>
 <section><sref ref="[modules]"/></section>
 <submitter>G. Dos Reis, M. Hall, G. Nishanov</submitter>
 <date>27 May 2014</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4466.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4466.pdf</a>
+</p>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4465.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4465.pdf</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4047.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4047.pdf</a>
 </p>
@@ -22,6 +28,12 @@ N4214 A Module System for C++ (Revision 2), N4047 A Module System for C++
 Discussed in Urbana. Authors are encouraged to work further, and implementation
 vendors are encouraged to gain implementation experience with the proposed
 syntax and semantics.
+</p>
+<p>
+Discussed in Lenexa. The overall notational model was supported by EWG,
+but there are fairly many technical details to solve. The authors are
+encouraged to talk to other implementation vendors before Kona and
+update the design paper.
 </p>
 </discussion>
 </issue>

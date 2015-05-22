@@ -3,7 +3,7 @@
   <!ENTITY nbsp "&#160;">
 ] >
 
-<issue num="170" status="New">
+<issue num="170" status="Ready">
 <title>
 N4340 Remove Deprecated Use of the register Keyword 
 </title>
@@ -14,6 +14,11 @@ N4340 Remove Deprecated Use of the register Keyword
 <discussion>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4340.html">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4340.html</a>
+</p>
+<p>
+Discussed in Lenexa. EWG supported making the use of register invalid but
+keeping it as a reserved word. The author is to go to Core
+with wording.
 </p>
 </discussion>
 </issue>

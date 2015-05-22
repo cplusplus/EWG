@@ -5,13 +5,16 @@
 
 <issue num="148" status="Open">
 <title>
-N4165 Unified Call Syntax, N4174 Call syntax: x.f(y) vs. f(x,y)
+N4474 Unified Call Syntax: x.f(y) and f(x,y), N4165 Unified Call Syntax, N4174 Call syntax: x.f(y) vs. f(x,y)
 </title>
 <section><sref ref="[expr.call]"/></section>
 <submitter>Herb Sutter, Bjarne Stroustrup</submitter>
 <date>4 Oct 2014</date>
 
 <discussion>
+<p>
+<a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4474.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4474.pdf</a>
+</p>
 <p>
 <a href="http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4165.pdf">http://open-std.org/JTC1/SC22/WG21/docs/papers/2014/n4165.pdf</a>
 </p>
@@ -22,6 +25,12 @@ N4165 Unified Call Syntax, N4174 Call syntax: x.f(y) vs. f(x,y)
 Discussed in Urbana. EWG favored being able to invoke non-members with
 the member call syntax, and was undecided on the other aspects. Authors
 are encouraged to follow up.
+</p>
+<p>
+Discussed in Lenexa. EWG didn't reach consensus on the proposal. Straw
+poll numbers were SF/WF/N/WA/SA 9/8/3/4/6. There is strong opposition
+to the proposal with concerns about maintainability of code when
+new free functions are added.
 </p>
 </discussion>
 </issue>
